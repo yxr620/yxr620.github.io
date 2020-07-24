@@ -9,85 +9,20 @@
       <link>https://yxr620.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Feb 2022 16:20:08 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Jul 2020 10:05:20 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>利率行为（interest rate behavior）</title>
-      <link>https://yxr620.github.io/posts/interest_rate_behavior/</link>
-      <pubDate>Sat, 26 Feb 2022 16:20:08 +0800</pubDate>
+      <title>中央银行和联邦储备体系</title>
+      <link>https://yxr620.github.io/posts/fed/</link>
+      <pubDate>Fri, 24 Jul 2020 10:05:20 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/interest_rate_behavior/</guid>
-      <description>0. 一些理解 根据《货币经济学》和理论上的推理，利率并不是由美联储决定的。市场上的利率会根据美联储的货币政策改变（例如货币供给量），但是市场上的利率是交易者的决策决定的，利率行为就是分析利率如何被决定的。总的来说有两种理论来解释利率的变化：
-  投资组合选择理论
-  流动性偏好理论
-  1. 投资组合选择理论 1.1 基本假设  财富上升，则对债券需求数量上升 债券预期回报率（不是到期回报率，不是利率）上升，对债券需求数量上升 债券风险上升，对债券需求数量下降 债券流动性上升，对占全需求数量上升  1.2 债券需求供给曲线（以一年期贴现放行债券为例） 其他条件不变情况下：债券价格越低需求量越高
-其他条件不变情况下：债券价格越高供给量越高
-说明：这里说的债券价格是对于固定面值（par value/face value）的债券。例如面值为1000元的债券，一年后将偿付1000元，这里的价格是买这个特定1000元债券的价格
-根据上面所述的情况，可以画出债券的供需曲线，如下：
-在这个图中，纵坐标为债券的价格，同时可以衡量对于该债券的利率，因为利率和债券的价格成负相关。以一年期贴现发行的债券为例，利率$i = (F - P) / P$，其中$F$表示债券的面值，$P$表示债券现在的价格。
-要注意不同术语的表达方式。此处的利率表示已经在市场上的利率。
-预期利率是人们觉得之后的利率，如果预期利率上升，说明人们觉得之后债券的价格会下跌。
-预期回报率在这里可以理解为债券价值的变化率，也就是说预期回报率和债券的价格正相关。我认为不能像《货币金融学》把预期回报率和利率挂钩，最好把其当作不相关的变量。对于一年期的债券如果持有时间就是一年，那么预期回报率是不变，这也就是《货币金融学》中的观点。但是在分析供需的时候，应该认为持有者会在短期内卖掉债券，也就是只赚取债券价格变化中的差价。这也就是说，如果预期利率上升，那么预期回报率就下跌，即投资者认为以后债券价格会下跌。
-1.3 需求曲线的位移 下面表中显示了债券需求量变化的影响因素。
-   影响因素 变化 需求量变化     财富 上升 上升   债券预期利率（见1.2） 上升 下降   预期通货膨胀 上升 下降   债券风险 上升 下降   债券流动性 上升 上升    需求量变化的导致需求曲线变化的情况如下：</description>
-    </item>
-    
-    <item>
-      <title>利率与债券</title>
-      <link>https://yxr620.github.io/posts/bond_interest/</link>
-      <pubDate>Sun, 20 Feb 2022 20:44:00 +0800</pubDate>
-      
-      <guid>https://yxr620.github.io/posts/bond_interest/</guid>
-      <description>1. 一些概念   到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
-  回报率：$R = \frac{C + P_{t + 1} - P_t}{P_t} = \frac{C}{P_t} + \frac{P_{t + 1} - P_t}{P_t} = i_c + g$
-其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值
-注：不是所有债券通用的计算规则。
-  名义利率（nominal interest rate）：$i$
-实际利率（real interest rate）：$r$
-通货膨胀率（inflation rate）：$\pi^e$
-上述三种变量的关系如下： $$ \begin{cases} i = r + \pi^e + r\pi^e \\\ r = i - \pi^e\frac{1 + i}{1 + \pi^e} \end{cases} $$
-  2. 四种贷债券的分析  普通债券：到期归还本金和利息，其到期收益率的公式如下：  $$ PV = \frac{CF}{(1 + i)^n} $$</description>
-    </item>
-    
-    <item>
-      <title>定投原理</title>
-      <link>https://yxr620.github.io/posts/auto_invest/</link>
-      <pubDate>Sat, 19 Feb 2022 23:44:00 +0800</pubDate>
-      
-      <guid>https://yxr620.github.io/posts/auto_invest/</guid>
-      <description>分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。
-1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
- $x$每次定投的金额 $0-T$总定投的时间 $\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）  由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
-$$c = TV / M\\= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}$$已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
-买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数&amp;lt;算数平均数。用公式来说就是：
-$$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算出平均数，也就是随机一点all in的平均成本。
-当然这个算式写出来非常的抽象，不妨说一个形象的理解。定投在投资的时候由于每次投资的金额相等，那么在价格低的时候会买入更多的产品，在高点的时候会购入更少的产品，也就是说自动的对价格进行了购买策略的调正，一定程度上放大了低价区间，缩小了高价区间。
-2. 定投实验 定投的实验反复被论证：定投是比大多数基金经理都聪明的投资策略。而且$89%$的对冲基金都没有战胜美国的股市的大盘。</description>
-    </item>
-    
-    <item>
-      <title>货币概述</title>
-      <link>https://yxr620.github.io/posts/monetary/</link>
-      <pubDate>Mon, 14 Feb 2022 20:20:08 +0800</pubDate>
-      
-      <guid>https://yxr620.github.io/posts/monetary/</guid>
-      <description>1. 概念  定义货币：在产品和服务支付以及债务偿还中被普遍接受的东西 货币的功能：交易媒介、记账单位、价值储存 支付体系的演进：商品货币、不兑现纸币、支票、电子支付、电子货币 货币的计量：  M1：通货（currency）、支票账户存款、旅行者支票、其他支票存款
-M2：M1、小额定期存款、储蓄存款与货币市场账户、货币市场共同基金
-2. M1和M2货币数量 2.1 M1 M1的构成为通货、支票账户存款、旅行者支票、其他支票存款。这是《货币金融学》里面标准的定义，在之后的金融技术革新之后，其他支票存款被替换成了其他流动性存款（Other Liquidity Deposits）；此外美联储在之后公布的M1里面去掉了旅行者支票（本身占比就非常小，而且逐年递减）。
-根据实际情况进行调整之后M1的组成如下：
- 通货（CURRSL） 活期存款（DEMDEPSL） 其他流动性存款（MDLM）  计算出来2021年的M1如下（单位billion，十亿美元）：
-上述三种组成在M1中的占比如下：</description>
-    </item>
-    
-    <item>
-      <title>道琼斯工业指数</title>
-      <link>https://yxr620.github.io/posts/dow_jones/</link>
-      <pubDate>Sat, 12 Feb 2022 23:20:08 +0800</pubDate>
-      
-      <guid>https://yxr620.github.io/posts/dow_jones/</guid>
-      <description>疫情之后的道琼斯工业指数
-道琼斯工业指数的增长率
-数据整理：google文档
-数据来源：Financial Forecast Center</description>
+      <guid>https://yxr620.github.io/posts/fed/</guid>
+      <description>1. 联邦储备体系的结构 联邦储备体系由三个部分组成，如下：
+ 联邦储备银行（Federal Reserve Banks）； 联邦储备委员会（Board of Governments of the Federal Reserve System） 联邦公开市场委员会（Federal Open Market Committee）  1.1 联邦储备银行 联邦储备银行有12所，每一所待变美国一部分区域的利益。他们有如下的职责：
+ 董事”确定“贴现率； 确定获得贴现贷款的银行； 12个银行中5个董事参加FOMC会议（纽约联邦储备银行+4个其他联邦储备银行）。  1.2 联邦储备委员会 委员会由7个总统提名，国会审批的委员，其中一人为主席。这7名委员的职责有：
+ 确定法定准备金率； 审批贴现率； 参加公开市场委员会。  1.3 联邦公开市场委员会 公开市场委员会成员有12个，其中包括7个联邦储备委员会、纽约联邦储备银行行长、4名其他联邦储备银行行长。这12个委员的职责有：
+ 知道公开市场操作，即实施制定好的贴现率； 每年8次会议并且想公众汇报会议内容。  2. 中央银行的独立性 美联储的独立性表现在以下三个方面：
+ 美联储以自己的方式完成目标（工具独立性） 美联储对目标有自己的解释权（目标独立性） 美联储有独立的经济来源  美联储独立可以避免政治经济周期（即以竞选为节点的周期）并且避免政治家没有能力处理复杂的经济问题。
+美联储也并非绝对独立，国会和总统可以通过法律以及委员的任命影响美联储。</description>
     </item>
     
   </channel>
