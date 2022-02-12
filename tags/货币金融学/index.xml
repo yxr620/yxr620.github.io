@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Blog</title>
-    <link>https://yxr.github.io/</link>
-    <description>Recent content on Blog</description>
+    <title>货币金融学 on Blog</title>
+    <link>https://yxr.github.io/tags/%E8%B4%A7%E5%B8%81%E9%87%91%E8%9E%8D%E5%AD%A6/</link>
+    <description>Recent content in 货币金融学 on Blog</description>
     <image>
       <url>https://yxr.github.io/papermod-cover.png</url>
       <link>https://yxr.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 12 Feb 2022 23:20:08 +0800</lastBuildDate><atom:link href="https://yxr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Feb 2022 23:20:08 +0800</lastBuildDate><atom:link href="https://yxr.github.io/tags/%E8%B4%A7%E5%B8%81%E9%87%91%E8%9E%8D%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>道琼斯工业指数</title>
       <link>https://yxr.github.io/posts/dow_jones/</link>

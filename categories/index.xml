@@ -8,6 +8,16 @@
       <url>https://yxr.github.io/papermod-cover.png</url>
       <link>https://yxr.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://yxr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 12 Feb 2022 23:20:08 +0800</lastBuildDate><atom:link href="https://yxr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://yxr.github.io/categories/blog/</link>
+      <pubDate>Sat, 12 Feb 2022 23:20:08 +0800</pubDate>
+      
+      <guid>https://yxr.github.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
