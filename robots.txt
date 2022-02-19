@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://620.github.io/sitemap.xml
+Sitemap: https://yxr620.github.io/sitemap.xml
