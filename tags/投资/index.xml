@@ -9,7 +9,24 @@
       <link>https://yxr620.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 19 Feb 2022 23:44:00 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/tags/%E6%8A%95%E8%B5%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Feb 2022 20:44:00 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/tags/%E6%8A%95%E8%B5%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利率与债券</title>
+      <link>https://yxr620.github.io/posts/bond_interest/</link>
+      <pubDate>Sun, 20 Feb 2022 20:44:00 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/posts/bond_interest/</guid>
+      <description>1. 一些概念   到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
+  回报率：$R = \frac{C + P_{t + 1} - P_t}{P_t} = \frac{C}{P_t} + \frac{P_{t + 1} - P_t}{P_t} = i_c + g$
+其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值
+注：不是所有债券通用的计算规则。
+  名义利率（nominal interest rate）：$i$
+实际利率（real interest rate）：$r$
+通货膨胀率（inflation rate）：$\pi^e$
+上述三种变量的关系如下： $$ \begin{cases} i = r + \pi^e + r\pi^e \\ r = i - \pi^e\frac{1 + i}{1 + \pi^e} \end{cases} $$
+  2. 四种贷债券的分析  普通债券：到期归还本金和利息，其到期收益率的公式如下：  $$ PV = \frac{CF}{(1 + i)^n} $$</description>
+    </item>
+    
     <item>
       <title>定投原理</title>
       <link>https://yxr620.github.io/posts/auto_invest/</link>
