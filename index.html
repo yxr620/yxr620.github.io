@@ -171,6 +171,29 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>股票价格计算
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>这一章的标题原本叫股票市场、理性预期理论与有效市场假说。但是我认为这一章所有的话题和结论都是指向股票价格计算提出的理论。这些所有的计算规则都无法真正的计算出股票的价格（因为涉及未来的信息），这些理论更像分析学，以假设出发说明股票价格反应的一些事实和特点。
+1. 资产估计原则 所有资产的估值都为该资产未来现金流的现值。将这个原则运用在股票市场中，股票的现金流为：股利（股息）、未来出售的价格。
+2. 戈登增长模型 戈登增长模型对股利做出了简化：假设公司按照每年不变的比率增加股利。根据该假设推导出来长期持有该股票时，股票的股利产生的现值如下：
+$$\begin{aligned}P_0 &amp;= \frac{D_0(1 &#43; g)}{(1 &#43; k_e)} &#43; \frac{D_0(1 &#43; g)^2}{(1 &#43; k_e)^2} &#43; \cdots &#43; \frac{D_0(1 &#43; g)^n}{(1 &#43; k_e)^n} \\&amp;=\frac{D_0(1 &#43; g)}{k_e - g}\end{aligned}$$$P_0$为购买时股票价格（第0年股票价格）；
+$D_0$为第0年股利（从第一年开始获得）；
+$g$为股利的增长率；
+$k_e$为要求的的回报率。
+要注意的是$k_e$是投资人根据自己对股票的了解从自己情况出发，要求的回报率，不同投资人因此计算出来的现值不同。例如张三对于这个股票了解很少，他必须要设置一个很高的$k_e$才能匹配自己冒的风险。李四对于该公司了解非常多，十分确定之后的股利分配，他就有可能接受$k_e$比较小，因此出价会高于张三。
+3. 理性预期理论 3.1 假设 理性预期理论认为人们对一个事物做出的预测$X^e$和利用所有可得信息做出的预测$X^{of}$相等。利用公式表示即$X^e = X^{of}$。
+此时还有第三个变量$X$，即市场之后出现的真实值。这三个变量之间可以互不相等，即$X^e \neq X^{of} \neq X$。理性预期理论只认为$X^e = X^{of}$。
+3.2 结论 根据上面的假设可以推导出下面两个结论：
+ 如果某一变量的运动方式发生变化，那么对该变量预期模型也发生变化； 预测误差$X - X^e$期望为0，且该误差无法预知。（感觉这个推理也不一定对）  4. 有效市场假说 4.1 推导 有效市场假说实际上是理性预期理论在金融市场上的应用。...</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-04-06 19:48:00 +0800 CST'>April 6, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620</footer>
+  <a class="entry-link" aria-label="post link to 股票价格计算" href="https://yxr620.github.io/posts/stock_analyze/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>利率风险结构和期限结构
     </h2>
   </header>
@@ -257,23 +280,6 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
   </section>
   <footer class="entry-footer"><span title='2022-02-19 23:44:00 +0800 CST'>February 19, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620</footer>
   <a class="entry-link" aria-label="post link to 定投原理" href="https://yxr620.github.io/posts/auto_invest/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>货币概述
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>1. 概念  定义货币：在产品和服务支付以及债务偿还中被普遍接受的东西 货币的功能：交易媒介、记账单位、价值储存 支付体系的演进：商品货币、不兑现纸币、支票、电子支付、电子货币 货币的计量：  M1：通货（currency）、支票账户存款、旅行者支票、其他支票存款
-M2：M1、小额定期存款、储蓄存款与货币市场账户、货币市场共同基金
-2. M1和M2货币数量 2.1 M1 M1的构成为通货、支票账户存款、旅行者支票、其他支票存款。这是《货币金融学》里面标准的定义，在之后的金融技术革新之后，其他支票存款被替换成了其他流动性存款（Other Liquidity Deposits）；此外美联储在之后公布的M1里面去掉了旅行者支票（本身占比就非常小，而且逐年递减）。
-根据实际情况进行调整之后M1的组成如下：
- 通货（CURRSL） 活期存款（DEMDEPSL） 其他流动性存款（MDLM）  计算出来2021年的M1如下（单位billion，十亿美元）：
-上述三种组成在M1中的占比如下：</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-02-14 20:20:08 +0800 CST'>February 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620</footer>
-  <a class="entry-link" aria-label="post link to 货币概述" href="https://yxr620.github.io/posts/monetary/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -9,7 +9,27 @@
       <link>https://yxr620.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Apr 2022 20:09:21 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 19:48:00 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>股票价格计算</title>
+      <link>https://yxr620.github.io/posts/stock_analyze/</link>
+      <pubDate>Wed, 06 Apr 2022 19:48:00 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/posts/stock_analyze/</guid>
+      <description>这一章的标题原本叫股票市场、理性预期理论与有效市场假说。但是我认为这一章所有的话题和结论都是指向股票价格计算提出的理论。这些所有的计算规则都无法真正的计算出股票的价格（因为涉及未来的信息），这些理论更像分析学，以假设出发说明股票价格反应的一些事实和特点。
+1. 资产估计原则 所有资产的估值都为该资产未来现金流的现值。将这个原则运用在股票市场中，股票的现金流为：股利（股息）、未来出售的价格。
+2. 戈登增长模型 戈登增长模型对股利做出了简化：假设公司按照每年不变的比率增加股利。根据该假设推导出来长期持有该股票时，股票的股利产生的现值如下：
+$$\begin{aligned}P_0 &amp;= \frac{D_0(1 + g)}{(1 + k_e)} + \frac{D_0(1 + g)^2}{(1 + k_e)^2} + \cdots + \frac{D_0(1 + g)^n}{(1 + k_e)^n} \\&amp;=\frac{D_0(1 + g)}{k_e - g}\end{aligned}$$$P_0$为购买时股票价格（第0年股票价格）；
+$D_0$为第0年股利（从第一年开始获得）；
+$g$为股利的增长率；
+$k_e$为要求的的回报率。
+要注意的是$k_e$是投资人根据自己对股票的了解从自己情况出发，要求的回报率，不同投资人因此计算出来的现值不同。例如张三对于这个股票了解很少，他必须要设置一个很高的$k_e$才能匹配自己冒的风险。李四对于该公司了解非常多，十分确定之后的股利分配，他就有可能接受$k_e$比较小，因此出价会高于张三。
+3. 理性预期理论 3.1 假设 理性预期理论认为人们对一个事物做出的预测$X^e$和利用所有可得信息做出的预测$X^{of}$相等。利用公式表示即$X^e = X^{of}$。
+此时还有第三个变量$X$，即市场之后出现的真实值。这三个变量之间可以互不相等，即$X^e \neq X^{of} \neq X$。理性预期理论只认为$X^e = X^{of}$。
+3.2 结论 根据上面的假设可以推导出下面两个结论：
+ 如果某一变量的运动方式发生变化，那么对该变量预期模型也发生变化； 预测误差$X - X^e$期望为0，且该误差无法预知。（感觉这个推理也不一定对）  4. 有效市场假说 4.1 推导 有效市场假说实际上是理性预期理论在金融市场上的应用。</description>
+    </item>
+    
     <item>
       <title>利率风险结构和期限结构</title>
       <link>https://yxr620.github.io/posts/risk_term_structure/</link>
