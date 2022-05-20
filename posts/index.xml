@@ -9,7 +9,38 @@
       <link>https://yxr620.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 Apr 2022 18:57:33 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 15:03:20 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>金融监管</title>
+      <link>https://yxr620.github.io/posts/financial_regulation/</link>
+      <pubDate>Fri, 20 May 2022 15:03:20 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/posts/financial_regulation/</guid>
+      <description>1. 对金融业的保护：政府安全网 政府安全网的形式为存款保险，具体来讲有两种拯救方式：
+ 偿付法（pay off method） 收购与接管法（purchase and assumption）  2. 政府安全网的缺陷  道德风险（太大而不能倒闭 逆向选择  3. 金融监管的8类  对持有资产的限制 对资本金要求：  杠杆比率 将表外业务转成风险资产（《巴塞尔协议》）   及时整改行动 金融监管：注册与检查。商业银行又通货监理署（OCC）、州银行监管当局批准成立，并且定期提交报告。 风险管理评估：评价银行控制风险的管理程序的健全性。 信息披露要求 消费者保护 对竞争的限制  4. 银行变化趋势 小银行和大银行的变化趋势如图
+由于大银行的数量急剧增加，小银行的数量减少。政府安全网为了不引发系统性风险，会对大银行进行救助，因此“太大而不能倒”的问题会加剧。
+同时该政策会导致更加严重的道德风险问题，因为储户不需要仔细审查银行的行为，银行也会由于自己不会倒闭而进一步冒险。
+5. 银行的杠杆比率 从1990年开始，银行资本和银行资产的比例（即银行杠杆比率）的变化如下图
+可以看到在2008年之前银行资本占比非常低，因此银行会冒更大的风险。在2008年之后银行资本比率明显增高。此外对于银行的资本要求应该是顺周期的，即市场扩张时应该提高银行资本要求，市场收缩的时候应该降低银行资本要求。可以看到2020年疫情来临之后银行资本比率也有明显的下降，当然这和美联储降息也有非常大的关系。
+MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]],displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[\[&#39;,&#39;\]\]&#39;]],processEscapes: true,processEnvironments: true,skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; },extensions: [&#34;</description>
+    </item>
+    
+    <item>
+      <title>银行业管理</title>
+      <link>https://yxr620.github.io/posts/bank_management/</link>
+      <pubDate>Mon, 25 Apr 2022 12:17:01 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/posts/bank_management/</guid>
+      <description>1. 银行资产负债表    资产 负债     准备金 支票存款   托收中款项 非交易存款   银行同业存款 借款   证券 银行资本   贷款    其他资产     2. 银行基本业务 资产转换：销售具有某组特征的负债并利用所得到的资金购买具有不同特征组合的资产。
+工具：T-账户（T-account）
+3. 银行的管理方案 如果要使利润最大化银行要考虑到如下方面：流动性管理、资产管理、负债管理、资本充足性管理、信用风险管理、利率风险管理。
+3.1 流动性管理 银行需要维持一定数量的准备金来应对存款外流，并且银行要时刻保持最低的法定准备金率。因此出现准备金不够的情况需要银行采取操作，具体可以采取如下操作：
+ 在联邦基金市场上向其他银行借款； 出售证券； 向美联储借款； 减少贷款。  由于出现准备金不足时采取的方式都可能将资产低价出售，因此银行愿意持有一定量的超额准备金来应对存款外流。考虑到准备金是没有利息收入的，因此银行不愿意持有，替代方案则是持有一定的高流动性的资产随时可以转换成现金应对存款外流，例如美国国债等。
+3.2 资产管理 金融系统需要银行稳定的运行，因此对银行持有的资产需要有一定的限制。本质上来讲就是持有的资产需要尽量高回报率、低风险、高流动性。要实现这个目标具体来说有如下几种控制方式。
+ 寻找愿意支付高利率并且违约风险低的借款人发放贷款（信用风险管理）； 购买高回报和低风险的证券； 银行的资产必须多样化来降低风险； 银行需要持有的资产要有比较高的流动性。  银行在进行信用风险管理时要用到非常多的策略来达到放出的贷款违约率较低的目的。具体来讲有如下几点：
+ 甄别借款人（对企业和个人进行评估）； 贷款专业化：银行在统一领域集中贷款，这样可以让银行了解该领域进而减少信息不对称； 限制性条款的监督； 长期客户关系（贷款承诺）：银行承诺在一定的时期内对企业发放贷款； 抵押品与补偿余额：要求客户在银行的存款达到一定的金额再发放贷款，或者要求客户提供抵押品； 信用配给：即使借款人愿意提供高利率也不发放贷款或者发放比要求更少的贷款。  3.</description>
+    </item>
+    
     <item>
       <title>金融结构的经济学分析</title>
       <link>https://yxr620.github.io/posts/finance_institution/</link>
