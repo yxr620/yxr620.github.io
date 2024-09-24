@@ -8,17 +8,30 @@
 <title>定投原理 | Blog</title>
 <meta name="keywords" content="投资" />
 <meta name="description" content="分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。
-1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
- $x$每次定投的金额 $0-T$总定投的时间 $\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）  由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
-$$c = TV / M\\= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}$$已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
+1. 定投模型
+定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
+
+$x$每次定投的金额
+$0-T$总定投的时间
+$\Delta T$每次定投间隔的时间
+$f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）
+
+由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
+$$
+c = TV / M\\
+= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\
+= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}
+$$
+已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
 买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数&lt;算数平均数。用公式来说就是：
-$$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算出平均数，也就是随机一点all in的平均成本。
-当然这个算式写出来非常的抽象，不妨说一个形象的理解。定投在投资的时候由于每次投资的金额相等，那么在价格低的时候会买入更多的产品，在高点的时候会购入更少的产品，也就是说自动的对价格进行了购买策略的调正，一定程度上放大了低价区间，缩小了高价区间。
-2. 定投实验 定投的实验反复被论证：定投是比大多数基金经理都聪明的投资策略。而且$89%$的对冲基金都没有战胜美国的股市的大盘。">
+$$
+\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} &lt; \frac{\sum_{i = 1}^n f(i \Delta T)}{n}
+$$
+右边的公式就是算出平均数，也就是随机一点all in的平均成本。">
 <meta name="author" content="yxr620">
 <link rel="canonical" href="https://yxr620.github.io/posts/auto_invest/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://yxr620.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://yxr620.github.io/favicon-16x16.png">
@@ -27,7 +40,8 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
 <link rel="mask-icon" href="https://yxr620.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.92.1" />
+<meta name="generator" content="Hugo 0.134.3">
+<link rel="alternate" hreflang="en" href="https://yxr620.github.io/posts/auto_invest/" />
 <noscript>
     <style>
         #theme-toggle,
@@ -66,13 +80,26 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
     </style>
 </noscript><meta property="og:title" content="定投原理" />
 <meta property="og:description" content="分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。
-1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
- $x$每次定投的金额 $0-T$总定投的时间 $\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）  由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
-$$c = TV / M\\= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}$$已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
+1. 定投模型
+定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
+
+$x$每次定投的金额
+$0-T$总定投的时间
+$\Delta T$每次定投间隔的时间
+$f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）
+
+由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
+$$
+c = TV / M\\
+= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\
+= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}
+$$
+已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
 买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数&lt;算数平均数。用公式来说就是：
-$$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算出平均数，也就是随机一点all in的平均成本。
-当然这个算式写出来非常的抽象，不妨说一个形象的理解。定投在投资的时候由于每次投资的金额相等，那么在价格低的时候会买入更多的产品，在高点的时候会购入更少的产品，也就是说自动的对价格进行了购买策略的调正，一定程度上放大了低价区间，缩小了高价区间。
-2. 定投实验 定投的实验反复被论证：定投是比大多数基金经理都聪明的投资策略。而且$89%$的对冲基金都没有战胜美国的股市的大盘。" />
+$$
+\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} &lt; \frac{\sum_{i = 1}^n f(i \Delta T)}{n}
+$$
+右边的公式就是算出平均数，也就是随机一点all in的平均成本。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yxr620.github.io/posts/auto_invest/" /><meta property="og:image" content="https://yxr620.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-19T23:44:00&#43;08:00" />
@@ -83,29 +110,42 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
 
 <meta name="twitter:title" content="定投原理"/>
 <meta name="twitter:description" content="分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。
-1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
- $x$每次定投的金额 $0-T$总定投的时间 $\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）  由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
-$$c = TV / M\\= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}$$已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
+1. 定投模型
+定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
+
+$x$每次定投的金额
+$0-T$总定投的时间
+$\Delta T$每次定投间隔的时间
+$f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）
+
+由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
+$$
+c = TV / M\\
+= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\
+= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}
+$$
+已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
 买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数&lt;算数平均数。用公式来说就是：
-$$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算出平均数，也就是随机一点all in的平均成本。
-当然这个算式写出来非常的抽象，不妨说一个形象的理解。定投在投资的时候由于每次投资的金额相等，那么在价格低的时候会买入更多的产品，在高点的时候会购入更少的产品，也就是说自动的对价格进行了购买策略的调正，一定程度上放大了低价区间，缩小了高价区间。
-2. 定投实验 定投的实验反复被论证：定投是比大多数基金经理都聪明的投资策略。而且$89%$的对冲基金都没有战胜美国的股市的大盘。"/>
+$$
+\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} &lt; \frac{\sum_{i = 1}^n f(i \Delta T)}{n}
+$$
+右边的公式就是算出平均数，也就是随机一点all in的平均成本。"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://yxr620.github.io/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "定投原理",
       "item": "https://yxr620.github.io/posts/auto_invest/"
     }
@@ -118,12 +158,12 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
   "@type": "BlogPosting",
   "headline": "定投原理",
   "name": "定投原理",
-  "description": "分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。\n1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：\n $x$每次定投的金额 $0-T$总定投的时间 $\\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）  由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \\Delta T$，那么投资的总金额就是$TV = nx = xT/\\Delta T$。不妨设在$\\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \\Delta T)$，总共获得投资产品的数量为$M= \\sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：\n$$\rc = TV / M\\\\\r= \\frac{xn}{\\sum_{i = i}^{n} \\frac{x}{f(i \\Delta T)}}\\\\\r= \\frac{n}{\\sum_{i = 1}^{n} \\frac{1}{f(i \\Delta T)}}\r$$\r已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。\n买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数\u0026lt;算数平均数。用公式来说就是：\n$$\r\\frac{n}{\\sum_{i = 1}^{n} \\frac{1}{f(i \\Delta T)}} 右边的公式就是算出平均数，也就是随机一点all in的平均成本。\n当然这个算式写出来非常的抽象，不妨说一个形象的理解。定投在投资的时候由于每次投资的金额相等，那么在价格低的时候会买入更多的产品，在高点的时候会购入更少的产品，也就是说自动的对价格进行了购买策略的调正，一定程度上放大了低价区间，缩小了高价区间。\n2. 定投实验 定投的实验反复被论证：定投是比大多数基金经理都聪明的投资策略。而且$89%$的对冲基金都没有战胜美国的股市的大盘。",
+  "description": "分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。\n1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：\n$x$每次定投的金额 $0-T$总定投的时间 $\\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元） 由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \\Delta T$，那么投资的总金额就是$TV = nx = xT/\\Delta T$。不妨设在$\\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \\Delta T)$，总共获得投资产品的数量为$M= \\sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：\n$$\rc = TV / M\\\\\r= \\frac{xn}{\\sum_{i = i}^{n} \\frac{x}{f(i \\Delta T)}}\\\\\r= \\frac{n}{\\sum_{i = 1}^{n} \\frac{1}{f(i \\Delta T)}}\r$$\r已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。\n买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数\u0026lt;算数平均数。用公式来说就是：\n$$\r\\frac{n}{\\sum_{i = 1}^{n} \\frac{1}{f(i \\Delta T)}} \u003c \\frac{\\sum_{i = 1}^n f(i \\Delta T)}{n}\r$$\r右边的公式就是算出平均数，也就是随机一点all in的平均成本。\n",
   "keywords": [
     "投资"
   ],
-  "articleBody": "分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。\n1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：\n $x$每次定投的金额 $0-T$总定投的时间 $\\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）  由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \\Delta T$，那么投资的总金额就是$TV = nx = xT/\\Delta T$。不妨设在$\\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \\Delta T)$，总共获得投资产品的数量为$M= \\sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：\n$$\rc = TV / M\\\\\r= \\frac{xn}{\\sum_{i = i}^{n} \\frac{x}{f(i \\Delta T)}}\\\\\r= \\frac{n}{\\sum_{i = 1}^{n} \\frac{1}{f(i \\Delta T)}}\r$$\r已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。\n买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数$$\r\\frac{n}{\\sum_{i = 1}^{n} \\frac{1}{f(i \\Delta T)}} 右边的公式就是算出平均数，也就是随机一点all in的平均成本。\n当然这个算式写出来非常的抽象，不妨说一个形象的理解。定投在投资的时候由于每次投资的金额相等，那么在价格低的时候会买入更多的产品，在高点的时候会购入更少的产品，也就是说自动的对价格进行了购买策略的调正，一定程度上放大了低价区间，缩小了高价区间。\n2. 定投实验 定投的实验反复被论证：定投是比大多数基金经理都聪明的投资策略。而且$89%$的对冲基金都没有战胜美国的股市的大盘。\n2.1 不同投资策略对比 有关定投的实验非常多，实验过程简单明了，结论也非常清晰。在这里介绍一个reddit上面的实验：源实验。\n这个实验假设三种情景：\n Tiffany是最差的投资者。每个月她存200美元，获得$3%$的利息。到了金融危机的时候她就在最高点全部买入S\u0026P500美国大盘基金。之后继续存钱直到下一次金融危机继续在最高点投入。这样她会买入4次，分别是1987、1990、2000、2007。经过40年的投资之后（从1979年开始），总共投入96,000美元，资产663,594美元。 Brittany是最强的投资者。每个月她存200美元，获得$3%$的利息，然后在每次金融危机最低点买入S\u0026P500。这样40年下来资产为956,838 Sarah是定投者。每个月投资200美元到S\u0026P500，四十年下来资产为1,386,429。  2.2 不同时间跨度对比 定投的时间间隔不同给人的感觉非常不同。因此在这里做一个不同时间间隔的利润对比。在2012-2022年这十年时间内，分别采用时间间隔为1天、1周、1月。结果如下：\n    1天 1周 1月     增长 $191.89%$ $207.19%$ $198.73%$    根据上面的结果看出当时间长度足够长的时候每一种时间间隔都有差不多的收益，因此不必过于纠结与时间间隔的长短。\nMathJax.Hub.Config({\rtex2jax: {\rinlineMath: [['$','$'], ['\\\\(','\\\\)']],\rdisplayMath: [['$$','$$'], ['\\[\\[','\\]\\]']],\rprocessEscapes: true,\rprocessEnvironments: true,\rskipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],\rTeX: { equationNumbers: { autoNumber: \"AMS\" },\rextensions: [\"AMSmath.js\", \"AMSsymbols.js\"] }\r}\r});\rMathJax.Hub.Queue(function() {\rvar all = MathJax.Hub.getAllJax(), i;\rfor(i = 0; i \rcode.has-jax {\rfont: inherit;\rfont-size: 100%;\rbackground: inherit;\rborder: inherit;\rcolor: #515151;\r}\r\r",
-  "wordCount" : "142",
+  "articleBody": "分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。\n1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：\n$x$每次定投的金额 $0-T$总定投的时间 $\\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元） 由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \\Delta T$，那么投资的总金额就是$TV = nx = xT/\\Delta T$。不妨设在$\\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \\Delta T)$，总共获得投资产品的数量为$M= \\sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：\n$$\rc = TV / M\\\\\r= \\frac{xn}{\\sum_{i = i}^{n} \\frac{x}{f(i \\Delta T)}}\\\\\r= \\frac{n}{\\sum_{i = 1}^{n} \\frac{1}{f(i \\Delta T)}}\r$$\r已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。\n买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数\u003c算数平均数。用公式来说就是：\n$$\r\\frac{n}{\\sum_{i = 1}^{n} \\frac{1}{f(i \\Delta T)}} \u003c \\frac{\\sum_{i = 1}^n f(i \\Delta T)}{n}\r$$\r右边的公式就是算出平均数，也就是随机一点all in的平均成本。\n当然这个算式写出来非常的抽象，不妨说一个形象的理解。定投在投资的时候由于每次投资的金额相等，那么在价格低的时候会买入更多的产品，在高点的时候会购入更少的产品，也就是说自动的对价格进行了购买策略的调正，一定程度上放大了低价区间，缩小了高价区间。\n2. 定投实验 定投的实验反复被论证：定投是比大多数基金经理都聪明的投资策略。而且$89%$的对冲基金都没有战胜美国的股市的大盘。\n2.1 不同投资策略对比 有关定投的实验非常多，实验过程简单明了，结论也非常清晰。在这里介绍一个reddit上面的实验：源实验。\n这个实验假设三种情景：\nTiffany是最差的投资者。每个月她存200美元，获得$3%$的利息。到了金融危机的时候她就在最高点全部买入S\u0026P500美国大盘基金。之后继续存钱直到下一次金融危机继续在最高点投入。这样她会买入4次，分别是1987、1990、2000、2007。经过40年的投资之后（从1979年开始），总共投入96,000美元，资产663,594美元。 Brittany是最强的投资者。每个月她存200美元，获得$3%$的利息，然后在每次金融危机最低点买入S\u0026P500。这样40年下来资产为956,838 Sarah是定投者。每个月投资200美元到S\u0026P500，四十年下来资产为1,386,429。 2.2 不同时间跨度对比 定投的时间间隔不同给人的感觉非常不同。因此在这里做一个不同时间间隔的利润对比。在2012-2022年这十年时间内，分别采用时间间隔为1天、1周、1月。结果如下：\n1天 1周 1月 增长 $191.89%$ $207.19%$ $198.73%$ 根据上面的结果看出当时间长度足够长的时候每一种时间间隔都有差不多的收益，因此不必过于纠结与时间间隔的长短。\n",
+  "wordCount" : "94",
   "inLanguage": "en",
   "datePublished": "2022-02-19T23:44:00+08:00",
   "dateModified": "2022-02-19T23:44:00+08:00",
@@ -162,7 +202,7 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://yxr620.github.io" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <a href="https://yxr620.github.io/" accesskey="h" title="Blog (Alt + H)">Blog</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -184,6 +224,8 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -214,11 +256,11 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://yxr620.github.io">Home</a>&nbsp;»&nbsp;<a href="https://yxr620.github.io/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://yxr620.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://yxr620.github.io/posts/">Posts</a></div>
     <h1 class="post-title">
       定投原理
     </h1>
-    <div class="post-meta"><span title='2022-02-19 23:44:00 +0800 CST'>February 19, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620&nbsp;|&nbsp;<a href="https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/posts/auto_invest/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta">&lt;span title=&#39;2022-02-19 23:44:00 &#43;0800 CST&#39;&gt;February 19, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;yxr620&nbsp;|&nbsp;<a href="https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/posts/auto_invest/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> <div class="toc">
@@ -280,22 +322,22 @@ $$</div>
 <h4 id="22-不同时间跨度对比">2.2 不同时间跨度对比<a hidden class="anchor" aria-hidden="true" href="#22-不同时间跨度对比">#</a></h4>
 <p>定投的时间间隔不同给人的感觉非常不同。因此在这里做一个不同时间间隔的利润对比。在2012-2022年这十年时间内，分别采用时间间隔为1天、1周、1月。结果如下：</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>1天</th>
-<th>1周</th>
-<th>1月</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>增长</td>
-<td>$191.89%$</td>
-<td>$207.19%$</td>
-<td>$198.73%$</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">1天</th>
+          <th style="text-align: left">1周</th>
+          <th style="text-align: left">1月</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">增长</td>
+          <td style="text-align: left">$191.89%$</td>
+          <td style="text-align: left">$207.19%$</td>
+          <td style="text-align: left">$198.73%$</td>
+      </tr>
+  </tbody>
 </table>
 <p>根据上面的结果看出当时间长度足够长的时候每一种时间间隔都有差不多的收益，因此不必过于纠结与时间间隔的长短。</p>
 <script type="text/javascript"
@@ -404,7 +446,7 @@ code.has-jax {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://yxr620.github.io">Blog</a></span>
+    <span>&copy; 2024 <a href="https://yxr620.github.io/">Blog</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

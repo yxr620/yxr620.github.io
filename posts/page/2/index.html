@@ -18,8 +18,9 @@
 <link rel="mask-icon" href="https://yxr620.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.92.1" />
+<meta name="generator" content="Hugo 0.134.3">
 <link rel="alternate" type="application/rss+xml" href="https://yxr620.github.io/posts/index.xml">
+<link rel="alternate" hreflang="en" href="https://yxr620.github.io/posts/" />
 <noscript>
     <style>
         #theme-toggle,
@@ -72,10 +73,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://yxr620.github.io/posts/"
     }
@@ -99,7 +100,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://yxr620.github.io" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <a href="https://yxr620.github.io/" accesskey="h" title="Blog (Alt + H)">Blog</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -121,6 +122,8 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -148,7 +151,7 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://yxr620.github.io">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://yxr620.github.io/">Home</a></div>
   <h1>Posts</h1>
 </header>
 
@@ -159,23 +162,26 @@
   </header>
   <section class="entry-content">
     <p>1. 风险结构 风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。
- 违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）； 流动性：流动性越低风险溢价越高·； 所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。  2. 利率期限结构 期限结构是为了解释同一机构发行的不同时长的债券的利率不同。
+违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）； 流动性：流动性越低风险溢价越高·； 所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。 2. 利率期限结构 期限结构是为了解释同一机构发行的不同时长的债券的利率不同。
 2.1 期限结构特点 这些不同时长的债券的利率会表现出如下三种特点：
- 到期期限不同的债券利率随时间波动基本一致； 若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜； 收益率曲线几乎总是向上倾斜的。  为了解释上面这三种现象，金融学家提出了三种理论。
+到期期限不同的债券利率随时间波动基本一致； 若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜； 收益率曲线几乎总是向上倾斜的。 为了解释上面这三种现象，金融学家提出了三种理论。
 2.2 预期理论 两个假设：
-  长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；
-  投资者对不同到期期限的债券无特别偏好。
-  根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：
+长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；
+投资者对不同到期期限的债券无特别偏好。
+根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：
 $$ i_l = \int_0^T i_s(t) dt / T $$
 这个理论只能解释1、2两个特点。
 2.3 分割市场理论 两个假设：
- 不同到期期限的债券之间不能相互替换 风险厌恶这愿意持有短期的债券  根据这两个假设推理出来的结论就是第三个特点。
+不同到期期限的债券之间不能相互替换 风险厌恶这愿意持有短期的债券 根据这两个假设推理出来的结论就是第三个特点。
 2.4 流动性溢价理论 该理论提出的假设为，长期债券的利率等于两项之和：
 第一项：短期利率的平均值；
 第二项：流动性溢价（随到期期限$n$的增长而上升）
-那么长期利率和短期利率之间的关系如下： $$ i_l = \int_0^T i_s(t) dt / T &#43; l_T $$ 其中$l_T$为流动性溢价。...</p>
+那么长期利率和短期利率之间的关系如下： $$ i_l = \int_0^T i_s(t) dt / T &#43; l_T $$ 其中$l_T$为流动性溢价。
+3. 收益率曲线（yield Curve） 3.1 定义 收益率曲线是同一时间下不同到期时间的债券的利率组成的曲线。例如下图中的收益率曲线就表示了2017年3月2日的收益率曲线。其中纵坐标表示债券到期的时长，以月为单位。
+3.2 收益曲线反转 在《货币金融学》中并没有详细说明反转的收益曲线对市场的影响，但是在写这博客的时候正好遇上了收益率曲线反转的情况（在2022年4月1号），反转的情况如下图。
+...</p>
   </section>
-  <footer class="entry-footer"><span title='2022-04-05 20:09:21 +0800 CST'>April 5, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-04-05 20:09:21 &#43;0800 CST&#39;&gt;April 5, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;yxr620</footer>
   <a class="entry-link" aria-label="post link to 利率风险结构和期限结构" href="https://yxr620.github.io/posts/risk_term_structure/"></a>
 </article>
 
@@ -186,9 +192,9 @@ $$ i_l = \int_0^T i_s(t) dt / T $$
   </header>
   <section class="entry-content">
     <p>0. 一些理解 根据《货币经济学》和理论上的推理，利率并不是由美联储决定的。市场上的利率会根据美联储的货币政策改变（例如货币供给量），但是市场上的利率是交易者的决策决定的，利率行为就是分析利率如何被决定的。总的来说有两种理论来解释利率的变化：
-  投资组合选择理论
-  流动性偏好理论
-  1. 投资组合选择理论 1.1 基本假设  财富上升，则对债券需求数量上升 债券预期回报率（不是到期回报率，不是利率）上升，对债券需求数量上升 债券风险上升，对债券需求数量下降 债券流动性上升，对占全需求数量上升  1.2 债券需求供给曲线（以一年期贴现放行债券为例） 其他条件不变情况下：债券价格越低需求量越高
+投资组合选择理论
+流动性偏好理论
+1. 投资组合选择理论 1.1 基本假设 财富上升，则对债券需求数量上升 债券预期回报率（不是到期回报率，不是利率）上升，对债券需求数量上升 债券风险上升，对债券需求数量下降 债券流动性上升，对占全需求数量上升 1.2 债券需求供给曲线（以一年期贴现放行债券为例） 其他条件不变情况下：债券价格越低需求量越高
 其他条件不变情况下：债券价格越高供给量越高
 说明：这里说的债券价格是对于固定面值（par value/face value）的债券。例如面值为1000元的债券，一年后将偿付1000元，这里的价格是买这个特定1000元债券的价格
 根据上面所述的情况，可以画出债券的供需曲线，如下：
@@ -197,9 +203,12 @@ $$ i_l = \int_0^T i_s(t) dt / T $$
 预期利率是人们觉得之后的利率，如果预期利率上升，说明人们觉得之后债券的价格会下跌。
 预期回报率在这里可以理解为债券价值的变化率，也就是说预期回报率和债券的价格正相关。我认为不能像《货币金融学》把预期回报率和利率挂钩，最好把其当作不相关的变量。对于一年期的债券如果持有时间就是一年，那么预期回报率是不变，这也就是《货币金融学》中的观点。但是在分析供需的时候，应该认为持有者会在短期内卖掉债券，也就是只赚取债券价格变化中的差价。这也就是说，如果预期利率上升，那么预期回报率就下跌，即投资者认为以后债券价格会下跌。
 1.3 需求曲线的位移 下面表中显示了债券需求量变化的影响因素。
-   影响因素 变化 需求量变化     财富 上升 上升   债券预期利率（见1.2） 上升 下降   预期通货膨胀 上升 下降   债券风险 上升 下降   债券流动性 上升 上升    需求量变化的导致需求曲线变化的情况如下：...</p>
+影响因素 变化 需求量变化 财富 上升 上升 债券预期利率（见1.2） 上升 下降 预期通货膨胀 上升 下降 债券风险 上升 下降 债券流动性 上升 上升 需求量变化的导致需求曲线变化的情况如下：
+1.4 供给曲线分析 下表中显示了供给曲线的影响因素：
+影响因素 变化 供给变化 （对公司）预期盈利性 上升 上升 预期通货膨胀 上升 上升 政府赤字 上升 上升 2. 流动性偏好理论 2.1 基本假设 假定市场只有货币（$M$)和债券（$B$）两种资产
+...</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-26 16:20:08 +0800 CST'>February 26, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-02-26 16:20:08 &#43;0800 CST&#39;&gt;February 26, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;yxr620</footer>
   <a class="entry-link" aria-label="post link to 利率行为（interest rate behavior）" href="https://yxr620.github.io/posts/interest_rate_behavior/"></a>
 </article>
 
@@ -209,17 +218,19 @@ $$ i_l = \int_0^T i_s(t) dt / T $$
     </h2>
   </header>
   <section class="entry-content">
-    <p>1. 一些概念   到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
-  回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
+    <p>1. 一些概念 到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
+回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
 其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值
 注：不是所有债券通用的计算规则。
-  名义利率（nominal interest rate）：$i$
+名义利率（nominal interest rate）：$i$
 实际利率（real interest rate）：$r$
 通货膨胀率（inflation rate）：$\pi^e$
 上述三种变量的关系如下： $$ \begin{cases} i = r &#43; \pi^e &#43; r\pi^e \\\ r = i - \pi^e\frac{1 &#43; i}{1 &#43; \pi^e} \end{cases} $$
-  2. 四种贷债券的分析  普通债券：到期归还本金和利息，其到期收益率的公式如下：  $$ PV = \frac{CF}{(1 &#43; i)^n} $$...</p>
+2. 四种贷债券的分析 普通债券：到期归还本金和利息，其到期收益率的公式如下： $$ PV = \frac{CF}{(1 &#43; i)^n} $$
+​	$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。
+...</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-20 20:44:00 +0800 CST'>February 20, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-02-20 20:44:00 &#43;0800 CST&#39;&gt;February 20, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;yxr620</footer>
   <a class="entry-link" aria-label="post link to 利率与债券" href="https://yxr620.github.io/posts/bond_interest/"></a>
 </article>
 
@@ -231,14 +242,13 @@ $$ i_l = \int_0^T i_s(t) dt / T $$
   <section class="entry-content">
     <p>分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。
 1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
- $x$每次定投的金额 $0-T$总定投的时间 $\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）  由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
+$x$每次定投的金额 $0-T$总定投的时间 $\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元） 由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
 $$c = TV / M\\= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}$$已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
 买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数&lt;算数平均数。用公式来说就是：
-$$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算出平均数，也就是随机一点all in的平均成本。
-当然这个算式写出来非常的抽象，不妨说一个形象的理解。定投在投资的时候由于每次投资的金额相等，那么在价格低的时候会买入更多的产品，在高点的时候会购入更少的产品，也就是说自动的对价格进行了购买策略的调正，一定程度上放大了低价区间，缩小了高价区间。
-2. 定投实验 定投的实验反复被论证：定投是比大多数基金经理都聪明的投资策略。而且$89%$的对冲基金都没有战胜美国的股市的大盘。...</p>
+$$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} &lt; \frac{\sum_{i = 1}^n f(i \Delta T)}{n}$$右边的公式就是算出平均数，也就是随机一点all in的平均成本。
+...</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-19 23:44:00 +0800 CST'>February 19, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-02-19 23:44:00 &#43;0800 CST&#39;&gt;February 19, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;yxr620</footer>
   <a class="entry-link" aria-label="post link to 定投原理" href="https://yxr620.github.io/posts/auto_invest/"></a>
 </article>
 
@@ -248,14 +258,15 @@ $$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} 右边的公式就是算�
     </h2>
   </header>
   <section class="entry-content">
-    <p>1. 概念  定义货币：在产品和服务支付以及债务偿还中被普遍接受的东西 货币的功能：交易媒介、记账单位、价值储存 支付体系的演进：商品货币、不兑现纸币、支票、电子支付、电子货币 货币的计量：  M1：通货（currency）、支票账户存款、旅行者支票、其他支票存款
+    <p>1. 概念 定义货币：在产品和服务支付以及债务偿还中被普遍接受的东西 货币的功能：交易媒介、记账单位、价值储存 支付体系的演进：商品货币、不兑现纸币、支票、电子支付、电子货币 货币的计量： M1：通货（currency）、支票账户存款、旅行者支票、其他支票存款
 M2：M1、小额定期存款、储蓄存款与货币市场账户、货币市场共同基金
 2. M1和M2货币数量 2.1 M1 M1的构成为通货、支票账户存款、旅行者支票、其他支票存款。这是《货币金融学》里面标准的定义，在之后的金融技术革新之后，其他支票存款被替换成了其他流动性存款（Other Liquidity Deposits）；此外美联储在之后公布的M1里面去掉了旅行者支票（本身占比就非常小，而且逐年递减）。
 根据实际情况进行调整之后M1的组成如下：
- 通货（CURRSL） 活期存款（DEMDEPSL） 其他流动性存款（MDLM）  计算出来2021年的M1如下（单位billion，十亿美元）：
-上述三种组成在M1中的占比如下：</p>
+通货（CURRSL） 活期存款（DEMDEPSL） 其他流动性存款（MDLM） 计算出来2021年的M1如下（单位billion，十亿美元）：
+上述三种组成在M1中的占比如下：
+</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-14 20:20:08 +0800 CST'>February 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-02-14 20:20:08 &#43;0800 CST&#39;&gt;February 14, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;yxr620</footer>
   <a class="entry-link" aria-label="post link to 货币概述" href="https://yxr620.github.io/posts/monetary/"></a>
 </article>
 <footer class="page-footer">
@@ -267,7 +278,7 @@ M2：M1、小额定期存款、储蓄存款与货币市场账户、货币市场�
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://yxr620.github.io">Blog</a></span>
+    <span>&copy; 2024 <a href="https://yxr620.github.io/">Blog</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

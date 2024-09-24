@@ -7,19 +7,41 @@
 <meta name="robots" content="index, follow">
 <title>利率与债券 | Blog</title>
 <meta name="keywords" content="投资" />
-<meta name="description" content="1. 一些概念   到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
-  回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
+<meta name="description" content="1. 一些概念
+
+
+到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
+
+
+回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
 其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值
 注：不是所有债券通用的计算规则。
-  名义利率（nominal interest rate）：$i$
+
+
+名义利率（nominal interest rate）：$i$
 实际利率（real interest rate）：$r$
 通货膨胀率（inflation rate）：$\pi^e$
-上述三种变量的关系如下： $$ \begin{cases} i = r &#43; \pi^e &#43; r\pi^e \\\ r = i - \pi^e\frac{1 &#43; i}{1 &#43; \pi^e} \end{cases} $$
-  2. 四种贷债券的分析  普通债券：到期归还本金和利息，其到期收益率的公式如下：  $$ PV = \frac{CF}{(1 &#43; i)^n} $$">
+上述三种变量的关系如下：
+$$
+\begin{cases}
+i = r &#43; \pi^e &#43; r\pi^e \\\
+r = i - \pi^e\frac{1 &#43; i}{1 &#43; \pi^e}
+\end{cases}
+$$
+
+
+2. 四种贷债券的分析
+
+普通债券：到期归还本金和利息，其到期收益率的公式如下：
+
+$$
+PV = \frac{CF}{(1 &#43; i)^n}
+$$
+​	$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。">
 <meta name="author" content="yxr620">
 <link rel="canonical" href="https://yxr620.github.io/posts/bond_interest/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://yxr620.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://yxr620.github.io/favicon-16x16.png">
@@ -28,7 +50,8 @@
 <link rel="mask-icon" href="https://yxr620.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.92.1" />
+<meta name="generator" content="Hugo 0.134.3">
+<link rel="alternate" hreflang="en" href="https://yxr620.github.io/posts/bond_interest/" />
 <noscript>
     <style>
         #theme-toggle,
@@ -66,15 +89,37 @@
 
     </style>
 </noscript><meta property="og:title" content="利率与债券" />
-<meta property="og:description" content="1. 一些概念   到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
-  回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
+<meta property="og:description" content="1. 一些概念
+
+
+到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
+
+
+回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
 其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值
 注：不是所有债券通用的计算规则。
-  名义利率（nominal interest rate）：$i$
+
+
+名义利率（nominal interest rate）：$i$
 实际利率（real interest rate）：$r$
 通货膨胀率（inflation rate）：$\pi^e$
-上述三种变量的关系如下： $$ \begin{cases} i = r &#43; \pi^e &#43; r\pi^e \\\ r = i - \pi^e\frac{1 &#43; i}{1 &#43; \pi^e} \end{cases} $$
-  2. 四种贷债券的分析  普通债券：到期归还本金和利息，其到期收益率的公式如下：  $$ PV = \frac{CF}{(1 &#43; i)^n} $$" />
+上述三种变量的关系如下：
+$$
+\begin{cases}
+i = r &#43; \pi^e &#43; r\pi^e \\\
+r = i - \pi^e\frac{1 &#43; i}{1 &#43; \pi^e}
+\end{cases}
+$$
+
+
+2. 四种贷债券的分析
+
+普通债券：到期归还本金和利息，其到期收益率的公式如下：
+
+$$
+PV = \frac{CF}{(1 &#43; i)^n}
+$$
+​	$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yxr620.github.io/posts/bond_interest/" /><meta property="og:image" content="https://yxr620.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-20T20:44:00&#43;08:00" />
@@ -84,31 +129,53 @@
 <meta name="twitter:image" content="https://yxr620.github.io/papermod-cover.png"/>
 
 <meta name="twitter:title" content="利率与债券"/>
-<meta name="twitter:description" content="1. 一些概念   到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
-  回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
+<meta name="twitter:description" content="1. 一些概念
+
+
+到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
+
+
+回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
 其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值
 注：不是所有债券通用的计算规则。
-  名义利率（nominal interest rate）：$i$
+
+
+名义利率（nominal interest rate）：$i$
 实际利率（real interest rate）：$r$
 通货膨胀率（inflation rate）：$\pi^e$
-上述三种变量的关系如下： $$ \begin{cases} i = r &#43; \pi^e &#43; r\pi^e \\\ r = i - \pi^e\frac{1 &#43; i}{1 &#43; \pi^e} \end{cases} $$
-  2. 四种贷债券的分析  普通债券：到期归还本金和利息，其到期收益率的公式如下：  $$ PV = \frac{CF}{(1 &#43; i)^n} $$"/>
+上述三种变量的关系如下：
+$$
+\begin{cases}
+i = r &#43; \pi^e &#43; r\pi^e \\\
+r = i - \pi^e\frac{1 &#43; i}{1 &#43; \pi^e}
+\end{cases}
+$$
+
+
+2. 四种贷债券的分析
+
+普通债券：到期归还本金和利息，其到期收益率的公式如下：
+
+$$
+PV = \frac{CF}{(1 &#43; i)^n}
+$$
+​	$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://yxr620.github.io/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "利率与债券",
       "item": "https://yxr620.github.io/posts/bond_interest/"
     }
@@ -121,12 +188,12 @@
   "@type": "BlogPosting",
   "headline": "利率与债券",
   "name": "利率与债券",
-  "description": "1. 一些概念   到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。\n  回报率：$R = \\frac{C + P_{t + 1} - P_t}{P_t} = \\frac{C}{P_t} + \\frac{P_{t + 1} - P_t}{P_t} = i_c + g$\n其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值\n注：不是所有债券通用的计算规则。\n  名义利率（nominal interest rate）：$i$\n实际利率（real interest rate）：$r$\n通货膨胀率（inflation rate）：$\\pi^e$\n上述三种变量的关系如下： $$ \\begin{cases} i = r + \\pi^e + r\\pi^e \\\\\\ r = i - \\pi^e\\frac{1 + i}{1 + \\pi^e} \\end{cases} $$\n  2. 四种贷债券的分析  普通债券：到期归还本金和利息，其到期收益率的公式如下：  $$ PV = \\frac{CF}{(1 + i)^n} $$",
+  "description": "1. 一些概念 到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。\n回报率：$R = \\frac{C + P_{t + 1} - P_t}{P_t} = \\frac{C}{P_t} + \\frac{P_{t + 1} - P_t}{P_t} = i_c + g$\n其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值\n注：不是所有债券通用的计算规则。\n名义利率（nominal interest rate）：$i$\n实际利率（real interest rate）：$r$\n通货膨胀率（inflation rate）：$\\pi^e$\n上述三种变量的关系如下： $$ \\begin{cases} i = r + \\pi^e + r\\pi^e \\\\\\ r = i - \\pi^e\\frac{1 + i}{1 + \\pi^e} \\end{cases} $$\n2. 四种贷债券的分析 普通债券：到期归还本金和利息，其到期收益率的公式如下： $$ PV = \\frac{CF}{(1 + i)^n} $$\n​\t$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。\n",
   "keywords": [
     "投资"
   ],
-  "articleBody": "1. 一些概念   到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。\n  回报率：$R = \\frac{C + P_{t + 1} - P_t}{P_t} = \\frac{C}{P_t} + \\frac{P_{t + 1} - P_t}{P_t} = i_c + g$\n其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值\n注：不是所有债券通用的计算规则。\n  名义利率（nominal interest rate）：$i$\n实际利率（real interest rate）：$r$\n通货膨胀率（inflation rate）：$\\pi^e$\n上述三种变量的关系如下： $$ \\begin{cases} i = r + \\pi^e + r\\pi^e \\\\\\ r = i - \\pi^e\\frac{1 + i}{1 + \\pi^e} \\end{cases} $$\n  2. 四种贷债券的分析  普通债券：到期归还本金和利息，其到期收益率的公式如下：  $$ PV = \\frac{CF}{(1 + i)^n} $$\n​\t$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。\n 固定支付贷款（fixed-payment loan）：分期定额还款，其到期收益率公式如下：  $$ PV = \\sum_{j = 1}^n \\frac{FP}{(1 + i)^j} $$\n​\t$FP$为每年固定偿付金额。\n 票息债券（coupon bond）：每年支付固定利息，n年时偿还本金。其到期收益率公式如下：  $$ PV = \\sum_{j = 1}^n\\frac{C}{(1 + i)^j} + \\frac{F}{(1 + i)^n} $$\n$C$为每年支付的利息；$F$为债券的面值（face value），即最后偿还的金额。\n 贴现发行债券（discount bond）：到期按照面值偿付。其到期收益率公式如下：  $$ PV = \\frac{CF}{(1 + i)^n} $$\n注：一般来讲贴现发行债券更常见，例如美国政府3月期国债就是贴现发行的债券。\nMathJax.Hub.Config({\rtex2jax: {\rinlineMath: [['$','$'], ['\\\\(','\\\\)']],\rdisplayMath: [['$$','$$'], ['\\[\\[','\\]\\]']],\rprocessEscapes: true,\rprocessEnvironments: true,\rskipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],\rTeX: { equationNumbers: { autoNumber: \"AMS\" },\rextensions: [\"AMSmath.js\", \"AMSsymbols.js\"] }\r}\r});\rMathJax.Hub.Queue(function() {\rvar all = MathJax.Hub.getAllJax(), i;\rfor(i = 0; i \rcode.has-jax {\rfont: inherit;\rfont-size: 100%;\rbackground: inherit;\rborder: inherit;\rcolor: #515151;\r}\r\r",
-  "wordCount" : "167",
+  "articleBody": "1. 一些概念 到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。\n回报率：$R = \\frac{C + P_{t + 1} - P_t}{P_t} = \\frac{C}{P_t} + \\frac{P_{t + 1} - P_t}{P_t} = i_c + g$\n其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值\n注：不是所有债券通用的计算规则。\n名义利率（nominal interest rate）：$i$\n实际利率（real interest rate）：$r$\n通货膨胀率（inflation rate）：$\\pi^e$\n上述三种变量的关系如下： $$ \\begin{cases} i = r + \\pi^e + r\\pi^e \\\\\\ r = i - \\pi^e\\frac{1 + i}{1 + \\pi^e} \\end{cases} $$\n2. 四种贷债券的分析 普通债券：到期归还本金和利息，其到期收益率的公式如下： $$ PV = \\frac{CF}{(1 + i)^n} $$\n​\t$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。\n固定支付贷款（fixed-payment loan）：分期定额还款，其到期收益率公式如下： $$ PV = \\sum_{j = 1}^n \\frac{FP}{(1 + i)^j} $$\n​\t$FP$为每年固定偿付金额。\n票息债券（coupon bond）：每年支付固定利息，n年时偿还本金。其到期收益率公式如下： $$ PV = \\sum_{j = 1}^n\\frac{C}{(1 + i)^j} + \\frac{F}{(1 + i)^n} $$\n$C$为每年支付的利息；$F$为债券的面值（face value），即最后偿还的金额。\n贴现发行债券（discount bond）：到期按照面值偿付。其到期收益率公式如下： $$ PV = \\frac{CF}{(1 + i)^n} $$\n注：一般来讲贴现发行债券更常见，例如美国政府3月期国债就是贴现发行的债券。\n",
+  "wordCount" : "111",
   "inLanguage": "en",
   "datePublished": "2022-02-20T20:44:00+08:00",
   "dateModified": "2022-02-20T20:44:00+08:00",
@@ -165,7 +232,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://yxr620.github.io" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <a href="https://yxr620.github.io/" accesskey="h" title="Blog (Alt + H)">Blog</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -187,6 +254,8 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -217,11 +286,11 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://yxr620.github.io">Home</a>&nbsp;»&nbsp;<a href="https://yxr620.github.io/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://yxr620.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://yxr620.github.io/posts/">Posts</a></div>
     <h1 class="post-title">
       利率与债券
     </h1>
-    <div class="post-meta"><span title='2022-02-20 20:44:00 +0800 CST'>February 20, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;yxr620&nbsp;|&nbsp;<a href="https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/posts/bond_interest/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta">&lt;span title=&#39;2022-02-20 20:44:00 &#43;0800 CST&#39;&gt;February 20, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;yxr620&nbsp;|&nbsp;<a href="https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/posts/bond_interest/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> <div class="toc">
@@ -399,7 +468,7 @@ code.has-jax {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://yxr620.github.io">Blog</a></span>
+    <span>&copy; 2024 <a href="https://yxr620.github.io/">Blog</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
