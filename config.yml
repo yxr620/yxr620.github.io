@@ -1,6 +1,7 @@
 baseURL: "https://yxr620.github.io"
 title: Blog
-paginate: 5
+pagination:
+    pagerSize: 5
 theme: hugo-PaperMod
 publishdir: ../yxr_public
 
@@ -20,20 +21,7 @@ languages:
     en:
         languageName: "English"
         weight: 1
-        menu:
-            main:
-                - name: Archive
-                  url: archives
-                  weight: 5
-                - name: Search
-                  url: search/
-                  weight: 10
-                - name: Tags
-                  url: tags/
-                  weight: 10
-                - name: Categories
-                  url: categories/
-                  weight: 10
+        # 顶部菜单已移除（Archive, Search, Tags, Categories 会导致 404）
 
     # fr:
     #     languageName: ":fr:"
@@ -112,26 +100,28 @@ params:
     # comments: false
     images: ["papermod-cover.png"]
 
-    # profileMode:
-    #     enabled: false
-    #     title: PaperMod
-    #     imageUrl: "#"
-    #     imageTitle: my image
-    #     # imageWidth: 120
-    #     # imageHeight: 120
-    #     buttons:
-    #         - name: Archives
-    #           url: archives
-    #         - name: Tags
-    #           url: tags
+    profileMode:
+        enabled: true
+        title: "Xiangrui Yang"
+        subtitle: |
+            🎓 Master Student @ HUST | 🔬 ML Systems & HPC Research
+            
+            I focus on machine learning system optimization and high-performance computing.
+        buttons:
+            - name: "📝 Blog"
+              url: blog
+            - name: "📄 CV"
+              url: cv
 
-    homeInfoParams:
-        Title: "yxr blog"
-        Content: >
-            Welcome to my blog. I will share my life and study here \\^o^/
+    # homeInfoParams:
+    #     Title: "My blog"
+    #     Content: >
+    #         Welcome to my blog. I will share my life and study here \\^o^/
     socialIcons:
         - name: github
           url: "https://github.com/yxr620"
+        - name: email
+          url: "mailto:yxr620@hust.edu.cn"
 
 
     editPost:
