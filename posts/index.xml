@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Blog</title>
-    <link>https://yxr620.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Blog</description>
     <image>
-      <url>https://yxr620.github.io/papermod-cover.png</url>
-      <link>https://yxr620.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Jul 2022 09:53:20 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jul 2022 09:53:20 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>银行业结构</title>
-      <link>https://yxr620.github.io/posts/banking_system/</link>
+      <link>http://localhost:1313/posts/banking_system/</link>
       <pubDate>Sun, 24 Jul 2022 09:53:20 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/banking_system/</guid>
+      <guid>http://localhost:1313/posts/banking_system/</guid>
       <description>&lt;p&gt;这一章主要讲述银行业结构以及结构的演化。&lt;/p&gt;
 &lt;h3 id=&#34;1-美国银行的多重监管喻双重银行体系dual-banking-system&#34;&gt;1. 美国银行的多重监管喻双重银行体系（dual banking system）&lt;/h3&gt;
 &lt;p&gt;由于一些历史原因，美国银行有多重监管以及双重银行体系（dual banking system），即银行要接受中央银行和州政府的监管。&lt;/p&gt;
@@ -62,10 +62,10 @@
     
     <item>
       <title>金融监管</title>
-      <link>https://yxr620.github.io/posts/financial_regulation/</link>
+      <link>http://localhost:1313/posts/financial_regulation/</link>
       <pubDate>Fri, 20 May 2022 15:03:20 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/financial_regulation/</guid>
+      <guid>http://localhost:1313/posts/financial_regulation/</guid>
       <description>&lt;h3 id=&#34;1-对金融业的保护政府安全网&#34;&gt;1. 对金融业的保护：政府安全网&lt;/h3&gt;
 &lt;p&gt;政府安全网的形式为存款保险，具体来讲有两种拯救方式：&lt;/p&gt;
 &lt;ul&gt;
@@ -144,10 +144,10 @@ code.has-jax {
     
     <item>
       <title>银行业管理</title>
-      <link>https://yxr620.github.io/posts/bank_management/</link>
+      <link>http://localhost:1313/posts/bank_management/</link>
       <pubDate>Mon, 25 Apr 2022 12:17:01 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/bank_management/</guid>
+      <guid>http://localhost:1313/posts/bank_management/</guid>
       <description>&lt;h3 id=&#34;1-银行资产负债表&#34;&gt;1. 银行资产负债表&lt;/h3&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -232,10 +232,10 @@ $$
     
     <item>
       <title>金融结构的经济学分析</title>
-      <link>https://yxr620.github.io/posts/finance_institution/</link>
+      <link>http://localhost:1313/posts/finance_institution/</link>
       <pubDate>Tue, 12 Apr 2022 18:57:33 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/finance_institution/</guid>
+      <guid>http://localhost:1313/posts/finance_institution/</guid>
       <description>&lt;h3 id=&#34;1-金融结构的8个基本事实&#34;&gt;1. 金融结构的8个基本事实&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -337,10 +337,10 @@ code.has-jax {
     
     <item>
       <title>股票价格计算</title>
-      <link>https://yxr620.github.io/posts/stock_analyze/</link>
+      <link>http://localhost:1313/posts/stock_analyze/</link>
       <pubDate>Wed, 06 Apr 2022 19:48:00 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/stock_analyze/</guid>
+      <guid>http://localhost:1313/posts/stock_analyze/</guid>
       <description>&lt;p&gt;这一章的标题原本叫&lt;strong&gt;股票市场、理性预期理论与有效市场假说&lt;/strong&gt;。但是我认为这一章所有的话题和结论都是指向股票价格计算提出的理论。这些所有的计算规则都无法真正的计算出股票的价格（因为涉及未来的信息），这些理论更像分析学，以假设出发说明股票价格反应的一些事实和特点。&lt;/p&gt;
 &lt;h3 id=&#34;1-资产估计原则&#34;&gt;1. 资产估计原则&lt;/h3&gt;
 &lt;p&gt;所有资产的估值都为&lt;strong&gt;该资产未来现金流的现值&lt;/strong&gt;。将这个原则运用在股票市场中，股票的现金流为：股利（股息）、未来出售的价格。&lt;/p&gt;
@@ -375,10 +375,10 @@ $$&lt;/div&gt;
     
     <item>
       <title>利率风险结构和期限结构</title>
-      <link>https://yxr620.github.io/posts/risk_term_structure/</link>
+      <link>http://localhost:1313/posts/risk_term_structure/</link>
       <pubDate>Tue, 05 Apr 2022 20:09:21 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/risk_term_structure/</guid>
+      <guid>http://localhost:1313/posts/risk_term_structure/</guid>
       <description>&lt;h3 id=&#34;1-风险结构&#34;&gt;1. 风险结构&lt;/h3&gt;
 &lt;p&gt;风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。&lt;/p&gt;
 &lt;ol&gt;
@@ -439,10 +439,10 @@ $$
     
     <item>
       <title>利率行为（interest rate behavior）</title>
-      <link>https://yxr620.github.io/posts/interest_rate_behavior/</link>
+      <link>http://localhost:1313/posts/interest_rate_behavior/</link>
       <pubDate>Sat, 26 Feb 2022 16:20:08 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/interest_rate_behavior/</guid>
+      <guid>http://localhost:1313/posts/interest_rate_behavior/</guid>
       <description>&lt;h3 id=&#34;0-一些理解&#34;&gt;0. 一些理解&lt;/h3&gt;
 &lt;p&gt;根据《货币经济学》和理论上的推理，利率并不是由美联储决定的。市场上的利率会根据美联储的货币政策改变（例如货币供给量），但是市场上的利率是交易者的决策决定的，利率行为就是分析利率如何被决定的。总的来说有两种理论来解释利率的变化：&lt;/p&gt;
 &lt;ol&gt;
@@ -546,10 +546,10 @@ $$
     
     <item>
       <title>利率与债券</title>
-      <link>https://yxr620.github.io/posts/bond_interest/</link>
+      <link>http://localhost:1313/posts/bond_interest/</link>
       <pubDate>Sun, 20 Feb 2022 20:44:00 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/bond_interest/</guid>
+      <guid>http://localhost:1313/posts/bond_interest/</guid>
       <description>&lt;h3 id=&#34;1-一些概念&#34;&gt;1. 一些概念&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -585,10 +585,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>定投原理</title>
-      <link>https://yxr620.github.io/posts/auto_invest/</link>
+      <link>http://localhost:1313/posts/auto_invest/</link>
       <pubDate>Sat, 19 Feb 2022 23:44:00 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/auto_invest/</guid>
+      <guid>http://localhost:1313/posts/auto_invest/</guid>
       <description>&lt;p&gt;分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。&lt;/p&gt;
 &lt;h3 id=&#34;1-定投模型&#34;&gt;1. 定投模型&lt;/h3&gt;
 &lt;p&gt;定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：&lt;/p&gt;
@@ -614,10 +614,10 @@ $$&lt;/div&gt;
     
     <item>
       <title>货币概述</title>
-      <link>https://yxr620.github.io/posts/monetary/</link>
+      <link>http://localhost:1313/posts/monetary/</link>
       <pubDate>Mon, 14 Feb 2022 20:20:08 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/monetary/</guid>
+      <guid>http://localhost:1313/posts/monetary/</guid>
       <description>&lt;h3 id=&#34;1-概念&#34;&gt;1. 概念&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;定义货币：在产品和服务支付以及债务偿还中被普遍接受的东西&lt;/li&gt;
@@ -648,10 +648,10 @@ $$&lt;/div&gt;
     
     <item>
       <title>道琼斯工业指数</title>
-      <link>https://yxr620.github.io/posts/dow_jones/</link>
+      <link>http://localhost:1313/posts/dow_jones/</link>
       <pubDate>Sat, 12 Feb 2022 23:20:08 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/dow_jones/</guid>
+      <guid>http://localhost:1313/posts/dow_jones/</guid>
       <description>&lt;p&gt;疫情之后的道琼斯工业指数&lt;/p&gt;
 &lt;img src=&#34;pic/dow_jones.svg&#34; alt=&#34;dow_jones&#34; style=&#34;zoom:80%;&#34; /&gt;
 &lt;p&gt;道琼斯工业指数的增长率&lt;/p&gt;
@@ -662,10 +662,10 @@ $$&lt;/div&gt;
     
     <item>
       <title>中央银行和联邦储备体系</title>
-      <link>https://yxr620.github.io/posts/fed/</link>
+      <link>http://localhost:1313/posts/fed/</link>
       <pubDate>Fri, 24 Jul 2020 10:05:20 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/fed/</guid>
+      <guid>http://localhost:1313/posts/fed/</guid>
       <description>&lt;h3 id=&#34;1-联邦储备体系的结构&#34;&gt;1. 联邦储备体系的结构&lt;/h3&gt;
 &lt;p&gt;联邦储备体系由三个部分组成，如下：&lt;/p&gt;
 &lt;ul&gt;

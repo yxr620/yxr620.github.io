@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog</title>
+    <link>https://yxr620.github.io/blog/</link>
+    <description>Recent content on Blog</description>
+    <image>
+      <url>https://yxr620.github.io/papermod-cover.png</url>
+      <link>https://yxr620.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Jul 2022 09:53:20 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>银行业结构</title>
+      <link>https://yxr620.github.io/blog/banking_system/</link>
+      <pubDate>Sun, 24 Jul 2022 09:53:20 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/banking_system/</guid>
+      <description>&lt;p&gt;这一章主要讲述银行业结构以及结构的演化。&lt;/p&gt;
+&lt;h3 id=&#34;1-美国银行的多重监管喻双重银行体系dual-banking-system&#34;&gt;1. 美国银行的多重监管喻双重银行体系（dual banking system）&lt;/h3&gt;
+&lt;p&gt;由于一些历史原因，美国银行有多重监管以及双重银行体系（dual banking system），即银行要接受中央银行和州政府的监管。&lt;/p&gt;
+&lt;img src=&#34;pic/image-20160724094943917.png&#34; alt=&#34;image-20160724094943917&#34; style=&#34;zoom:67%;&#34; /&gt;
+&lt;h3 id=&#34;2-美国商业银行业结构&#34;&gt;2. 美国商业银行业结构&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;**《麦克法登法案》**禁止银行跨周开办分支结构。银行业使用银行持股公司、自动提款机进行规避。&lt;/li&gt;
+&lt;li&gt;**《格拉斯-斯蒂格尔法案》**禁止商业银行承销&amp;amp;发行企业证券，即分割投资银行和商业银行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;《里格尼尔州际银行业务喻分支机构效率法案》&lt;/strong&gt;（1994）允许州际分支机构。&lt;/li&gt;
+&lt;li&gt;**《格兰姆-里奇-布利利金融服务现代化法案》**废除格拉斯法案&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-金融创新与影子银行&#34;&gt;3. 金融创新与影子银行&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;利率波动导致需求变化：可变利率抵押贷款，金融衍生工具。&lt;/li&gt;
+&lt;li&gt;适应供给的信息技术：信用卡与借记卡、电子银行业务、垃圾债券、商业票据市场。&lt;/li&gt;
+&lt;li&gt;证券化与影子银行：
+&lt;ul&gt;
+&lt;li&gt;发起贷款；&lt;/li&gt;
+&lt;li&gt;贷款服务；&lt;/li&gt;
+&lt;li&gt;捆绑；&lt;/li&gt;
+&lt;li&gt;分销；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;规避监管的金融创新：货币市场共同基金、流动账户。&lt;/li&gt;
+&lt;li&gt;金融创新导致传统银行业的衰落。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-一些其他金融结构&#34;&gt;4. 一些其他金融结构&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;储蓄与贷款协会；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;信用社；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;美国海外银行业务（欧洲美元市场）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;美国的外国银行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>金融监管</title>
+      <link>https://yxr620.github.io/blog/financial_regulation/</link>
+      <pubDate>Fri, 20 May 2022 15:03:20 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/financial_regulation/</guid>
+      <description>&lt;h3 id=&#34;1-对金融业的保护政府安全网&#34;&gt;1. 对金融业的保护：政府安全网&lt;/h3&gt;
+&lt;p&gt;政府安全网的形式为存款保险，具体来讲有两种拯救方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;偿付法（pay off method）&lt;/li&gt;
+&lt;li&gt;收购与接管法（purchase and assumption）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-政府安全网的缺陷&#34;&gt;2. 政府安全网的缺陷&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;道德风险（太大而不能倒闭&lt;/li&gt;
+&lt;li&gt;逆向选择&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-金融监管的8类&#34;&gt;3. 金融监管的8类&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;对持有资产的限制&lt;/li&gt;
+&lt;li&gt;对资本金要求：
+&lt;ul&gt;
+&lt;li&gt;杠杆比率&lt;/li&gt;
+&lt;li&gt;将表外业务转成风险资产（《巴塞尔协议》）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;及时整改行动&lt;/li&gt;
+&lt;li&gt;金融监管：注册与检查。商业银行又通货监理署（OCC）、州银行监管当局批准成立，并且定期提交报告。&lt;/li&gt;
+&lt;li&gt;风险管理评估：评价银行控制风险的管理程序的健全性。&lt;/li&gt;
+&lt;li&gt;信息披露要求&lt;/li&gt;
+&lt;li&gt;消费者保护&lt;/li&gt;
+&lt;li&gt;对竞争的限制&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-银行变化趋势&#34;&gt;4. 银行变化趋势&lt;/h3&gt;
+&lt;p&gt;小银行和大银行的变化趋势如图&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img-blog.csdnimg.cn/a3e548cfd4c74d32894099a9c5141d4a.png#pic_center&#34; alt=&#34;在这里插入图片描述&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img-blog.csdnimg.cn/14e2eafbaf494272b611f8d07b6e120e.png#pic_center&#34; alt=&#34;在这里插入图片描述&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;由于大银行的数量急剧增加，小银行的数量减少。政府安全网为了不引发系统性风险，会对大银行进行救助，因此“太大而不能倒”的问题会加剧。&lt;/p&gt;
+&lt;p&gt;同时该政策会导致更加严重的道德风险问题，因为储户不需要仔细审查银行的行为，银行也会由于自己不会倒闭而进一步冒险。&lt;/p&gt;
+&lt;h3 id=&#34;5-银行的杠杆比率&#34;&gt;5. 银行的杠杆比率&lt;/h3&gt;
+&lt;p&gt;从1990年开始，银行资本和银行资产的比例（即银行杠杆比率）的变化如下图&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img-blog.csdnimg.cn/e604e35a66d04606af2a39b9ae667166.png#pic_center&#34; alt=&#34;在这里插入图片描述&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;可以看到在2008年之前银行资本占比非常低，因此银行会冒更大的风险。在2008年之后银行资本比率明显增高。此外对于银行的资本要求应该是顺周期的，即市场扩张时应该提高银行资本要求，市场收缩的时候应该降低银行资本要求。可以看到2020年疫情来临之后银行资本比率也有明显的下降，当然这和美联储降息也有非常大的关系。&lt;/p&gt;
+&lt;script type=&#34;text/javascript&#34;
+        async
+        src=&#34;https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]],
+    displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[\[&#39;,&#39;\]\]&#39;]],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],
+    TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; },
+         extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += &#39; has-jax&#39;;
+    }
+});
+&lt;/script&gt;
+&lt;style&gt;
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+&lt;/style&gt;</description>
+    </item>
+    
+    <item>
+      <title>银行业管理</title>
+      <link>https://yxr620.github.io/blog/bank_management/</link>
+      <pubDate>Mon, 25 Apr 2022 12:17:01 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/bank_management/</guid>
+      <description>&lt;h3 id=&#34;1-银行资产负债表&#34;&gt;1. 银行资产负债表&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;资产&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;负债&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;准备金&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支票存款&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;托收中款项&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;非交易存款&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;银行同业存款&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;借款&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;证券&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;银行资本&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;贷款&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;其他资产&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;2-银行基本业务&#34;&gt;2. 银行基本业务&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;资产转换&lt;/strong&gt;：销售具有某组特征的负债并利用所得到的资金购买具有不同特征组合的资产。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;工具&lt;/strong&gt;：T-账户（T-account）&lt;/p&gt;
+&lt;h3 id=&#34;3-银行的管理方案&#34;&gt;3. 银行的管理方案&lt;/h3&gt;
+&lt;p&gt;如果要使利润最大化银行要考虑到如下方面：流动性管理、资产管理、负债管理、资本充足性管理、信用风险管理、利率风险管理。&lt;/p&gt;
+&lt;h4 id=&#34;31-流动性管理&#34;&gt;3.1 流动性管理&lt;/h4&gt;
+&lt;p&gt;银行需要维持一定数量的准备金来应对存款外流，并且银行要时刻保持最低的法定准备金率。因此出现准备金不够的情况需要银行采取操作，具体可以采取如下操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在联邦基金市场上向其他银行借款；&lt;/li&gt;
+&lt;li&gt;出售证券；&lt;/li&gt;
+&lt;li&gt;向美联储借款；&lt;/li&gt;
+&lt;li&gt;减少贷款。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;由于出现准备金不足时采取的方式都可能将资产低价出售，因此银行愿意持有一定量的超额准备金来应对存款外流。考虑到准备金是没有利息收入的，因此银行不愿意持有，替代方案则是持有一定的高流动性的资产随时可以转换成现金应对存款外流，例如美国国债等。&lt;/p&gt;
+&lt;h4 id=&#34;32-资产管理&#34;&gt;3.2 资产管理&lt;/h4&gt;
+&lt;p&gt;金融系统需要银行稳定的运行，因此对银行持有的资产需要有一定的限制。本质上来讲就是持有的资产需要尽量&lt;strong&gt;高回报率&lt;/strong&gt;、&lt;strong&gt;低风险&lt;/strong&gt;、&lt;strong&gt;高流动性&lt;/strong&gt;。要实现这个目标具体来说有如下几种控制方式。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;寻找愿意支付高利率并且违约风险低的借款人发放贷款（信用风险管理）；&lt;/li&gt;
+&lt;li&gt;购买高回报和低风险的证券；&lt;/li&gt;
+&lt;li&gt;银行的资产必须多样化来降低风险；&lt;/li&gt;
+&lt;li&gt;银行需要持有的资产要有比较高的流动性。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;银行在进行信用风险管理时要用到非常多的策略来达到放出的贷款违约率较低的目的。具体来讲有如下几点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;甄别借款人（对企业和个人进行评估）；&lt;/li&gt;
+&lt;li&gt;贷款专业化：银行在统一领域集中贷款，这样可以让银行了解该领域进而减少信息不对称；&lt;/li&gt;
+&lt;li&gt;限制性条款的监督；&lt;/li&gt;
+&lt;li&gt;长期客户关系（贷款承诺）：银行承诺在一定的时期内对企业发放贷款；&lt;/li&gt;
+&lt;li&gt;抵押品与补偿余额：要求客户在银行的存款达到一定的金额再发放贷款，或者要求客户提供抵押品；&lt;/li&gt;
+&lt;li&gt;信用配给：即使借款人愿意提供高利率也不发放贷款或者发放比要求更少的贷款。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;33-负债管理&#34;&gt;3.3 负债管理&lt;/h4&gt;
+&lt;p&gt;使用负债管理工具：隔夜贷款市场和可转让大额存单。隔夜贷款就是向其他大银行借款。大额可转让存单实际上也是向市场进行借款，即发放债券，并且该债券可以进行交易。&lt;/p&gt;
+&lt;h4 id=&#34;34-资本充足性管理&#34;&gt;3.4 资本充足性管理&lt;/h4&gt;
+&lt;p&gt;银行的资本相当于银行的净值并且有助于银行破产。当资本价值损失时银行在负债表上的银行资本也会减少，当减少到负数时就会资不抵债然后破产。银行资本较高可以防止破产，但是资本较高就表明股东的回报率较低。银行总资产的回报率为资本回报率（return on assets，ROA）。银行股东的回报率为股权回报率（return on equity，ROE）。资产和资本的比例为股本乘数（equity multiplier，EM）。这三者的计算如下：&lt;/p&gt;
+&lt;div&gt;
+$$
+ROA = \frac{税后净利润}{资产}\\
+ROE = \frac{税后净利润}{股权资本}\\
+EM = \frac{资产}{股权资本}\\
+ROE = ROA \times EM
+$$
+&lt;/div&gt;
+提高资本比例：发行股份；减少股利，增加留存收益；减少贷款和负债。
+&lt;p&gt;减少资本比例：回购股票；增加股利；增加负债和贷款。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>金融结构的经济学分析</title>
+      <link>https://yxr620.github.io/blog/finance_institution/</link>
+      <pubDate>Tue, 12 Apr 2022 18:57:33 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/finance_institution/</guid>
+      <description>&lt;h3 id=&#34;1-金融结构的8个基本事实&#34;&gt;1. 金融结构的8个基本事实&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;股票不是企业最主要的外部融资来源；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可流通债券不是企业主要外部融资来源；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;间接融资重要性大于直接融资；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;金融中介，特别是银行，是企业外部资金的重要来源（类似3）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;金融体系是经济体中收到监管最严格的部门；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;只有良好信誉的大公司才能进入金融市场筹资；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;债务合约通常需要抵押品（显性和隐性抵押品）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;债务合约有繁复的限制条款和法律文件；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-理论架构&#34;&gt;2. 理论架构&lt;/h3&gt;
+&lt;p&gt;这一章的结构非常复杂，因此先说明一些概念的关系。&lt;/p&gt;
+&lt;img src=&#34;pic/image-20220409174623555.png&#34; alt=&#34;image-20220409174623555&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;h3 id=&#34;3-交易成本&#34;&gt;3. 交易成本&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：每一笔交易成本几乎固定，因此小笔交易相对的成本更高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决办法&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;规模经济。将投资者的钱聚集在一起进行投资。&lt;/li&gt;
+&lt;li&gt;专业技术和服务。金融机构可以使用专业的技术和硬件进行投资，可以拉低每一笔交易的成本。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-逆向选择作用与金融市场&#34;&gt;4. 逆向选择作用与金融市场&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：差公司相比好公司有更强的意愿去发行相同利息的债券。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决办法&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;信息生产和出售（会存在免费搭车者）；&lt;/li&gt;
+&lt;li&gt;政府增加监管；&lt;/li&gt;
+&lt;li&gt;金融中介手机信息并且发放私人贷款（私人贷款无法交易，因此不会出现免费搭车者问题）；&lt;/li&gt;
+&lt;li&gt;抵押品。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;5-道德风险作用股权合约&#34;&gt;5. 道德风险作用股权合约&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;问题（委托-代理问题）&lt;/strong&gt;：经理比股东有更多信息和实时掌握公司的权力并且经理和股东的利益不一定符合，因此会在决策时以自己的利益为主。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决办法&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;信息产生和出售（免费搭车者）；&lt;/li&gt;
+&lt;li&gt;政府监管；&lt;/li&gt;
+&lt;li&gt;金融中介收集信息且股权不可转让；&lt;/li&gt;
+&lt;li&gt;使用债务合约。在公司获利时不追问经营细节，在亏损时可以通过法律索取利益。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;6-道德风险作用债务合约&#34;&gt;6. 道德风险作用债务合约&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：借款人利用信息不对称可能从事风险更高的活动，因为如果盈利将获得更大的利润。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决办法&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;抵押品（或者让公司有更高的净值来弥补可能会出现的亏损）；&lt;/li&gt;
+&lt;li&gt;限制性条款：限制借款人违背贷款人利益的行为；强制借款人执行符合贷款人利益的行为（购买人寿保险）；保持抵押品的价值；提供信息。（这种解决办法会引入执行成本的问题）&lt;/li&gt;
+&lt;li&gt;金融中介：降低执行成本。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script type=&#34;text/javascript&#34;
+        async
+        src=&#34;https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]],
+    displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[\[&#39;,&#39;\]\]&#39;]],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],
+    TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; },
+         extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += &#39; has-jax&#39;;
+    }
+});
+&lt;/script&gt;
+&lt;style&gt;
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+&lt;/style&gt;</description>
+    </item>
+    
+    <item>
+      <title>股票价格计算</title>
+      <link>https://yxr620.github.io/blog/stock_analyze/</link>
+      <pubDate>Wed, 06 Apr 2022 19:48:00 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/stock_analyze/</guid>
+      <description>&lt;p&gt;这一章的标题原本叫&lt;strong&gt;股票市场、理性预期理论与有效市场假说&lt;/strong&gt;。但是我认为这一章所有的话题和结论都是指向股票价格计算提出的理论。这些所有的计算规则都无法真正的计算出股票的价格（因为涉及未来的信息），这些理论更像分析学，以假设出发说明股票价格反应的一些事实和特点。&lt;/p&gt;
+&lt;h3 id=&#34;1-资产估计原则&#34;&gt;1. 资产估计原则&lt;/h3&gt;
+&lt;p&gt;所有资产的估值都为&lt;strong&gt;该资产未来现金流的现值&lt;/strong&gt;。将这个原则运用在股票市场中，股票的现金流为：股利（股息）、未来出售的价格。&lt;/p&gt;
+&lt;h3 id=&#34;2-戈登增长模型&#34;&gt;2. 戈登增长模型&lt;/h3&gt;
+&lt;p&gt;戈登增长模型对股利做出了简化：假设公司按照每年不变的比率增加股利。根据该假设推导出来长期持有该股票时，股票的股利产生的现值如下：&lt;/p&gt;
+&lt;div&gt;$$
+\begin{aligned}
+P_0 &amp;= \frac{D_0(1 + g)}{(1 + k_e)} + \frac{D_0(1 + g)^2}{(1 + k_e)^2} + \cdots + \frac{D_0(1 + g)^n}{(1 + k_e)^n} \\
+&amp;=\frac{D_0(1 + g)}{k_e - g}
+\end{aligned}
+$$&lt;/div&gt;
+&lt;p&gt;$P_0$为购买时股票价格（第0年股票价格）；&lt;/p&gt;
+&lt;p&gt;$D_0$为第0年股利（从第一年开始获得）；&lt;/p&gt;
+&lt;p&gt;$g$为股利的增长率；&lt;/p&gt;
+&lt;p&gt;$k_e$为要求的的回报率。&lt;/p&gt;
+&lt;p&gt;要注意的是$k_e$是投资人根据自己对股票的了解从自己情况出发，要求的回报率，不同投资人因此计算出来的现值不同。例如张三对于这个股票了解很少，他必须要设置一个很高的$k_e$才能匹配自己冒的风险。李四对于该公司了解非常多，十分确定之后的股利分配，他就有可能接受$k_e$比较小，因此出价会高于张三。&lt;/p&gt;
+&lt;h3 id=&#34;3-理性预期理论&#34;&gt;3. 理性预期理论&lt;/h3&gt;
+&lt;h4 id=&#34;31-假设&#34;&gt;3.1 假设&lt;/h4&gt;
+&lt;p&gt;理性预期理论认为人们对一个事物做出的预测$X^e$和利用所有可得信息做出的预测$X^{of}$相等。利用公式表示即$X^e = X^{of}$。&lt;/p&gt;
+&lt;p&gt;此时还有第三个变量$X$，即市场之后出现的真实值。这三个变量之间可以互不相等，即$X^e \neq X^{of} \neq X$。理性预期理论只认为$X^e = X^{of}$。&lt;/p&gt;
+&lt;h4 id=&#34;32-结论&#34;&gt;3.2 结论&lt;/h4&gt;
+&lt;p&gt;根据上面的假设可以推导出下面两个结论：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果某一变量的运动方式发生变化，那么对该变量预期模型也发生变化；&lt;/li&gt;
+&lt;li&gt;预测误差$X - X^e$期望为0，且该误差无法预知。（感觉这个推理也不一定对）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-有效市场假说&#34;&gt;4. 有效市场假说&lt;/h3&gt;
+&lt;h4 id=&#34;41-推导&#34;&gt;4.1 推导&lt;/h4&gt;
+&lt;p&gt;有效市场假说实际上是理性预期理论在金融市场上的应用。&lt;/p&gt;
+&lt;p&gt;设一种资产的回报率为$R$，在供求平衡时达到市场的均衡回报率$R^* $，此时$R^* $就是市场上的投资者决定的预期回报率$R^e$，因此有效市场假说可以表示为$R^{of} = R^e = R^* $，当然这些值并不能确定市场未来的真实值$R$。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>利率风险结构和期限结构</title>
+      <link>https://yxr620.github.io/blog/risk_term_structure/</link>
+      <pubDate>Tue, 05 Apr 2022 20:09:21 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/risk_term_structure/</guid>
+      <description>&lt;h3 id=&#34;1-风险结构&#34;&gt;1. 风险结构&lt;/h3&gt;
+&lt;p&gt;风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）；&lt;/li&gt;
+&lt;li&gt;流动性：流动性越低风险溢价越高·；&lt;/li&gt;
+&lt;li&gt;所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-利率期限结构&#34;&gt;2. 利率期限结构&lt;/h3&gt;
+&lt;p&gt;期限结构是为了解释同一机构发行的不同时长的债券的利率不同。&lt;/p&gt;
+&lt;h4 id=&#34;21-期限结构特点&#34;&gt;2.1 期限结构特点&lt;/h4&gt;
+&lt;p&gt;这些不同时长的债券的利率会表现出如下三种特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;到期期限不同的债券利率随时间波动基本一致；&lt;/li&gt;
+&lt;li&gt;若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜；&lt;/li&gt;
+&lt;li&gt;收益率曲线几乎总是向上倾斜的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为了解释上面这三种现象，金融学家提出了三种理论。&lt;/p&gt;
+&lt;h4 id=&#34;22-预期理论&#34;&gt;2.2 预期理论&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;两个假设&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;投资者对不同到期期限的债券无特别偏好。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：&lt;/p&gt;
+&lt;p&gt;$$
+i_l = \int_0^T i_s(t) dt / T
+$$&lt;/p&gt;
+&lt;p&gt;这个理论只能解释1、2两个特点。&lt;/p&gt;
+&lt;h4 id=&#34;23-分割市场理论&#34;&gt;2.3 分割市场理论&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;两个假设&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不同到期期限的债券之间不能相互替换&lt;/li&gt;
+&lt;li&gt;风险厌恶这愿意持有短期的债券&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;根据这两个假设推理出来的结论就是第三个特点。&lt;/p&gt;
+&lt;h4 id=&#34;24-流动性溢价理论&#34;&gt;2.4 流动性溢价理论&lt;/h4&gt;
+&lt;p&gt;该理论提出的&lt;strong&gt;假设&lt;/strong&gt;为，长期债券的利率等于两项之和：&lt;/p&gt;
+&lt;p&gt;第一项：短期利率的平均值；&lt;/p&gt;
+&lt;p&gt;第二项：流动性溢价（随到期期限$n$的增长而上升）&lt;/p&gt;
+&lt;p&gt;那么长期利率和短期利率之间的关系如下：
+$$
+i_l = \int_0^T i_s(t) dt / T + l_T
+$$
+其中$l_T$为流动性溢价。&lt;/p&gt;
+&lt;h3 id=&#34;3-收益率曲线yield-curve&#34;&gt;3. 收益率曲线（yield Curve）&lt;/h3&gt;
+&lt;h4 id=&#34;31-定义&#34;&gt;3.1 定义&lt;/h4&gt;
+&lt;p&gt;收益率曲线是同一时间下不同到期时间的债券的利率组成的曲线。例如下图中的收益率曲线就表示了2017年3月2日的收益率曲线。其中纵坐标表示债券到期的时长，以月为单位。&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;pic/2017yieldcurve.png&#34; alt=&#34;2017yieldcurve&#34; style=&#34;zoom: 80%;&#34; /&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;32-收益曲线反转&#34;&gt;3.2 收益曲线反转&lt;/h4&gt;
+&lt;p&gt;在《货币金融学》中并没有详细说明反转的收益曲线对市场的影响，但是在写这博客的时候正好遇上了收益率曲线反转的情况（在2022年4月1号），反转的情况如下图。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>利率行为（interest rate behavior）</title>
+      <link>https://yxr620.github.io/blog/interest_rate_behavior/</link>
+      <pubDate>Sat, 26 Feb 2022 16:20:08 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/interest_rate_behavior/</guid>
+      <description>&lt;h3 id=&#34;0-一些理解&#34;&gt;0. 一些理解&lt;/h3&gt;
+&lt;p&gt;根据《货币经济学》和理论上的推理，利率并不是由美联储决定的。市场上的利率会根据美联储的货币政策改变（例如货币供给量），但是市场上的利率是交易者的决策决定的，利率行为就是分析利率如何被决定的。总的来说有两种理论来解释利率的变化：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;投资组合选择理论&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;流动性偏好理论&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-投资组合选择理论&#34;&gt;1. 投资组合选择理论&lt;/h3&gt;
+&lt;h4 id=&#34;11-基本假设&#34;&gt;1.1 基本假设&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;财富上升，则对债券需求数量上升&lt;/li&gt;
+&lt;li&gt;债券预期回报率（不是到期回报率，不是利率）上升，对债券需求数量上升&lt;/li&gt;
+&lt;li&gt;债券风险上升，对债券需求数量下降&lt;/li&gt;
+&lt;li&gt;债券流动性上升，对占全需求数量上升&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;12-债券需求供给曲线以一年期贴现放行债券为例&#34;&gt;1.2 债券需求供给曲线（以一年期贴现放行债券为例）&lt;/h4&gt;
+&lt;p&gt;其他条件不变情况下：债券价格越低需求量越高&lt;/p&gt;
+&lt;p&gt;其他条件不变情况下：债券价格越高供给量越高&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：这里说的债券价格是对于固定面值（par value/face value）的债券。例如面值为1000元的债券，一年后将偿付1000元，这里的价格是买这个特定1000元债券的价格&lt;/p&gt;
+&lt;p&gt;根据上面所述的情况，可以画出债券的供需曲线，如下：&lt;/p&gt;
+&lt;img src=&#34;pic/bond_supply_demand.png&#34; alt=&#34;bond_supply_demand&#34; style=&#34;zoom: 50%;&#34; /&gt;
+&lt;p&gt;在这个图中，纵坐标为债券的价格，同时可以衡量对于该债券的利率，因为利率和债券的价格成负相关。以一年期贴现发行的债券为例，利率$i = (F - P) / P$，其中$F$表示债券的面值，$P$表示债券现在的价格。&lt;/p&gt;
+&lt;p&gt;要注意不同术语的表达方式。此处的&lt;strong&gt;利率&lt;/strong&gt;表示已经在市场上的利率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预期利率&lt;/strong&gt;是人们觉得之后的利率，如果预期利率上升，说明人们觉得之后债券的价格会下跌。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预期回报率&lt;/strong&gt;在这里可以理解为债券价值的变化率，也就是说预期回报率和债券的价格正相关。我认为不能像《货币金融学》把预期回报率和利率挂钩，最好把其当作不相关的变量。对于一年期的债券如果持有时间就是一年，那么预期回报率是不变，这也就是《货币金融学》中的观点。但是在分析供需的时候，应该认为持有者会在短期内卖掉债券，也就是只赚取债券价格变化中的差价。这也就是说，如果预期利率上升，那么预期回报率就下跌，即投资者认为以后债券价格会下跌。&lt;/p&gt;
+&lt;h4 id=&#34;13-需求曲线的位移&#34;&gt;1.3 需求曲线的位移&lt;/h4&gt;
+&lt;p&gt;下面表中显示了债券需求量变化的影响因素。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;影响因素&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;变化&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;需求量变化&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;财富&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;债券预期利率（见1.2）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;下降&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;预期通货膨胀&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;下降&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;债券风险&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;下降&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;债券流动性&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;需求量变化的导致需求曲线变化的情况如下：&lt;/p&gt;
+&lt;img src=&#34;pic/bond_demand_change.png&#34; alt=&#34;bond_demand_change&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;h4 id=&#34;14-供给曲线分析&#34;&gt;1.4 供给曲线分析&lt;/h4&gt;
+&lt;p&gt;下表中显示了供给曲线的影响因素：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;影响因素&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;变化&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;供给变化&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;（对公司）预期盈利性&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;预期通货膨胀&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;政府赤字&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;上升&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;2-流动性偏好理论&#34;&gt;2. 流动性偏好理论&lt;/h3&gt;
+&lt;h4 id=&#34;21-基本假设&#34;&gt;2.1 基本假设&lt;/h4&gt;
+&lt;p&gt;假定市场只有货币（$M$)和债券（$B$）两种资产&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>利率与债券</title>
+      <link>https://yxr620.github.io/blog/bond_interest/</link>
+      <pubDate>Sun, 20 Feb 2022 20:44:00 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/bond_interest/</guid>
+      <description>&lt;h3 id=&#34;1-一些概念&#34;&gt;1. 一些概念&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;到期收益率（yield to maturity）&lt;/strong&gt;：使债务工具所有的未来回报的现值与其今天价值相等的利率。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;回报率&lt;/strong&gt;：$R = \frac{C + P_{t + 1} - P_t}{P_t} = \frac{C}{P_t} + \frac{P_{t + 1} - P_t}{P_t} = i_c + g$&lt;/p&gt;
+&lt;p&gt;其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值&lt;/p&gt;
+&lt;p&gt;注：不是所有债券通用的计算规则。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;名义利率（nominal interest rate）&lt;/strong&gt;：$i$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实际利率（real interest rate）&lt;/strong&gt;：$r$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通货膨胀率（inflation rate）&lt;/strong&gt;：$\pi^e$&lt;/p&gt;
+&lt;p&gt;上述三种变量的关系如下：
+$$
+\begin{cases}
+i = r + \pi^e + r\pi^e \\\
+r = i - \pi^e\frac{1 + i}{1 + \pi^e}
+\end{cases}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-四种贷债券的分析&#34;&gt;2. 四种贷债券的分析&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;普通债券&lt;/strong&gt;：到期归还本金和利息，其到期收益率的公式如下：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+PV = \frac{CF}{(1 + i)^n}
+$$&lt;/p&gt;
+&lt;p&gt;​	$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>定投原理</title>
+      <link>https://yxr620.github.io/blog/auto_invest/</link>
+      <pubDate>Sat, 19 Feb 2022 23:44:00 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/auto_invest/</guid>
+      <description>&lt;p&gt;分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。&lt;/p&gt;
+&lt;h3 id=&#34;1-定投模型&#34;&gt;1. 定投模型&lt;/h3&gt;
+&lt;p&gt;定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$x$每次定投的金额&lt;/li&gt;
+&lt;li&gt;$0-T$总定投的时间&lt;/li&gt;
+&lt;li&gt;$\Delta T$每次定投间隔的时间&lt;/li&gt;
+&lt;li&gt;$f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：&lt;/p&gt;
+&lt;div&gt;$$
+c = TV / M\\
+= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\
+= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}
+$$&lt;/div&gt;
+&lt;p&gt;已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。&lt;/p&gt;
+&lt;p&gt;买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数&amp;lt;算数平均数。用公式来说就是：&lt;/p&gt;
+&lt;div&gt;$$
+\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} &lt; \frac{\sum_{i = 1}^n f(i \Delta T)}{n}
+$$&lt;/div&gt;
+&lt;p&gt;右边的公式就是算出平均数，也就是随机一点all in的平均成本。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>货币概述</title>
+      <link>https://yxr620.github.io/blog/monetary/</link>
+      <pubDate>Mon, 14 Feb 2022 20:20:08 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/monetary/</guid>
+      <description>&lt;h3 id=&#34;1-概念&#34;&gt;1. 概念&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;定义货币：在产品和服务支付以及债务偿还中被普遍接受的东西&lt;/li&gt;
+&lt;li&gt;货币的功能：交易媒介、记账单位、价值储存&lt;/li&gt;
+&lt;li&gt;支付体系的演进：商品货币、不兑现纸币、支票、电子支付、电子货币&lt;/li&gt;
+&lt;li&gt;货币的计量：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;M1&lt;/strong&gt;：通货（currency）、支票账户存款、旅行者支票、其他支票存款&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;M2&lt;/strong&gt;：M1、小额定期存款、储蓄存款与货币市场账户、货币市场共同基金&lt;/p&gt;
+&lt;h3 id=&#34;2-m1和m2货币数量&#34;&gt;2. M1和M2货币数量&lt;/h3&gt;
+&lt;h4 id=&#34;21-m1&#34;&gt;2.1 M1&lt;/h4&gt;
+&lt;p&gt;M1的构成为通货、支票账户存款、旅行者支票、其他支票存款。这是《货币金融学》里面标准的定义，在之后的金融技术革新之后，其他支票存款被替换成了其他流动性存款（Other Liquidity Deposits）；此外美联储在之后公布的M1里面去掉了旅行者支票（本身占比就非常小，而且逐年递减）。&lt;/p&gt;
+&lt;p&gt;根据实际情况进行调整之后M1的组成如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通货（CURRSL）&lt;/li&gt;
+&lt;li&gt;活期存款（DEMDEPSL）&lt;/li&gt;
+&lt;li&gt;其他流动性存款（MDLM）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;计算出来2021年的M1如下（单位billion，十亿美元）：&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;pic/M1.svg&#34; alt=&#34;M1&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;上述三种组成在M1中的占比如下：&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;pic/M1_component.svg&#34; alt=&#34;M1_component&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>道琼斯工业指数</title>
+      <link>https://yxr620.github.io/blog/dow_jones/</link>
+      <pubDate>Sat, 12 Feb 2022 23:20:08 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/dow_jones/</guid>
+      <description>&lt;p&gt;疫情之后的道琼斯工业指数&lt;/p&gt;
+&lt;img src=&#34;pic/dow_jones.svg&#34; alt=&#34;dow_jones&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;p&gt;道琼斯工业指数的增长率&lt;/p&gt;
+&lt;img src=&#34;pic/change.svg&#34; alt=&#34;change&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;p&gt;数据整理：&lt;a href=&#34;https://docs.google.com/spreadsheets/d/18S3EzF0Y8Eh9YCAfCt7UznUlV83Ndhox/edit?usp=sharing&amp;ouid=116628198958200984504&amp;rtpof=true&amp;sd=true&#34;&gt;google文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;数据来源：&lt;a href=&#34;https://www.forecasts.org/&#34;&gt;Financial Forecast Center&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>中央银行和联邦储备体系</title>
+      <link>https://yxr620.github.io/blog/fed/</link>
+      <pubDate>Fri, 24 Jul 2020 10:05:20 +0800</pubDate>
+      
+      <guid>https://yxr620.github.io/blog/fed/</guid>
+      <description>&lt;h3 id=&#34;1-联邦储备体系的结构&#34;&gt;1. 联邦储备体系的结构&lt;/h3&gt;
+&lt;p&gt;联邦储备体系由三个部分组成，如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;联邦储备银行（Federal Reserve Banks）；&lt;/li&gt;
+&lt;li&gt;联邦储备委员会（Board of Governments of the Federal Reserve System）&lt;/li&gt;
+&lt;li&gt;联邦公开市场委员会（Federal Open Market Committee）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;11-联邦储备银行&#34;&gt;1.1 联邦储备银行&lt;/h4&gt;
+&lt;p&gt;联邦储备银行有12所，每一所待变美国一部分区域的利益。他们有如下的职责：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;董事”确定“贴现率；&lt;/li&gt;
+&lt;li&gt;确定获得贴现贷款的银行；&lt;/li&gt;
+&lt;li&gt;12个银行中5个董事参加FOMC会议（纽约联邦储备银行+4个其他联邦储备银行）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;12-联邦储备委员会&#34;&gt;1.2 联邦储备委员会&lt;/h4&gt;
+&lt;p&gt;委员会由7个总统提名，国会审批的委员，其中一人为主席。这7名委员的职责有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;确定法定准备金率；&lt;/li&gt;
+&lt;li&gt;审批贴现率；&lt;/li&gt;
+&lt;li&gt;参加公开市场委员会。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;13-联邦公开市场委员会&#34;&gt;1.3 联邦公开市场委员会&lt;/h4&gt;
+&lt;p&gt;公开市场委员会成员有12个，其中包括7个联邦储备委员会、纽约联邦储备银行行长、4名其他联邦储备银行行长。这12个委员的职责有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;知道公开市场操作，即实施制定好的贴现率；&lt;/li&gt;
+&lt;li&gt;每年8次会议并且想公众汇报会议内容。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-中央银行的独立性&#34;&gt;2. 中央银行的独立性&lt;/h3&gt;
+&lt;p&gt;美联储的独立性表现在以下三个方面：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;美联储以自己的方式完成目标（工具独立性）&lt;/li&gt;
+&lt;li&gt;美联储对目标有自己的解释权（目标独立性）&lt;/li&gt;
+&lt;li&gt;美联储有独立的经济来源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;美联储独立可以避免政治经济周期（即以竞选为节点的周期）并且避免政治家没有能力处理复杂的经济问题。&lt;/p&gt;
+&lt;p&gt;美联储也并非绝对独立，国会和总统可以通过法律以及委员的任命影响美联储。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

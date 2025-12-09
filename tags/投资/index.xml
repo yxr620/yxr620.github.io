@@ -13,10 +13,10 @@
     <lastBuildDate>Sun, 20 Feb 2022 20:44:00 +0800</lastBuildDate><atom:link href="https://yxr620.github.io/tags/%E6%8A%95%E8%B5%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利率与债券</title>
-      <link>https://yxr620.github.io/posts/bond_interest/</link>
+      <link>https://yxr620.github.io/blog/bond_interest/</link>
       <pubDate>Sun, 20 Feb 2022 20:44:00 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/bond_interest/</guid>
+      <guid>https://yxr620.github.io/blog/bond_interest/</guid>
       <description>&lt;h3 id=&#34;1-一些概念&#34;&gt;1. 一些概念&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -52,10 +52,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>定投原理</title>
-      <link>https://yxr620.github.io/posts/auto_invest/</link>
+      <link>https://yxr620.github.io/blog/auto_invest/</link>
       <pubDate>Sat, 19 Feb 2022 23:44:00 +0800</pubDate>
       
-      <guid>https://yxr620.github.io/posts/auto_invest/</guid>
+      <guid>https://yxr620.github.io/blog/auto_invest/</guid>
       <description>&lt;p&gt;分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。&lt;/p&gt;
 &lt;h3 id=&#34;1-定投模型&#34;&gt;1. 定投模型&lt;/h3&gt;
 &lt;p&gt;定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：&lt;/p&gt;
