@@ -1,0 +1,18 @@
+{{- define "main" }}
+<article class="cv-page">
+    <header class="cv-header">
+        {{- if .Title }}
+        <h1>{{ .Title }}</h1>
+        {{- end }}
+        {{- if .Description }}
+        <p class="cv-subtitle">{{ .Description | markdownify }}</p>
+        {{- end }}
+    </header>
+
+    <div class="cv-content post-content">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+        {{- partial "anchored_headings.html" .Content -}}
+        {{- else }}{{ .Content }}{{ end }}
+    </div>
+</article>
+{{- end }}

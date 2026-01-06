@@ -1,0 +1,148 @@
+/* Custom CV Page Styles */
+
+/* CV Page Container */
+.cv-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* CV Header */
+.cv-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.cv-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary) 0%, #667eea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cv-subtitle {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin: 0;
+}
+
+/* CV Content Sections */
+.cv-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--primary);
+}
+
+.cv-content h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--content);
+}
+
+/* Section Cards */
+.cv-content hr {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 2rem 0;
+}
+
+/* Lists in CV */
+.cv-content ul {
+    padding-left: 1.5rem;
+    margin: 0.8rem 0;
+}
+
+.cv-content li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+}
+
+/* Links styling */
+.cv-content a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.cv-content a:hover {
+    border-bottom-color: var(--primary);
+}
+
+/* Contact info styling */
+.cv-content > p:first-of-type {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--secondary);
+}
+
+/* Experience entries */
+.cv-content h3 + p {
+    margin-top: -0.5rem;
+}
+
+.cv-content h3 + p em {
+    color: var(--secondary);
+    font-style: italic;
+}
+
+/* Improve spacing for Education & Experience sections */
+.cv-content h3 strong {
+    font-weight: 600;
+}
+
+/* Animation for section headers */
+.cv-content h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1.2em;
+    background: linear-gradient(135deg, var(--primary) 0%, #667eea 100%);
+    margin-right: 0.8rem;
+    vertical-align: text-bottom;
+    border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cv-page {
+        padding: 1rem;
+    }
+    
+    .cv-header h1 {
+        font-size: 2rem;
+    }
+    
+    .cv-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .cv-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Dark mode enhancements */
+.dark .cv-header h1 {
+    background: linear-gradient(135deg, #64b5f6 0%, #90caf9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark .cv-content h2::before {
+    background: linear-gradient(135deg, #64b5f6 0%, #90caf9 100%);
+}
+
+.dark .cv-content h2 {
+    color: #64b5f6;
+}

@@ -21,7 +21,11 @@ languages:
     en:
         languageName: "English"
         weight: 1
-        # 顶部菜单已移除（Archive, Search, Tags, Categories 会导致 404）
+        menu:
+            main:
+                - name: "📝 Blog"
+                  url: blog/
+                  weight: 10
 
     # fr:
     #     languageName: ":fr:"
@@ -101,7 +105,7 @@ params:
     images: ["papermod-cover.png"]
 
     profileMode:
-        enabled: true
+        enabled: false
         title: "Xiangrui Yang"
         subtitle: |
             🎓 Master Student @ HUST | 🔬 ML Systems & HPC Research
