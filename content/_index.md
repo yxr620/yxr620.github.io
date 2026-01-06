@@ -3,6 +3,9 @@ title: "Xiangrui Yang"
 description: "🎓 PhD Student @ HKU | 🔬 ML Systems & HPC Research"
 ---
 
+
+<img src="/images/user.jpg" align="right" width="150" style="margin-left: 20px; margin-bottom: 20px; border-radius: 10px; display: inline-block; margin-top: -80px;" />
+
 **📧 Email**: yxr620@hust.edu.cn | **📱 Phone**: (+86) 18963961350
 
 
