@@ -3,11 +3,23 @@ title: "Xiangrui Yang"
 description: "🎓 PhD Student @ HKU | 🔬 ML Systems & HPC Research"
 ---
 
-
-<img src="/images/user.jpg" align="right" width="150" style="margin-left: 20px; margin-bottom: 20px; border-radius: 10px; display: inline-block; margin-top: -80px;" />
-
-**📧 Email**: yxr620@hust.edu.cn | **📱 Phone**: (+86) 18963961350
-
+<div class="cv-hero">
+<div class="cv-hero-text">
+<p class="cv-hero-label">I work on machine learning systems, storage systems, and high-performance computing, with an emphasis on practical performance optimization.</p>
+<div class="cv-contact-row">
+<span class="cv-contact-item">📧 <a href="mailto:yxr620@gmail.com">yxr620@gmail.com</a></span>
+<span class="cv-contact-item">📱 (+86) 18963961350</span>
+</div>
+<div class="cv-social-links">
+<a href="https://github.com/yxr620">GitHub</a>
+<a href="/blog/">Blog</a>
+<a href="#academic-papers">Selected Papers</a>
+</div>
+</div>
+<div class="cv-hero-photo">
+<img src="/images/user.jpg" alt="Xiangrui Yang" />
+</div>
+</div>
 
 ---
 
@@ -18,6 +30,22 @@ I am a first-year PhD student at the University of Hong Kong, advised by Profess
 My research interests lie in the optimization of machine learning systems and high-performance computing. I have experience working with tools like CUDA and DGL for model acceleration. I researched sparse matrix multiplication in an advertisement scoring system during the internship at Tencent. 
 
 Outside of academia, I enjoy diving into economics and investment.
+
+---
+
+## Academic Papers
+
+- [HeteroGNN: A Heterogeneous Task Division Based GNN Training Framework to Maximize CPU-GPU Parallelism](https://ieeexplore.ieee.org/document/11209980), **ICME 2025**
+- [Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs](https://www.usenix.org/conference/fast26/presentation/zhan), **FAST 2026**
+- ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference, **ICCD 2025**
+- [Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs](https://www.usenix.org/conference/fast25/presentation/zhan), **FAST'25**
+- [AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation for Commodity SSDs](https://dl.acm.org/doi/10.1145/3708538), **ACM TACO**
+- [RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths](https://dl.acm.org/doi/10.1145/3698038.3698539), **SoCC'24**
+- [HEncode: A Highly Modularized and Efficient FPGA QC-LDPC Encoder Using High Level Synthesis](https://ieeexplore.ieee.org/document/10818010/), **ICCD'24**
+- [A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding](http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003)
+- [Analyzing performance degradation for wide stripe erasure codes](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13067/130670E/Analyzing-performance-degradation-for-wide-stripe-erasure-codes/10.1117/12.3024709.full)
+- [PMLDS: An LSM-tree Direct Managed Storage for Key-value Stores on Byte-addressable Devices](https://dl.acm.org/doi/10.1145/3605573.3605629)
+- [Leveraging Orbital Information and Atomic Feature in Deep Learning Model](https://arxiv.org/abs/2211.11543)
 
 ---
 
@@ -39,30 +67,12 @@ Outside of academia, I enjoy diving into economics and investment.
 
 ---
 
-
 ## Talks & Presentations
 
 - ICME'25, IEEE International Conference on Multimedia & Expo 2025, Nantes, France. [Website](https://whova.com/embedded/session/hlWY6K3rL7pHvG8Yd1TfjYJVgDEZvOuEPKWGmeuUbIQ%3D/4654604/?widget=primary)
-- FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. [video](https://www.youtube.com/watch?v=6dGa7Ol8Ryk)
+- FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. [Video](https://www.youtube.com/watch?v=6dGa7Ol8Ryk)
 - SoCC'24, 15th ACM Symposium on Cloud Computing, Redmond, Washington.
 - HiPEAC'25, 20th High Performance, Edge And Cloud computing, Barcelona, Spain.
-
----
-
-
-## Academic Papers
-
-- [HeteroGNN: A Heterogeneous Task Division Based GNN Training Framework to Maximize CPU-GPU Parallelism](https://ieeexplore.ieee.org/document/11209980), ICME 2025
-- [Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs](https://www.usenix.org/conf%C3%A9rence/fast26/presentation/zhan), FAST 2026
-- ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference, ICCD 2025
-- [Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs](https://www.usenix.org/conference/fast25/presentation/zhan), FAST' 25
-- [AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation for Commodity SSDs](https://dl.acm.org/doi/10.1145/3708538), ACM TACO
-- [RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths](https://dl.acm.org/doi/10.1145/3698038.3698539), SoCC' 24
-- [HEncode: A Highly Modularized and Efficient FPGA QC-LDPC Encoder Using High Level Synthesis](https://ieeexplore.ieee.org/document/10818010/), ICCD' 24
-- [A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding](http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003)
-- [Analyzing performance degradation for wide stripe erasure codes](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13067/130670E/Analyzing-performance-degradation-for-wide-stripe-erasure-codes/10.1117/12.3024709.full)
-- [PMLDS: An LSM-tree Direct Managed Storage for Key-value Stores on Byte-addressable Devices](https://dl.acm.org/doi/10.1145/3605573.3605629)
-- [Leveraging Orbital Information and Atomic Feature in Deep Learning Model](https://arxiv.org/abs/2211.11543)
 
 ---
 

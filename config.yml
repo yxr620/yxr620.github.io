@@ -125,7 +125,7 @@ params:
         - name: github
           url: "https://github.com/yxr620"
         - name: email
-          url: "mailto:yxr620@hust.edu.cn"
+          url: "mailto:yxr620@gmail.com"
 
 
     editPost:

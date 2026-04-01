@@ -10,9 +10,7 @@
     </header>
 
     <div class="cv-content post-content">
-        {{- if not (.Param "disableAnchoredHeadings") }}
-        {{- partial "anchored_headings.html" .Content -}}
-        {{- else }}{{ .Content }}{{ end }}
+        {{ .Content }}
     </div>
 </article>
 {{- end }}
