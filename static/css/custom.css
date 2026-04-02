@@ -9,11 +9,20 @@
 }
 
 .dark {
-    --cv-accent: #84a8ff;
-    --cv-accent-soft: rgba(132, 168, 255, 0.16);
-    --cv-panel: rgba(255, 255, 255, 0.035);
-    --cv-grid: rgba(255, 255, 255, 0.08);
-    --cv-shadow: 0 26px 70px rgba(0, 0, 0, 0.3);
+    /* PaperMod base token overrides */
+    --theme: #111318;
+    --entry: #16191f;
+    --primary: #dde2ec;
+    --secondary: rgba(160, 180, 255, 0.55);
+    --content: #a8b0c0;
+    --border: rgba(160, 180, 255, 0.10);
+
+    /* cv custom tokens */
+    --cv-accent: #00e5c0;
+    --cv-accent-soft: rgba(0, 229, 192, 0.12);
+    --cv-panel: rgba(255, 255, 255, 0.03);
+    --cv-grid: rgba(160, 180, 255, 0.08);
+    --cv-shadow: 0 26px 70px rgba(0, 0, 0, 0.4);
 }
 
 body {
