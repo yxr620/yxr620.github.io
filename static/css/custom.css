@@ -114,6 +114,8 @@ body {
     margin-bottom: 1.8rem;
     text-align: left;
     animation: cv-rise 0.55s ease-out both;
+    position: relative;
+    overflow: hidden;
 }
 
 .cv-header h1 {
@@ -124,6 +126,8 @@ body {
     font-weight: 700;
     color: var(--primary);
     text-wrap: balance;
+    position: relative;
+    z-index: 1;
 }
 
 .cv-subtitle {
@@ -495,10 +499,6 @@ body {
 }
 
 /* Keep h1 text above the watermark */
-.cv-header h1 {
-    position: relative;
-    z-index: 1;
-}
 
 /* "XY" faint watermark */
 .dark .cv-header::before {
@@ -518,10 +518,6 @@ body {
 }
 
 /* Ensure header has stacking context for watermark */
-.cv-header {
-    position: relative;
-    overflow: hidden;
-}
 
 /* Tag pill — cyan border + text in dark mode */
 .dark .cv-subtitle {
