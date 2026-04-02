@@ -1,35 +1,19 @@
 ---
 title: "Xiangrui Yang"
-description: "🎓 PhD Student @ HKU | 🔬 ML Systems & HPC Research"
+description: "PhD Student at HKU / ML Systems / Storage / HPC"
 ---
 
 <div class="cv-hero">
 <div class="cv-hero-text">
-<p class="cv-hero-label">I work on machine learning systems, storage systems, and high-performance computing, with an emphasis on practical performance optimization.</p>
-<div class="cv-contact-row">
-<span class="cv-contact-item">📧 <a href="mailto:yxr620@gmail.com">yxr620@gmail.com</a></span>
-<span class="cv-contact-item">📱 (+86) 18963961350</span>
-</div>
-<div class="cv-social-links">
-<a href="https://github.com/yxr620">GitHub</a>
-<a href="/blog/">Blog</a>
-<a href="#academic-papers">Selected Papers</a>
-</div>
+<div class="cv-hero-kicker">About Me</div>
+<p class="cv-hero-bio">I am a first-year PhD student at the University of Hong Kong, advised by Professor <a href="https://yimingqiu.me/">Yiming Qiu</a>. I received my Master's from <strong>HUST</strong> (advised by <a href="http://english.cs.hust.edu.cn/info/1464/1194.htm">Qiang Cao</a>) and my Bachelor's from <strong>SYSU</strong> (advised by <a href="https://cse.sysu.edu.cn/content/2951">Yuedong Yang</a>). My research focuses on ML systems, storage, and high-performance computing.</p>
 </div>
 <div class="cv-hero-photo">
+<div class="cv-hero-photo-frame">
 <img src="/images/user.jpg" alt="Xiangrui Yang" />
 </div>
 </div>
-
----
-
-## About Me
-
-I am a first-year PhD student at the University of Hong Kong, advised by Professor [Yiming Qiu](https://yimingqiu.me/). I received my Master's degree in Computer Science from Huazhong University of Science and Technology (HUST), advised by Professor [Qiang Cao](http://english.cs.hust.edu.cn/info/1464/1194.htm), and my Bachelor's degree in Computer Science from Sun Yat-Sen University (SYSU), advised by Professor [Yuedong Yang](https://cse.sysu.edu.cn/content/2951). 
-
-My research interests lie in the optimization of machine learning systems and high-performance computing. I have experience working with tools like CUDA and DGL for model acceleration. I researched sparse matrix multiplication in an advertisement scoring system during the internship at Tencent. 
-
-Outside of academia, I enjoy diving into economics and investment.
+</div>
 
 ---
 

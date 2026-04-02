@@ -23,7 +23,7 @@ languages:
         weight: 1
         menu:
             main:
-                - name: "📝 Blog"
+                - name: "Blog"
                   url: blog/
                   weight: 10
 
@@ -87,7 +87,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "PhD student at HKU working on ML Systems and High-Performance Computing"
+    description: "PhD student at HKU focused on ML systems, storage, and HPC"
     author: Xiangrui Yang
     # author: ["Me", "You"] # multiple authors
 
