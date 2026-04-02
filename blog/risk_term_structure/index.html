@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>利率风险结构和期限结构 | Xiangrui Yang</title>
+<meta name="keywords" content="" />
+<meta name="description" content="1. 风险结构
+风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。
+
+违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）；
+流动性：流动性越低风险溢价越高·；
+所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。
+
+2. 利率期限结构
+期限结构是为了解释同一机构发行的不同时长的债券的利率不同。
+2.1 期限结构特点
+这些不同时长的债券的利率会表现出如下三种特点：
+
+到期期限不同的债券利率随时间波动基本一致；
+若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜；
+收益率曲线几乎总是向上倾斜的。
+
+为了解释上面这三种现象，金融学家提出了三种理论。
+2.2 预期理论
+两个假设：
+
+
+长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；
+
+
+投资者对不同到期期限的债券无特别偏好。
+
+
+根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：
+$$
+i_l = \int_0^T i_s(t) dt / T
+$$
+这个理论只能解释1、2两个特点。
+2.3 分割市场理论
+两个假设：
+
+不同到期期限的债券之间不能相互替换
+风险厌恶这愿意持有短期的债券
+
+根据这两个假设推理出来的结论就是第三个特点。
+2.4 流动性溢价理论
+该理论提出的假设为，长期债券的利率等于两项之和：
+第一项：短期利率的平均值；
+第二项：流动性溢价（随到期期限$n$的增长而上升）
+那么长期利率和短期利率之间的关系如下：
+$$
+i_l = \int_0^T i_s(t) dt / T &#43; l_T
+$$
+其中$l_T$为流动性溢价。
+3. 收益率曲线（yield Curve）
+3.1 定义
+收益率曲线是同一时间下不同到期时间的债券的利率组成的曲线。例如下图中的收益率曲线就表示了2017年3月2日的收益率曲线。其中纵坐标表示债券到期的时长，以月为单位。
+
+
+
+3.2 收益曲线反转
+在《货币金融学》中并没有详细说明反转的收益曲线对市场的影响，但是在写这博客的时候正好遇上了收益率曲线反转的情况（在2022年4月1号），反转的情况如下图。">
+<meta name="author" content="yxr620">
+<link rel="canonical" href="https://yxr620.github.io/blog/risk_term_structure/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.199271f351c4b46f0d0536b6e2eb89a4766040c0e8df57f1a695c6570d8a4e0f.js" integrity="sha256-GZJx81HEtG8NBTa24uuJpHZgQMDo31fxppXGVw2KTg8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://yxr620.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://yxr620.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://yxr620.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://yxr620.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://yxr620.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.159.1">
+<link rel="alternate" hreflang="en" href="https://yxr620.github.io/blog/risk_term_structure/" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="/css/custom.css" />
+<meta name="google-site-verification" content="x7_LCaHvViA9b_WVXqGPjUuaph9OSJR_Fl9-5aJV_fQ" /><meta property="og:title" content="利率风险结构和期限结构" />
+<meta property="og:description"
+  content="1. 风险结构
+风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。
+
+违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）；
+流动性：流动性越低风险溢价越高·；
+所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。
+
+2. 利率期限结构
+期限结构是为了解释同一机构发行的不同时长的债券的利率不同。
+2.1 期限结构特点
+这些不同时长的债券的利率会表现出如下三种特点：
+
+到期期限不同的债券利率随时间波动基本一致；
+若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜；
+收益率曲线几乎总是向上倾斜的。
+
+为了解释上面这三种现象，金融学家提出了三种理论。
+2.2 预期理论
+两个假设：
+
+
+长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；
+
+
+投资者对不同到期期限的债券无特别偏好。
+
+
+根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：
+$$
+i_l = \int_0^T i_s(t) dt / T
+$$
+这个理论只能解释1、2两个特点。
+2.3 分割市场理论
+两个假设：
+
+不同到期期限的债券之间不能相互替换
+风险厌恶这愿意持有短期的债券
+
+根据这两个假设推理出来的结论就是第三个特点。
+2.4 流动性溢价理论
+该理论提出的假设为，长期债券的利率等于两项之和：
+第一项：短期利率的平均值；
+第二项：流动性溢价（随到期期限$n$的增长而上升）
+那么长期利率和短期利率之间的关系如下：
+$$
+i_l = \int_0^T i_s(t) dt / T &#43; l_T
+$$
+其中$l_T$为流动性溢价。
+3. 收益率曲线（yield Curve）
+3.1 定义
+收益率曲线是同一时间下不同到期时间的债券的利率组成的曲线。例如下图中的收益率曲线就表示了2017年3月2日的收益率曲线。其中纵坐标表示债券到期的时长，以月为单位。
+
+
+
+3.2 收益曲线反转
+在《货币金融学》中并没有详细说明反转的收益曲线对市场的影响，但是在写这博客的时候正好遇上了收益率曲线反转的情况（在2022年4月1号），反转的情况如下图。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yxr620.github.io/blog/risk_term_structure/" />
+<meta property="og:image" content="https://yxr620.github.io/papermod-cover.png" /><meta property="article:section" content="blog" />
+
+<meta property="article:published_time" content="2022-04-05T20:09:21&#43;08:00" />
+
+<meta property="article:modified_time" content="2022-04-05T20:09:21&#43;08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yxr620.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="利率风险结构和期限结构"/>
+<meta name="twitter:description" content="1. 风险结构
+风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。
+
+违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）；
+流动性：流动性越低风险溢价越高·；
+所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。
+
+2. 利率期限结构
+期限结构是为了解释同一机构发行的不同时长的债券的利率不同。
+2.1 期限结构特点
+这些不同时长的债券的利率会表现出如下三种特点：
+
+到期期限不同的债券利率随时间波动基本一致；
+若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜；
+收益率曲线几乎总是向上倾斜的。
+
+为了解释上面这三种现象，金融学家提出了三种理论。
+2.2 预期理论
+两个假设：
+
+
+长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；
+
+
+投资者对不同到期期限的债券无特别偏好。
+
+
+根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：
+$$
+i_l = \int_0^T i_s(t) dt / T
+$$
+这个理论只能解释1、2两个特点。
+2.3 分割市场理论
+两个假设：
+
+不同到期期限的债券之间不能相互替换
+风险厌恶这愿意持有短期的债券
+
+根据这两个假设推理出来的结论就是第三个特点。
+2.4 流动性溢价理论
+该理论提出的假设为，长期债券的利率等于两项之和：
+第一项：短期利率的平均值；
+第二项：流动性溢价（随到期期限$n$的增长而上升）
+那么长期利率和短期利率之间的关系如下：
+$$
+i_l = \int_0^T i_s(t) dt / T &#43; l_T
+$$
+其中$l_T$为流动性溢价。
+3. 收益率曲线（yield Curve）
+3.1 定义
+收益率曲线是同一时间下不同到期时间的债券的利率组成的曲线。例如下图中的收益率曲线就表示了2017年3月2日的收益率曲线。其中纵坐标表示债券到期的时长，以月为单位。
+
+
+
+3.2 收益曲线反转
+在《货币金融学》中并没有详细说明反转的收益曲线对市场的影响，但是在写这博客的时候正好遇上了收益率曲线反转的情况（在2022年4月1号），反转的情况如下图。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://yxr620.github.io/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "利率风险结构和期限结构",
+      "item": "https://yxr620.github.io/blog/risk_term_structure/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "利率风险结构和期限结构",
+  "name": "利率风险结构和期限结构",
+  "description": "1. 风险结构 风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。\n违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）； 流动性：流动性越低风险溢价越高·； 所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。 2. 利率期限结构 期限结构是为了解释同一机构发行的不同时长的债券的利率不同。\n2.1 期限结构特点 这些不同时长的债券的利率会表现出如下三种特点：\n到期期限不同的债券利率随时间波动基本一致； 若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜； 收益率曲线几乎总是向上倾斜的。 为了解释上面这三种现象，金融学家提出了三种理论。\n2.2 预期理论 两个假设：\n长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；\n投资者对不同到期期限的债券无特别偏好。\n根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：\n$$ i_l = \\int_0^T i_s(t) dt / T $$\n这个理论只能解释1、2两个特点。\n2.3 分割市场理论 两个假设：\n不同到期期限的债券之间不能相互替换 风险厌恶这愿意持有短期的债券 根据这两个假设推理出来的结论就是第三个特点。\n2.4 流动性溢价理论 该理论提出的假设为，长期债券的利率等于两项之和：\n第一项：短期利率的平均值；\n第二项：流动性溢价（随到期期限$n$的增长而上升）\n那么长期利率和短期利率之间的关系如下： $$ i_l = \\int_0^T i_s(t) dt / T + l_T $$ 其中$l_T$为流动性溢价。\n3. 收益率曲线（yield Curve） 3.1 定义 收益率曲线是同一时间下不同到期时间的债券的利率组成的曲线。例如下图中的收益率曲线就表示了2017年3月2日的收益率曲线。其中纵坐标表示债券到期的时长，以月为单位。\n3.2 收益曲线反转 在《货币金融学》中并没有详细说明反转的收益曲线对市场的影响，但是在写这博客的时候正好遇上了收益率曲线反转的情况（在2022年4月1号），反转的情况如下图。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "1. 风险结构 风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。\n违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）； 流动性：流动性越低风险溢价越高·； 所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。 2. 利率期限结构 期限结构是为了解释同一机构发行的不同时长的债券的利率不同。\n2.1 期限结构特点 这些不同时长的债券的利率会表现出如下三种特点：\n到期期限不同的债券利率随时间波动基本一致； 若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜； 收益率曲线几乎总是向上倾斜的。 为了解释上面这三种现象，金融学家提出了三种理论。\n2.2 预期理论 两个假设：\n长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；\n投资者对不同到期期限的债券无特别偏好。\n根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：\n$$ i_l = \\int_0^T i_s(t) dt / T $$\n这个理论只能解释1、2两个特点。\n2.3 分割市场理论 两个假设：\n不同到期期限的债券之间不能相互替换 风险厌恶这愿意持有短期的债券 根据这两个假设推理出来的结论就是第三个特点。\n2.4 流动性溢价理论 该理论提出的假设为，长期债券的利率等于两项之和：\n第一项：短期利率的平均值；\n第二项：流动性溢价（随到期期限$n$的增长而上升）\n那么长期利率和短期利率之间的关系如下： $$ i_l = \\int_0^T i_s(t) dt / T + l_T $$ 其中$l_T$为流动性溢价。\n3. 收益率曲线（yield Curve） 3.1 定义 收益率曲线是同一时间下不同到期时间的债券的利率组成的曲线。例如下图中的收益率曲线就表示了2017年3月2日的收益率曲线。其中纵坐标表示债券到期的时长，以月为单位。\n3.2 收益曲线反转 在《货币金融学》中并没有详细说明反转的收益曲线对市场的影响，但是在写这博客的时候正好遇上了收益率曲线反转的情况（在2022年4月1号），反转的情况如下图。\n之所以会出现这样的情况是因为投资者认为长期的利率会下降，也就是说在未来几年中利率会比现在的利率低。根据历史经验来讲，每当出现这种情况很大概率经济会发生萧条。根据统计，过去11次萧条中有10次都在萧条前出现过收益曲线反转。离谱的是在2019年8月28日出现了收益率曲线反转（见下图），过了半年之后就出现了疫情造成的萧条，理性来讲在2019年8月应该没有人知道疫情的影响，但是收益率曲线还是准确的预测了萧条的发生。\n具体为什么收益率曲线反转会导致萧条我还不清楚，可以之后研究一下。\n",
+  "wordCount" : "70",
+  "inLanguage": "en",
+  "datePublished": "2022-04-05T20:09:21+08:00",
+  "dateModified": "2022-04-05T20:09:21+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "yxr620"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yxr620.github.io/blog/risk_term_structure/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiangrui Yang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yxr620.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://yxr620.github.io/" accesskey="h" title="Xiangrui Yang (Alt + H)">Xiangrui Yang</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://yxr620.github.io/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+<div class="lab-page">
+    <aside class="lab-sidebar">
+        <div class="lab-breadcrumb">
+            <a href="/blog/">~/blog</a>&nbsp;/
+        </div>
+        <div class="lab-toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-风险结构">1. 风险结构</a></li>
+        <li><a href="#2-利率期限结构">2. 利率期限结构</a></li>
+        <li><a href="#3-收益率曲线yield-curve">3. 收益率曲线（yield Curve）</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+
+        <div class="lab-meta">
+            <div class="lab-date">2022-04-05</div>
+        </div>
+    </aside>
+
+    <article class="lab-content post-content">
+        
+        <div class="lab-mobile-meta">
+            <span>2022-04-05</span>
+        </div>
+
+        <header class="lab-header">
+            <h1>利率风险结构和期限结构</h1>
+        </header>
+
+        <h3 id="1-风险结构">1. 风险结构</h3>
+<p>风险结构是为了解释为什么不同的机构发行的相同到期期限的债券利率不同。</p>
+<ol>
+<li>违约风险（default risk）：该风险是指债券的借款人可能违约，因此不同的程度的违约可能性会产生风险溢价。该溢价是针对国债而言，国债被视为无违约风险债券（default-free bonds）；</li>
+<li>流动性：流动性越低风险溢价越高·；</li>
+<li>所得税因素：可能针对地方债券的收入不缴纳所得税，因此地方债券利率更低。</li>
+</ol>
+<h3 id="2-利率期限结构">2. 利率期限结构</h3>
+<p>期限结构是为了解释同一机构发行的不同时长的债券的利率不同。</p>
+<h4 id="21-期限结构特点">2.1 期限结构特点</h4>
+<p>这些不同时长的债券的利率会表现出如下三种特点：</p>
+<ol>
+<li>到期期限不同的债券利率随时间波动基本一致；</li>
+<li>若短期利率较低，收益率曲线（yield curve）向上倾斜；若短期利率较高，则收益率曲线可能向下倾斜；</li>
+<li>收益率曲线几乎总是向上倾斜的。</li>
+</ol>
+<p>为了解释上面这三种现象，金融学家提出了三种理论。</p>
+<h4 id="22-预期理论">2.2 预期理论</h4>
+<p><strong>两个假设</strong>：</p>
+<ol>
+<li>
+<p>长期债券的利率等于在其有效期内预期短期利率的平均值（可以看成积分之后除以积分区间长度）；</p>
+</li>
+<li>
+<p>投资者对不同到期期限的债券无特别偏好。</p>
+</li>
+</ol>
+<p>根据上面两个假设可以计算长期利率$i_l$和短期利率$i_s$之间的关系，如下（用连续形式表示）：</p>
+<p>$$
+i_l = \int_0^T i_s(t) dt / T
+$$</p>
+<p>这个理论只能解释1、2两个特点。</p>
+<h4 id="23-分割市场理论">2.3 分割市场理论</h4>
+<p><strong>两个假设</strong>：</p>
+<ol>
+<li>不同到期期限的债券之间不能相互替换</li>
+<li>风险厌恶这愿意持有短期的债券</li>
+</ol>
+<p>根据这两个假设推理出来的结论就是第三个特点。</p>
+<h4 id="24-流动性溢价理论">2.4 流动性溢价理论</h4>
+<p>该理论提出的<strong>假设</strong>为，长期债券的利率等于两项之和：</p>
+<p>第一项：短期利率的平均值；</p>
+<p>第二项：流动性溢价（随到期期限$n$的增长而上升）</p>
+<p>那么长期利率和短期利率之间的关系如下：
+$$
+i_l = \int_0^T i_s(t) dt / T + l_T
+$$
+其中$l_T$为流动性溢价。</p>
+<h3 id="3-收益率曲线yield-curve">3. 收益率曲线（yield Curve）</h3>
+<h4 id="31-定义">3.1 定义</h4>
+<p>收益率曲线是同一时间下不同到期时间的债券的利率组成的曲线。例如下图中的收益率曲线就表示了2017年3月2日的收益率曲线。其中纵坐标表示债券到期的时长，以月为单位。</p>
+<p align="center">
+<img src="pic/2017yieldcurve.png" alt="2017yieldcurve" style="zoom: 80%;" />
+</p>
+<h4 id="32-收益曲线反转">3.2 收益曲线反转</h4>
+<p>在《货币金融学》中并没有详细说明反转的收益曲线对市场的影响，但是在写这博客的时候正好遇上了收益率曲线反转的情况（在2022年4月1号），反转的情况如下图。</p>
+<p align="center">
+<img src="pic/image-20220405171609024.png" alt="image-20220405171609024" style="zoom:80%;" />
+</p>
+<p>之所以会出现这样的情况是因为投资者认为长期的利率会下降，也就是说在未来几年中利率会比现在的利率低。根据历史经验来讲，每当出现这种情况很大概率经济会发生萧条。根据统计，过去11次萧条中有10次都在萧条前出现过收益曲线反转。离谱的是在2019年8月28日出现了收益率曲线反转（见下图），过了半年之后就出现了疫情造成的萧条，理性来讲在2019年8月应该没有人知道疫情的影响，但是收益率曲线还是准确的预测了萧条的发生。</p>
+<p align="center">
+<img src="pic/image-20220405200042576.png" alt="image-20220405200042576" style="zoom:80%;" />
+</p>
+<p>具体为什么收益率曲线反转会导致萧条我还不清楚，可以之后研究一下。</p>
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+    </article>
+</div>
+
+<script>
+(function () {
+    var tocLinks = document.querySelectorAll('.lab-toc nav a');
+    if (!tocLinks.length) return;
+
+    var headings = document.querySelectorAll('.lab-content h2, .lab-content h3');
+    if (!headings.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var id = entry.target.getAttribute('id');
+            if (!id) return;
+            tocLinks.forEach(function (l) { l.classList.remove('active'); });
+            var match = document.querySelector('.lab-toc nav a[href="#' + id + '"]');
+            if (match) match.classList.add('active');
+        });
+    }, {
+        rootMargin: '-10% 0px -80% 0px',
+        threshold: 0
+    });
+
+    headings.forEach(function (h) { observer.observe(h); });
+}());
+</script>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 <a href="https://yxr620.github.io/">Xiangrui Yang</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

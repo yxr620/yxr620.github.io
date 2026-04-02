@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Blog | Xiangrui Yang</title>
+<meta name="keywords" content="" />
+<meta name="description" content="PhD student at HKU focused on ML systems, storage, and HPC">
+<meta name="author" content="Xiangrui Yang">
+<link rel="canonical" href="https://yxr620.github.io/categories/blog/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://yxr620.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://yxr620.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://yxr620.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://yxr620.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://yxr620.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.159.1">
+<link rel="alternate" type="application/rss+xml" href="https://yxr620.github.io/categories/blog/index.xml">
+<link rel="alternate" hreflang="en" href="https://yxr620.github.io/categories/blog/" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="/css/custom.css" />
+<meta name="google-site-verification" content="x7_LCaHvViA9b_WVXqGPjUuaph9OSJR_Fl9-5aJV_fQ" /><meta property="og:title" content="Blog" />
+<meta property="og:description"
+  content="PhD student at HKU focused on ML systems, storage, and HPC" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yxr620.github.io/categories/blog/" />
+<meta property="og:image" content="https://yxr620.github.io/papermod-cover.png" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yxr620.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="Blog"/>
+<meta name="twitter:description" content="PhD student at HKU focused on ML systems, storage, and HPC"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://yxr620.github.io/" accesskey="h" title="Xiangrui Yang (Alt + H)">Xiangrui Yang</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://yxr620.github.io/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+<div class="list-page">
+    <h1 class="list-page-header">Blog</h1>
+    <a class="post-entry-link" href="https://yxr620.github.io/blog/interest_rate_behavior/" aria-label="利率行为（interest rate behavior）">
+        <div class="post-entry-meta">2022-02-26</div>
+        <h2 class="post-entry-title">利率行为（interest rate behavior）</h2>
+        <div class="post-entry-cats">blog</div>
+        <p class="post-entry-summary">0. 一些理解 根据《货币经济学》和理论上的推理，利率并不是由美联储决定的。市场上的利率会根据美联储的货币政策改变（例如货币供给量），但是市场上的利率是交易者的决策决定的，利率行为就是分析利率如何被决定的。总的来说有两种理论来解释利率的变化：
+投资组合选择理论
+流动性偏好理论
+1. 投资组合选择理论 1.1 基本假设 财富上升，则对债券需求数量上升 债券预期回报率（不是到期回报率，不是利率）上升，对债券需求数量上升 债券风险上升，对债券需求数量下降 债券流动性上升，对占全需求数量上升 1.2 债券需求供给曲线（以一年期贴现放行债券为例） 其他条件不变情况下：债券价格越低需求量越高
+其他条件不变情况下：债券价格越高供给量越高
+说明：这里说的债券价格是对于固定面值（par value/face value）的债券。例如面值为1000元的债券，一年后将偿付1000元，这里的价格是买这个特定1000元债券的价格
+根据上面所述的情况，可以画出债券的供需曲线，如下：
+在这个图中，纵坐标为债券的价格，同时可以衡量对于该债券的利率，因为利率和债券的价格成负相关。以一年期贴现发行的债券为例，利率$i = (F - P) / P$，其中$F$表示债券的面值，$P$表示债券现在的价格。
+要注意不同术语的表达方式。此处的利率表示已经在市场上的利率。
+预期利率是人们觉得之后的利率，如果预期利率上升，说明人们觉得之后债券的价格会下跌。
+预期回报率在这里可以理解为债券价值的变化率，也就是说预期回报率和债券的价格正相关。我认为不能像《货币金融学》把预期回报率和利率挂钩，最好把其当作不相关的变量。对于一年期的债券如果持有时间就是一年，那么预期回报率是不变，这也就是《货币金融学》中的观点。但是在分析供需的时候，应该认为持有者会在短期内卖掉债券，也就是只赚取债券价格变化中的差价。这也就是说，如果预期利率上升，那么预期回报率就下跌，即投资者认为以后债券价格会下跌。
+1.3 需求曲线的位移 下面表中显示了债券需求量变化的影响因素。
+影响因素 变化 需求量变化 财富 上升 上升 债券预期利率（见1.2） 上升 下降 预期通货膨胀 上升 下降 债券风险 上升 下降 债券流动性 上升 上升 需求量变化的导致需求曲线变化的情况如下：
+1.4 供给曲线分析 下表中显示了供给曲线的影响因素：
+影响因素 变化 供给变化 （对公司）预期盈利性 上升 上升 预期通货膨胀 上升 上升 政府赤字 上升 上升 2. 流动性偏好理论 2.1 基本假设 假定市场只有货币（$M$)和债券（$B$）两种资产
+</p>
+    </a>
+    <a class="post-entry-link" href="https://yxr620.github.io/blog/bond_interest/" aria-label="利率与债券">
+        <div class="post-entry-meta">2022-02-20</div>
+        <h2 class="post-entry-title">利率与债券</h2>
+        <div class="post-entry-cats">blog</div>
+        <p class="post-entry-summary">1. 一些概念 到期收益率（yield to maturity）：使债务工具所有的未来回报的现值与其今天价值相等的利率。
+回报率：$R = \frac{C &#43; P_{t &#43; 1} - P_t}{P_t} = \frac{C}{P_t} &#43; \frac{P_{t &#43; 1} - P_t}{P_t} = i_c &#43; g$
+其中$P_t$表示$t$时刻债券价格；$C$表示息票利息；$i_c$表示债券标注的利率；$g$表示资产增值
+注：不是所有债券通用的计算规则。
+名义利率（nominal interest rate）：$i$
+实际利率（real interest rate）：$r$
+通货膨胀率（inflation rate）：$\pi^e$
+上述三种变量的关系如下： $$ \begin{cases} i = r &#43; \pi^e &#43; r\pi^e \\\ r = i - \pi^e\frac{1 &#43; i}{1 &#43; \pi^e} \end{cases} $$
+2. 四种贷债券的分析 普通债券：到期归还本金和利息，其到期收益率的公式如下： $$ PV = \frac{CF}{(1 &#43; i)^n} $$
+​	$PV$为借款金额，即现值；$CF$为n年后还款额；$i$为到期收益率。
+</p>
+    </a>
+    <a class="post-entry-link" href="https://yxr620.github.io/blog/auto_invest/" aria-label="定投原理">
+        <div class="post-entry-meta">2022-02-19</div>
+        <h2 class="post-entry-title">定投原理</h2>
+        <div class="post-entry-cats">blog</div>
+        <p class="post-entry-summary">分析一个定投的原理并且做一些定投的实验。通过原理找出合适定投的产品，并且通过实验验证结论是否正确。
+1. 定投模型 定投就是每隔一定的时间就对一个投资产品进行固定金额的购买。为了能简化出来定投的数学模型，定义如下符号：
+$x$每次定投的金额 $0-T$总定投的时间 $\Delta T$每次定投间隔的时间 $f(t)$投资产品的价格关于时间的函数（例如一股$f(t)$元） 由定投的总时间和定投的间隔时间我们可以计算出定投的总次数$n = T / \Delta T$，那么投资的总金额就是$TV = nx = xT/\Delta T$。不妨设在$\Delta T$时刻进行第一次投资，那么第$i$次投资获得产品数量$m_i = x / f(i \Delta T)$，总共获得投资产品的数量为$M= \sum_{i = 1}^{n} m_i$。计算出总数量和总成本，就可以计算出平均成本$c$如下：
+$$c = TV / M\\= \frac{xn}{\sum_{i = i}^{n} \frac{x}{f(i \Delta T)}}\\= \frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}}$$已知如果想要投资获利，那么投资人的目标是降低手上每一份投资产品的均价尽量低，并且在卖出时的价格尽量高。定投平没有规定卖出的时间，因此定投策略本身无法控制卖出价格。根据上面的分可以看定投主要控制的是买入的平均价格。
+买入的平均价格是$c$，这个公式实际上是一个调和平均数的公式。定投的魔力也正是通过这个调和平均数表现出来。如果我们在任意一个时刻all in一个投资产品那么我们得到的产品价格是算数平均数。根据基础的不等式知识知道调和平均数&lt;算数平均数。用公式来说就是：
+$$\frac{n}{\sum_{i = 1}^{n} \frac{1}{f(i \Delta T)}} &lt; \frac{\sum_{i = 1}^n f(i \Delta T)}{n}$$右边的公式就是算出平均数，也就是随机一点all in的平均成本。
+</p>
+    </a>
+    <a class="post-entry-link" href="https://yxr620.github.io/blog/monetary/" aria-label="货币概述">
+        <div class="post-entry-meta">2022-02-14</div>
+        <h2 class="post-entry-title">货币概述</h2>
+        <div class="post-entry-cats">blog</div>
+        <p class="post-entry-summary">1. 概念 定义货币：在产品和服务支付以及债务偿还中被普遍接受的东西 货币的功能：交易媒介、记账单位、价值储存 支付体系的演进：商品货币、不兑现纸币、支票、电子支付、电子货币 货币的计量： M1：通货（currency）、支票账户存款、旅行者支票、其他支票存款
+M2：M1、小额定期存款、储蓄存款与货币市场账户、货币市场共同基金
+2. M1和M2货币数量 2.1 M1 M1的构成为通货、支票账户存款、旅行者支票、其他支票存款。这是《货币金融学》里面标准的定义，在之后的金融技术革新之后，其他支票存款被替换成了其他流动性存款（Other Liquidity Deposits）；此外美联储在之后公布的M1里面去掉了旅行者支票（本身占比就非常小，而且逐年递减）。
+根据实际情况进行调整之后M1的组成如下：
+通货（CURRSL） 活期存款（DEMDEPSL） 其他流动性存款（MDLM） 计算出来2021年的M1如下（单位billion，十亿美元）：
+上述三种组成在M1中的占比如下：
+</p>
+    </a>
+    <a class="post-entry-link" href="https://yxr620.github.io/blog/dow_jones/" aria-label="道琼斯工业指数">
+        <div class="post-entry-meta">2022-02-12</div>
+        <h2 class="post-entry-title">道琼斯工业指数</h2>
+        <div class="post-entry-cats">blog</div>
+        <p class="post-entry-summary">疫情之后的道琼斯工业指数
+道琼斯工业指数的增长率
+数据整理：google文档
+数据来源：Financial Forecast Center
+</p>
+    </a>
+    <footer class="page-footer">
+        <nav class="pagination">
+            <a class="next" href="https://yxr620.github.io/categories/blog/page/2/">Next Page »</a>
+        </nav>
+    </footer>
+</div>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 <a href="https://yxr620.github.io/">Xiangrui Yang</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

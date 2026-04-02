@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>银行业管理 | Xiangrui Yang</title>
+<meta name="keywords" content="" />
+<meta name="description" content="1. 银行资产负债表
+
+  
+      
+          资产
+          负债
+      
+  
+  
+      
+          准备金
+          支票存款
+      
+      
+          托收中款项
+          非交易存款
+      
+      
+          银行同业存款
+          借款
+      
+      
+          证券
+          银行资本
+      
+      
+          贷款
+          
+      
+      
+          其他资产
+          
+      
+  
+
+2. 银行基本业务
+资产转换：销售具有某组特征的负债并利用所得到的资金购买具有不同特征组合的资产。
+工具：T-账户（T-account）
+3. 银行的管理方案
+如果要使利润最大化银行要考虑到如下方面：流动性管理、资产管理、负债管理、资本充足性管理、信用风险管理、利率风险管理。
+3.1 流动性管理
+银行需要维持一定数量的准备金来应对存款外流，并且银行要时刻保持最低的法定准备金率。因此出现准备金不够的情况需要银行采取操作，具体可以采取如下操作：
+
+在联邦基金市场上向其他银行借款；
+出售证券；
+向美联储借款；
+减少贷款。
+
+由于出现准备金不足时采取的方式都可能将资产低价出售，因此银行愿意持有一定量的超额准备金来应对存款外流。考虑到准备金是没有利息收入的，因此银行不愿意持有，替代方案则是持有一定的高流动性的资产随时可以转换成现金应对存款外流，例如美国国债等。
+3.2 资产管理
+金融系统需要银行稳定的运行，因此对银行持有的资产需要有一定的限制。本质上来讲就是持有的资产需要尽量高回报率、低风险、高流动性。要实现这个目标具体来说有如下几种控制方式。
+
+寻找愿意支付高利率并且违约风险低的借款人发放贷款（信用风险管理）；
+购买高回报和低风险的证券；
+银行的资产必须多样化来降低风险；
+银行需要持有的资产要有比较高的流动性。
+
+银行在进行信用风险管理时要用到非常多的策略来达到放出的贷款违约率较低的目的。具体来讲有如下几点：
+
+甄别借款人（对企业和个人进行评估）；
+贷款专业化：银行在统一领域集中贷款，这样可以让银行了解该领域进而减少信息不对称；
+限制性条款的监督；
+长期客户关系（贷款承诺）：银行承诺在一定的时期内对企业发放贷款；
+抵押品与补偿余额：要求客户在银行的存款达到一定的金额再发放贷款，或者要求客户提供抵押品；
+信用配给：即使借款人愿意提供高利率也不发放贷款或者发放比要求更少的贷款。
+
+3.3 负债管理
+使用负债管理工具：隔夜贷款市场和可转让大额存单。隔夜贷款就是向其他大银行借款。大额可转让存单实际上也是向市场进行借款，即发放债券，并且该债券可以进行交易。
+3.4 资本充足性管理
+银行的资本相当于银行的净值并且有助于银行破产。当资本价值损失时银行在负债表上的银行资本也会减少，当减少到负数时就会资不抵债然后破产。银行资本较高可以防止破产，但是资本较高就表明股东的回报率较低。银行总资产的回报率为资本回报率（return on assets，ROA）。银行股东的回报率为股权回报率（return on equity，ROE）。资产和资本的比例为股本乘数（equity multiplier，EM）。这三者的计算如下：
+
+$$
+ROA = \frac{税后净利润}{资产}\\
+ROE = \frac{税后净利润}{股权资本}\\
+EM = \frac{资产}{股权资本}\\
+ROE = ROA \times EM
+$$
+
+提高资本比例：发行股份；减少股利，增加留存收益；减少贷款和负债。
+减少资本比例：回购股票；增加股利；增加负债和贷款。">
+<meta name="author" content="yxr620">
+<link rel="canonical" href="https://yxr620.github.io/blog/bank_management/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.199271f351c4b46f0d0536b6e2eb89a4766040c0e8df57f1a695c6570d8a4e0f.js" integrity="sha256-GZJx81HEtG8NBTa24uuJpHZgQMDo31fxppXGVw2KTg8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://yxr620.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://yxr620.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://yxr620.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://yxr620.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://yxr620.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.159.1">
+<link rel="alternate" hreflang="en" href="https://yxr620.github.io/blog/bank_management/" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="/css/custom.css" />
+<meta name="google-site-verification" content="x7_LCaHvViA9b_WVXqGPjUuaph9OSJR_Fl9-5aJV_fQ" /><meta property="og:title" content="银行业管理" />
+<meta property="og:description"
+  content="1. 银行资产负债表
+
+  
+      
+          资产
+          负债
+      
+  
+  
+      
+          准备金
+          支票存款
+      
+      
+          托收中款项
+          非交易存款
+      
+      
+          银行同业存款
+          借款
+      
+      
+          证券
+          银行资本
+      
+      
+          贷款
+          
+      
+      
+          其他资产
+          
+      
+  
+
+2. 银行基本业务
+资产转换：销售具有某组特征的负债并利用所得到的资金购买具有不同特征组合的资产。
+工具：T-账户（T-account）
+3. 银行的管理方案
+如果要使利润最大化银行要考虑到如下方面：流动性管理、资产管理、负债管理、资本充足性管理、信用风险管理、利率风险管理。
+3.1 流动性管理
+银行需要维持一定数量的准备金来应对存款外流，并且银行要时刻保持最低的法定准备金率。因此出现准备金不够的情况需要银行采取操作，具体可以采取如下操作：
+
+在联邦基金市场上向其他银行借款；
+出售证券；
+向美联储借款；
+减少贷款。
+
+由于出现准备金不足时采取的方式都可能将资产低价出售，因此银行愿意持有一定量的超额准备金来应对存款外流。考虑到准备金是没有利息收入的，因此银行不愿意持有，替代方案则是持有一定的高流动性的资产随时可以转换成现金应对存款外流，例如美国国债等。
+3.2 资产管理
+金融系统需要银行稳定的运行，因此对银行持有的资产需要有一定的限制。本质上来讲就是持有的资产需要尽量高回报率、低风险、高流动性。要实现这个目标具体来说有如下几种控制方式。
+
+寻找愿意支付高利率并且违约风险低的借款人发放贷款（信用风险管理）；
+购买高回报和低风险的证券；
+银行的资产必须多样化来降低风险；
+银行需要持有的资产要有比较高的流动性。
+
+银行在进行信用风险管理时要用到非常多的策略来达到放出的贷款违约率较低的目的。具体来讲有如下几点：
+
+甄别借款人（对企业和个人进行评估）；
+贷款专业化：银行在统一领域集中贷款，这样可以让银行了解该领域进而减少信息不对称；
+限制性条款的监督；
+长期客户关系（贷款承诺）：银行承诺在一定的时期内对企业发放贷款；
+抵押品与补偿余额：要求客户在银行的存款达到一定的金额再发放贷款，或者要求客户提供抵押品；
+信用配给：即使借款人愿意提供高利率也不发放贷款或者发放比要求更少的贷款。
+
+3.3 负债管理
+使用负债管理工具：隔夜贷款市场和可转让大额存单。隔夜贷款就是向其他大银行借款。大额可转让存单实际上也是向市场进行借款，即发放债券，并且该债券可以进行交易。
+3.4 资本充足性管理
+银行的资本相当于银行的净值并且有助于银行破产。当资本价值损失时银行在负债表上的银行资本也会减少，当减少到负数时就会资不抵债然后破产。银行资本较高可以防止破产，但是资本较高就表明股东的回报率较低。银行总资产的回报率为资本回报率（return on assets，ROA）。银行股东的回报率为股权回报率（return on equity，ROE）。资产和资本的比例为股本乘数（equity multiplier，EM）。这三者的计算如下：
+
+$$
+ROA = \frac{税后净利润}{资产}\\
+ROE = \frac{税后净利润}{股权资本}\\
+EM = \frac{资产}{股权资本}\\
+ROE = ROA \times EM
+$$
+
+提高资本比例：发行股份；减少股利，增加留存收益；减少贷款和负债。
+减少资本比例：回购股票；增加股利；增加负债和贷款。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yxr620.github.io/blog/bank_management/" />
+<meta property="og:image" content="https://yxr620.github.io/papermod-cover.png" /><meta property="article:section" content="blog" />
+
+<meta property="article:published_time" content="2022-04-25T12:17:01&#43;08:00" />
+
+<meta property="article:modified_time" content="2022-04-25T12:17:01&#43;08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yxr620.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="银行业管理"/>
+<meta name="twitter:description" content="1. 银行资产负债表
+
+  
+      
+          资产
+          负债
+      
+  
+  
+      
+          准备金
+          支票存款
+      
+      
+          托收中款项
+          非交易存款
+      
+      
+          银行同业存款
+          借款
+      
+      
+          证券
+          银行资本
+      
+      
+          贷款
+          
+      
+      
+          其他资产
+          
+      
+  
+
+2. 银行基本业务
+资产转换：销售具有某组特征的负债并利用所得到的资金购买具有不同特征组合的资产。
+工具：T-账户（T-account）
+3. 银行的管理方案
+如果要使利润最大化银行要考虑到如下方面：流动性管理、资产管理、负债管理、资本充足性管理、信用风险管理、利率风险管理。
+3.1 流动性管理
+银行需要维持一定数量的准备金来应对存款外流，并且银行要时刻保持最低的法定准备金率。因此出现准备金不够的情况需要银行采取操作，具体可以采取如下操作：
+
+在联邦基金市场上向其他银行借款；
+出售证券；
+向美联储借款；
+减少贷款。
+
+由于出现准备金不足时采取的方式都可能将资产低价出售，因此银行愿意持有一定量的超额准备金来应对存款外流。考虑到准备金是没有利息收入的，因此银行不愿意持有，替代方案则是持有一定的高流动性的资产随时可以转换成现金应对存款外流，例如美国国债等。
+3.2 资产管理
+金融系统需要银行稳定的运行，因此对银行持有的资产需要有一定的限制。本质上来讲就是持有的资产需要尽量高回报率、低风险、高流动性。要实现这个目标具体来说有如下几种控制方式。
+
+寻找愿意支付高利率并且违约风险低的借款人发放贷款（信用风险管理）；
+购买高回报和低风险的证券；
+银行的资产必须多样化来降低风险；
+银行需要持有的资产要有比较高的流动性。
+
+银行在进行信用风险管理时要用到非常多的策略来达到放出的贷款违约率较低的目的。具体来讲有如下几点：
+
+甄别借款人（对企业和个人进行评估）；
+贷款专业化：银行在统一领域集中贷款，这样可以让银行了解该领域进而减少信息不对称；
+限制性条款的监督；
+长期客户关系（贷款承诺）：银行承诺在一定的时期内对企业发放贷款；
+抵押品与补偿余额：要求客户在银行的存款达到一定的金额再发放贷款，或者要求客户提供抵押品；
+信用配给：即使借款人愿意提供高利率也不发放贷款或者发放比要求更少的贷款。
+
+3.3 负债管理
+使用负债管理工具：隔夜贷款市场和可转让大额存单。隔夜贷款就是向其他大银行借款。大额可转让存单实际上也是向市场进行借款，即发放债券，并且该债券可以进行交易。
+3.4 资本充足性管理
+银行的资本相当于银行的净值并且有助于银行破产。当资本价值损失时银行在负债表上的银行资本也会减少，当减少到负数时就会资不抵债然后破产。银行资本较高可以防止破产，但是资本较高就表明股东的回报率较低。银行总资产的回报率为资本回报率（return on assets，ROA）。银行股东的回报率为股权回报率（return on equity，ROE）。资产和资本的比例为股本乘数（equity multiplier，EM）。这三者的计算如下：
+
+$$
+ROA = \frac{税后净利润}{资产}\\
+ROE = \frac{税后净利润}{股权资本}\\
+EM = \frac{资产}{股权资本}\\
+ROE = ROA \times EM
+$$
+
+提高资本比例：发行股份；减少股利，增加留存收益；减少贷款和负债。
+减少资本比例：回购股票；增加股利；增加负债和贷款。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://yxr620.github.io/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "银行业管理",
+      "item": "https://yxr620.github.io/blog/bank_management/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "银行业管理",
+  "name": "银行业管理",
+  "description": "1. 银行资产负债表 资产 负债 准备金 支票存款 托收中款项 非交易存款 银行同业存款 借款 证券 银行资本 贷款 其他资产 2. 银行基本业务 资产转换：销售具有某组特征的负债并利用所得到的资金购买具有不同特征组合的资产。\n工具：T-账户（T-account）\n3. 银行的管理方案 如果要使利润最大化银行要考虑到如下方面：流动性管理、资产管理、负债管理、资本充足性管理、信用风险管理、利率风险管理。\n3.1 流动性管理 银行需要维持一定数量的准备金来应对存款外流，并且银行要时刻保持最低的法定准备金率。因此出现准备金不够的情况需要银行采取操作，具体可以采取如下操作：\n在联邦基金市场上向其他银行借款； 出售证券； 向美联储借款； 减少贷款。 由于出现准备金不足时采取的方式都可能将资产低价出售，因此银行愿意持有一定量的超额准备金来应对存款外流。考虑到准备金是没有利息收入的，因此银行不愿意持有，替代方案则是持有一定的高流动性的资产随时可以转换成现金应对存款外流，例如美国国债等。\n3.2 资产管理 金融系统需要银行稳定的运行，因此对银行持有的资产需要有一定的限制。本质上来讲就是持有的资产需要尽量高回报率、低风险、高流动性。要实现这个目标具体来说有如下几种控制方式。\n寻找愿意支付高利率并且违约风险低的借款人发放贷款（信用风险管理）； 购买高回报和低风险的证券； 银行的资产必须多样化来降低风险； 银行需要持有的资产要有比较高的流动性。 银行在进行信用风险管理时要用到非常多的策略来达到放出的贷款违约率较低的目的。具体来讲有如下几点：\n甄别借款人（对企业和个人进行评估）； 贷款专业化：银行在统一领域集中贷款，这样可以让银行了解该领域进而减少信息不对称； 限制性条款的监督； 长期客户关系（贷款承诺）：银行承诺在一定的时期内对企业发放贷款； 抵押品与补偿余额：要求客户在银行的存款达到一定的金额再发放贷款，或者要求客户提供抵押品； 信用配给：即使借款人愿意提供高利率也不发放贷款或者发放比要求更少的贷款。 3.3 负债管理 使用负债管理工具：隔夜贷款市场和可转让大额存单。隔夜贷款就是向其他大银行借款。大额可转让存单实际上也是向市场进行借款，即发放债券，并且该债券可以进行交易。\n3.4 资本充足性管理 银行的资本相当于银行的净值并且有助于银行破产。当资本价值损失时银行在负债表上的银行资本也会减少，当减少到负数时就会资不抵债然后破产。银行资本较高可以防止破产，但是资本较高就表明股东的回报率较低。银行总资产的回报率为资本回报率（return on assets，ROA）。银行股东的回报率为股权回报率（return on equity，ROE）。资产和资本的比例为股本乘数（equity multiplier，EM）。这三者的计算如下：\n$$\rROA = \\frac{税后净利润}{资产}\\\\\rROE = \\frac{税后净利润}{股权资本}\\\\\rEM = \\frac{资产}{股权资本}\\\\\rROE = ROA \\times EM\r$$\r提高资本比例：发行股份；减少股利，增加留存收益；减少贷款和负债。\r减少资本比例：回购股票；增加股利；增加负债和贷款。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "1. 银行资产负债表 资产 负债 准备金 支票存款 托收中款项 非交易存款 银行同业存款 借款 证券 银行资本 贷款 其他资产 2. 银行基本业务 资产转换：销售具有某组特征的负债并利用所得到的资金购买具有不同特征组合的资产。\n工具：T-账户（T-account）\n3. 银行的管理方案 如果要使利润最大化银行要考虑到如下方面：流动性管理、资产管理、负债管理、资本充足性管理、信用风险管理、利率风险管理。\n3.1 流动性管理 银行需要维持一定数量的准备金来应对存款外流，并且银行要时刻保持最低的法定准备金率。因此出现准备金不够的情况需要银行采取操作，具体可以采取如下操作：\n在联邦基金市场上向其他银行借款； 出售证券； 向美联储借款； 减少贷款。 由于出现准备金不足时采取的方式都可能将资产低价出售，因此银行愿意持有一定量的超额准备金来应对存款外流。考虑到准备金是没有利息收入的，因此银行不愿意持有，替代方案则是持有一定的高流动性的资产随时可以转换成现金应对存款外流，例如美国国债等。\n3.2 资产管理 金融系统需要银行稳定的运行，因此对银行持有的资产需要有一定的限制。本质上来讲就是持有的资产需要尽量高回报率、低风险、高流动性。要实现这个目标具体来说有如下几种控制方式。\n寻找愿意支付高利率并且违约风险低的借款人发放贷款（信用风险管理）； 购买高回报和低风险的证券； 银行的资产必须多样化来降低风险； 银行需要持有的资产要有比较高的流动性。 银行在进行信用风险管理时要用到非常多的策略来达到放出的贷款违约率较低的目的。具体来讲有如下几点：\n甄别借款人（对企业和个人进行评估）； 贷款专业化：银行在统一领域集中贷款，这样可以让银行了解该领域进而减少信息不对称； 限制性条款的监督； 长期客户关系（贷款承诺）：银行承诺在一定的时期内对企业发放贷款； 抵押品与补偿余额：要求客户在银行的存款达到一定的金额再发放贷款，或者要求客户提供抵押品； 信用配给：即使借款人愿意提供高利率也不发放贷款或者发放比要求更少的贷款。 3.3 负债管理 使用负债管理工具：隔夜贷款市场和可转让大额存单。隔夜贷款就是向其他大银行借款。大额可转让存单实际上也是向市场进行借款，即发放债券，并且该债券可以进行交易。\n3.4 资本充足性管理 银行的资本相当于银行的净值并且有助于银行破产。当资本价值损失时银行在负债表上的银行资本也会减少，当减少到负数时就会资不抵债然后破产。银行资本较高可以防止破产，但是资本较高就表明股东的回报率较低。银行总资产的回报率为资本回报率（return on assets，ROA）。银行股东的回报率为股权回报率（return on equity，ROE）。资产和资本的比例为股本乘数（equity multiplier，EM）。这三者的计算如下：\n$$\rROA = \\frac{税后净利润}{资产}\\\\\rROE = \\frac{税后净利润}{股权资本}\\\\\rEM = \\frac{资产}{股权资本}\\\\\rROE = ROA \\times EM\r$$\r提高资本比例：发行股份；减少股利，增加留存收益；减少贷款和负债。\r减少资本比例：回购股票；增加股利；增加负债和贷款。\n3.5 利率风险管理 银行的资产收益和利率有很大关系，因此需要关注利率变化对银行总资产的影响。通常来讲，利率上升会让银行的利润下跌，利率下降会让银行的利润上涨。因此要分析银行的资产和负债对利率的敏感性。主要方式有缺口分析和久期分析。\n4. 表外业务（off-balance-sheet activity） 表外业务主要有：\n贷款出售（倒卖）； 金融服务费：帮客户买卖外汇、承销证券等； 交易活动与风险管理：期货、期权等。 ",
+  "wordCount" : "82",
+  "inLanguage": "en",
+  "datePublished": "2022-04-25T12:17:01+08:00",
+  "dateModified": "2022-04-25T12:17:01+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "yxr620"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yxr620.github.io/blog/bank_management/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiangrui Yang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yxr620.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://yxr620.github.io/" accesskey="h" title="Xiangrui Yang (Alt + H)">Xiangrui Yang</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://yxr620.github.io/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+<div class="lab-page">
+    <aside class="lab-sidebar">
+        <div class="lab-breadcrumb">
+            <a href="/blog/">~/blog</a>&nbsp;/
+        </div>
+        <div class="lab-toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-银行资产负债表">1. 银行资产负债表</a></li>
+        <li><a href="#2-银行基本业务">2. 银行基本业务</a></li>
+        <li><a href="#3-银行的管理方案">3. 银行的管理方案</a></li>
+        <li><a href="#4-表外业务off-balance-sheet-activity">4. 表外业务（off-balance-sheet activity）</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+
+        <div class="lab-meta">
+            <div class="lab-date">2022-04-25</div>
+        </div>
+    </aside>
+
+    <article class="lab-content post-content">
+        
+        <div class="lab-mobile-meta">
+            <span>2022-04-25</span>
+        </div>
+
+        <header class="lab-header">
+            <h1>银行业管理</h1>
+        </header>
+
+        <h3 id="1-银行资产负债表">1. 银行资产负债表</h3>
+<table>
+  <thead>
+      <tr>
+          <th>资产</th>
+          <th>负债</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>准备金</td>
+          <td>支票存款</td>
+      </tr>
+      <tr>
+          <td>托收中款项</td>
+          <td>非交易存款</td>
+      </tr>
+      <tr>
+          <td>银行同业存款</td>
+          <td>借款</td>
+      </tr>
+      <tr>
+          <td>证券</td>
+          <td>银行资本</td>
+      </tr>
+      <tr>
+          <td>贷款</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>其他资产</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="2-银行基本业务">2. 银行基本业务</h3>
+<p><strong>资产转换</strong>：销售具有某组特征的负债并利用所得到的资金购买具有不同特征组合的资产。</p>
+<p><strong>工具</strong>：T-账户（T-account）</p>
+<h3 id="3-银行的管理方案">3. 银行的管理方案</h3>
+<p>如果要使利润最大化银行要考虑到如下方面：流动性管理、资产管理、负债管理、资本充足性管理、信用风险管理、利率风险管理。</p>
+<h4 id="31-流动性管理">3.1 流动性管理</h4>
+<p>银行需要维持一定数量的准备金来应对存款外流，并且银行要时刻保持最低的法定准备金率。因此出现准备金不够的情况需要银行采取操作，具体可以采取如下操作：</p>
+<ol>
+<li>在联邦基金市场上向其他银行借款；</li>
+<li>出售证券；</li>
+<li>向美联储借款；</li>
+<li>减少贷款。</li>
+</ol>
+<p>由于出现准备金不足时采取的方式都可能将资产低价出售，因此银行愿意持有一定量的超额准备金来应对存款外流。考虑到准备金是没有利息收入的，因此银行不愿意持有，替代方案则是持有一定的高流动性的资产随时可以转换成现金应对存款外流，例如美国国债等。</p>
+<h4 id="32-资产管理">3.2 资产管理</h4>
+<p>金融系统需要银行稳定的运行，因此对银行持有的资产需要有一定的限制。本质上来讲就是持有的资产需要尽量<strong>高回报率</strong>、<strong>低风险</strong>、<strong>高流动性</strong>。要实现这个目标具体来说有如下几种控制方式。</p>
+<ol>
+<li>寻找愿意支付高利率并且违约风险低的借款人发放贷款（信用风险管理）；</li>
+<li>购买高回报和低风险的证券；</li>
+<li>银行的资产必须多样化来降低风险；</li>
+<li>银行需要持有的资产要有比较高的流动性。</li>
+</ol>
+<p>银行在进行信用风险管理时要用到非常多的策略来达到放出的贷款违约率较低的目的。具体来讲有如下几点：</p>
+<ol>
+<li>甄别借款人（对企业和个人进行评估）；</li>
+<li>贷款专业化：银行在统一领域集中贷款，这样可以让银行了解该领域进而减少信息不对称；</li>
+<li>限制性条款的监督；</li>
+<li>长期客户关系（贷款承诺）：银行承诺在一定的时期内对企业发放贷款；</li>
+<li>抵押品与补偿余额：要求客户在银行的存款达到一定的金额再发放贷款，或者要求客户提供抵押品；</li>
+<li>信用配给：即使借款人愿意提供高利率也不发放贷款或者发放比要求更少的贷款。</li>
+</ol>
+<h4 id="33-负债管理">3.3 负债管理</h4>
+<p>使用负债管理工具：隔夜贷款市场和可转让大额存单。隔夜贷款就是向其他大银行借款。大额可转让存单实际上也是向市场进行借款，即发放债券，并且该债券可以进行交易。</p>
+<h4 id="34-资本充足性管理">3.4 资本充足性管理</h4>
+<p>银行的资本相当于银行的净值并且有助于银行破产。当资本价值损失时银行在负债表上的银行资本也会减少，当减少到负数时就会资不抵债然后破产。银行资本较高可以防止破产，但是资本较高就表明股东的回报率较低。银行总资产的回报率为资本回报率（return on assets，ROA）。银行股东的回报率为股权回报率（return on equity，ROE）。资产和资本的比例为股本乘数（equity multiplier，EM）。这三者的计算如下：</p>
+<div>
+$$
+ROA = \frac{税后净利润}{资产}\\
+ROE = \frac{税后净利润}{股权资本}\\
+EM = \frac{资产}{股权资本}\\
+ROE = ROA \times EM
+$$
+</div>
+提高资本比例：发行股份；减少股利，增加留存收益；减少贷款和负债。
+<p>减少资本比例：回购股票；增加股利；增加负债和贷款。</p>
+<h4 id="35-利率风险管理">3.5 利率风险管理</h4>
+<p>银行的资产收益和利率有很大关系，因此需要关注利率变化对银行总资产的影响。通常来讲，利率上升会让银行的利润下跌，利率下降会让银行的利润上涨。因此要分析银行的资产和负债对利率的敏感性。主要方式有缺口分析和久期分析。</p>
+<h3 id="4-表外业务off-balance-sheet-activity">4. 表外业务（off-balance-sheet activity）</h3>
+<p>表外业务主要有：</p>
+<ul>
+<li>贷款出售（倒卖）；</li>
+<li>金融服务费：帮客户买卖外汇、承销证券等；</li>
+<li>交易活动与风险管理：期货、期权等。</li>
+</ul>
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+    </article>
+</div>
+
+<script>
+(function () {
+    var tocLinks = document.querySelectorAll('.lab-toc nav a');
+    if (!tocLinks.length) return;
+
+    var headings = document.querySelectorAll('.lab-content h2, .lab-content h3');
+    if (!headings.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var id = entry.target.getAttribute('id');
+            if (!id) return;
+            tocLinks.forEach(function (l) { l.classList.remove('active'); });
+            var match = document.querySelector('.lab-toc nav a[href="#' + id + '"]');
+            if (match) match.classList.add('active');
+        });
+    }, {
+        rootMargin: '-10% 0px -80% 0px',
+        threshold: 0
+    });
+
+    headings.forEach(function (h) { observer.observe(h); });
+}());
+</script>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 <a href="https://yxr620.github.io/">Xiangrui Yang</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
