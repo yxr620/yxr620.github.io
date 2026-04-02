@@ -51,7 +51,7 @@ description: "PhD Student at HKU / ML Systems / Storage / HPC"
 </details>
 
 <details>
-<summary>Talks & Presentations</summary>
+<summary>Talks &amp; Presentations</summary>
 <ul style="padding-top:0.5rem">
 <li>ICME'25, IEEE International Conference on Multimedia &amp; Expo 2025, Nantes, France. <a href="https://whova.com/embedded/session/hlWY6K3rL7pHvG8Yd1TfjYJVgDEZvOuEPKWGmeuUbIQ%3D/4654604/?widget=primary">Website</a></li>
 <li>FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. <a href="https://www.youtube.com/watch?v=6dGa7Ol8Ryk">Video</a></li>
@@ -109,7 +109,7 @@ description: "PhD Student at HKU / ML Systems / Storage / HPC"
 </details>
 
 <details>
-<summary>Certificates & Awards</summary>
+<summary>Certificates &amp; Awards</summary>
 <div style="padding-top:0.5rem">
 <h3>Awards</h3>
 <ul>
