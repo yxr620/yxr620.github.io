@@ -1,0 +1,36 @@
+{{- define "main" }}
+<div class="list-page">
+    {{- if .Title }}
+    <h1 class="list-page-header">{{ .Title }}</h1>
+    {{- end }}
+
+    {{- $pages := union .RegularPages .Sections }}
+    {{- $paginator := .Paginate $pages }}
+
+    {{- range $paginator.Pages }}
+    <a class="post-entry-link" href="{{ .Permalink }}">
+        <div class="post-entry-meta">{{ .Date.Format "2006-01-02" }}</div>
+        <h2 class="post-entry-title">{{ .Title }}</h2>
+        {{- with .Params.categories }}
+        <div class="post-entry-cats">{{ delimit . " · " }}</div>
+        {{- end }}
+        {{- if .Summary }}
+        <p class="post-entry-summary">{{ .Summary | plainify | htmlUnescape }}</p>
+        {{- end }}
+    </a>
+    {{- end }}
+
+    {{- if gt $paginator.TotalPages 1 }}
+    <footer class="page-footer">
+        <nav class="pagination">
+            {{- if $paginator.HasPrev }}
+            <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
+            {{- end }}
+            {{- if $paginator.HasNext }}
+            <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
+            {{- end }}
+        </nav>
+    </footer>
+    {{- end }}
+</div>
+{{- end }}
