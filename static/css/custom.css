@@ -498,8 +498,6 @@ body {
     background-clip: text;
 }
 
-/* Keep h1 text above the watermark */
-
 /* "XY" faint watermark */
 .dark .cv-header::before {
     content: "XY";
@@ -516,8 +514,6 @@ body {
     user-select: none;
     z-index: 0;
 }
-
-/* Ensure header has stacking context for watermark */
 
 /* Tag pill — cyan border + text in dark mode */
 .dark .cv-subtitle {
