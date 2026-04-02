@@ -698,7 +698,6 @@ body {
     color: inherit;
     padding: 1.1rem 0;
     border-bottom: 1px solid var(--border);
-    transition: opacity 0.15s ease;
 }
 
 .post-entry-link:hover .post-entry-title {

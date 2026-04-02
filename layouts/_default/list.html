@@ -8,7 +8,7 @@
     {{- $paginator := .Paginate $pages }}
 
     {{- range $paginator.Pages }}
-    <a class="post-entry-link" href="{{ .Permalink }}">
+    <a class="post-entry-link" href="{{ .Permalink }}" aria-label="{{ .Title | plainify }}">
         <div class="post-entry-meta">{{ .Date.Format "2006-01-02" }}</div>
         <h2 class="post-entry-title">{{ .Title }}</h2>
         {{- with .Params.categories }}
