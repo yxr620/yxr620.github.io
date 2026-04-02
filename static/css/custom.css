@@ -794,6 +794,7 @@ body {
 .lab-sidebar {
     position: sticky;
     top: 5rem;
+    align-self: start;
     height: fit-content;
     max-height: calc(100vh - 6rem);
     overflow-y: auto;
