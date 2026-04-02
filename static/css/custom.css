@@ -134,7 +134,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.55rem;
-    margin-top: 0.9rem;
+    margin: 0;
     padding: 0.45rem 0.8rem;
     border: 1px solid var(--border);
     border-radius: 999px;
@@ -145,12 +145,20 @@ body {
     text-transform: uppercase;
 }
 
+.cv-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 0.9rem;
+    margin-top: 0.9rem;
+}
+
 .cv-quick-links {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.4rem;
-    margin-top: 0.75rem;
+    margin: 0;
 }
 
 .cv-quick-links a {
@@ -431,6 +439,10 @@ body {
     .cv-subtitle {
         max-width: 100%;
         line-height: 1.6;
+    }
+
+    .cv-meta-row {
+        gap: 0.55rem 0.75rem;
     }
 
     .cv-hero {

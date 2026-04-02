@@ -1,6 +1,6 @@
 ---
 title: "Xiangrui Yang"
-description: "PhD Student at HKU / ML Systems / Storage / HPC"
+description: "PhD Student at HKU"
 ---
 
 <div class="cv-hero">

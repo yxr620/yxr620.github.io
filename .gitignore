@@ -7,3 +7,6 @@ resources/_gen/
 
 # macOS
 .DS_Store
+
+# Visual brainstorming session files
+.superpowers/
