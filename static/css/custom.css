@@ -478,3 +478,53 @@ body {
         transform: translateY(0);
     }
 }
+
+/* ============================================================
+   TYPOGRAPHIC DRAMA — Homepage header (dark mode only)
+   ============================================================ */
+
+/* Gradient name fill */
+.dark .cv-header h1 {
+    font-size: clamp(3.5rem, 12vw, 5.5rem);
+    letter-spacing: -0.06em;
+    line-height: 0.88;
+    background: linear-gradient(100deg, #dde2ec 30%, #6a80b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Keep h1 text above the watermark */
+.cv-header h1 {
+    position: relative;
+    z-index: 1;
+}
+
+/* "XY" faint watermark */
+.dark .cv-header::before {
+    content: "XY";
+    position: absolute;
+    right: -0.5rem;
+    top: -1rem;
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", monospace;
+    font-size: 9rem;
+    font-weight: 700;
+    color: rgba(0, 229, 192, 0.035);
+    letter-spacing: -0.06em;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+}
+
+/* Ensure header has stacking context for watermark */
+.cv-header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Tag pill — cyan border + text in dark mode */
+.dark .cv-subtitle {
+    border-color: rgba(0, 229, 192, 0.3);
+    color: var(--cv-accent);
+}
