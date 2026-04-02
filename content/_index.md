@@ -6,7 +6,14 @@ description: "PhD Student at HKU / ML Systems / Storage / HPC"
 <div class="cv-hero">
 <div class="cv-hero-text">
 <div class="cv-hero-kicker">About Me</div>
-<p class="cv-hero-bio">I am a first-year PhD student at the University of Hong Kong, advised by Professor <a href="https://yimingqiu.me/">Yiming Qiu</a>. I received my Master's from <strong>HUST</strong> (advised by <a href="http://english.cs.hust.edu.cn/info/1464/1194.htm">Qiang Cao</a>) and my Bachelor's from <strong>SYSU</strong> (advised by <a href="https://cse.sysu.edu.cn/content/2951">Yuedong Yang</a>). My research focuses on ML systems, storage, and high-performance computing.</p>
+<details class="cv-hero-bio-expand">
+<summary>PhD @ HKU, advised by Yiming Qiu. MSc @ HUST · BSc @ SYSU. Research: ML systems, storage, HPC.</summary>
+<div class="cv-hero-bio-full">
+<p>PhD student @ HKU, advised by Prof. Yiming Qiu. MSc CS @ HUST (adv. Prof. Qiang Cao) · BSc CS @ SYSU (adv. Prof. Yuedong Yang).</p>
+<p>Research: optimizing ML systems and HPC — CUDA, DGL, sparse matrix acceleration. Explored sparse ops in ad-ranking systems at Tencent.</p>
+<p>Outside academia: economics and investment.</p>
+</div>
+</details>
 </div>
 <div class="cv-hero-photo">
 <div class="cv-hero-photo-frame">
@@ -31,106 +38,90 @@ description: "PhD Student at HKU / ML Systems / Storage / HPC"
 - [PMLDS: An LSM-tree Direct Managed Storage for Key-value Stores on Byte-addressable Devices](https://dl.acm.org/doi/10.1145/3605573.3605629)
 - [Leveraging Orbital Information and Atomic Feature in Deep Learning Model](https://arxiv.org/abs/2211.11543)
 
----
+<details>
+<summary>Education</summary>
+<div style="padding-top:0.5rem">
+<h3><a href="https://www.hku.hk/">University of Hong Kong</a></h3>
+<p><em>PhD, Computer Science</em><br><strong>2025 – present</strong> · adv. Prof. Yiming Qiu</p>
+<h3>Huazhong University of Science and Technology</h3>
+<p><em>MSc, Computer Science</em><br><strong>2022 – 2025</strong> · Outstanding Graduate (Top 20%)</p>
+<h3>Sun Yat-sen University</h3>
+<p><em>BSc, Computer Science</em><br><strong>2018 – 2022</strong></p>
+</div>
+</details>
 
-## Education Background
+<details>
+<summary>Talks & Presentations</summary>
+<ul style="padding-top:0.5rem">
+<li>ICME'25, IEEE International Conference on Multimedia &amp; Expo 2025, Nantes, France. <a href="https://whova.com/embedded/session/hlWY6K3rL7pHvG8Yd1TfjYJVgDEZvOuEPKWGmeuUbIQ%3D/4654604/?widget=primary">Website</a></li>
+<li>FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. <a href="https://www.youtube.com/watch?v=6dGa7Ol8Ryk">Video</a></li>
+<li>SoCC'24, 15th ACM Symposium on Cloud Computing, Redmond, Washington.</li>
+<li>HiPEAC'25, 20th High Performance, Edge And Cloud computing, Barcelona, Spain.</li>
+</ul>
+</details>
 
-### **University of Hong Kong**  
-*Department of Computer Science, PhD*  
-**Duration**: Nov. 2025 - Now  
-**Supervisor**: Professor Yiming Qiu
+<details>
+<summary>Experience</summary>
+<div style="padding-top:0.5rem">
+<h3><a href="https://www.tencent.com/en-us/">Tencent</a></h3>
+<p><em>Advertising Engineering — Intern</em><br><strong>May 2024 – Sep 2024 &amp; Apr 2025 – Jun 2025</strong> · Shenzhen</p>
+<ul>
+<li>int8 quantization in ad scoring system: &gt;30% GPU kernel speedup, &gt;2% system throughput gain.</li>
+<li>Added latency-analysis logs to ad recall system; tuned parameters to raise QPS from 10,000 to 15,000.</li>
+</ul>
+<h3><a href="https://www.sqhyfund.com/">Shengquan Hengyuan Investment</a></h3>
+<p><em>Quantitative Finance Research — Intern</em><br><strong>Jun 2023 – Aug 2023</strong> · Nanjing</p>
+<ul>
+<li>&gt;30% annual cumulative abnormal return using high- and low-frequency signals.</li>
+<li>Accelerated time-series and multi-factor model training with GPU servers.</li>
+</ul>
+<h3><a href="https://www.miracleplus.com/en/">Miracle Plus</a></h3>
+<p><em>Investment &amp; Operations — Intern</em><br><strong>May 2023 – Jun 2023</strong> · Beijing</p>
+<ul>
+<li>Led diligence on a networking-industry startup that closed a Series A in the tens of millions.</li>
+</ul>
+<h3><a href="http://biomed.nscc-gz.cn/sail/en:research">SYSU AI4Science</a></h3>
+<p><em>Data Analyst</em><br><strong>Jan 2022 – Jun 2022</strong> · Guangzhou</p>
+<ul>
+<li>Predicted Synthetic Lethality using random-walk + graph convolution with multi-view fusion.</li>
+<li>Built message-passing models on CATL crystal database to predict physical properties.</li>
+</ul>
+</div>
+</details>
 
-### **Huazhong University of Science and Technology**  
-*School of Computer Science and Technology, Master Degree*  
-**Duration**: Sep. 2022 - Jun. 2025  
-**Honor**: Outstanding Graduate (Top 20\%) 
+<details>
+<summary>Academic Projects</summary>
+<div style="padding-top:0.5rem">
+<h3>Model Optimization</h3>
+<ul>
+<li>Profiled DGL conv bottlenecks with Nsight; optimized GCN normalization for a 30% speedup over DGL.</li>
+<li>C++/CUDA extensions for Python; CUDA operator overloading.</li>
+</ul>
+<h3>Reed-Solomon Code Optimization</h3>
+<ul>
+<li>Compared wide- vs narrow-stripe erasure codes (ISA-L / Jerasure); reached 128 Gbps single-node throughput via OpenMP.</li>
+</ul>
+<h3>SSD Optimization</h3>
+<ul>
+<li>Built SSDTEST to characterize performance degradation; developed I/O scheduler to control tail latency.</li>
+</ul>
+</div>
+</details>
 
-### **Sun Yat-sen University**  
-*School of Computer Science and Engineering, Bachelor Degree*  
-**Duration**: Sep. 2018 - Jun. 2022 
-
----
-
-## Talks & Presentations
-
-- ICME'25, IEEE International Conference on Multimedia & Expo 2025, Nantes, France. [Website](https://whova.com/embedded/session/hlWY6K3rL7pHvG8Yd1TfjYJVgDEZvOuEPKWGmeuUbIQ%3D/4654604/?widget=primary)
-- FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. [Video](https://www.youtube.com/watch?v=6dGa7Ol8Ryk)
-- SoCC'24, 15th ACM Symposium on Cloud Computing, Redmond, Washington.
-- HiPEAC'25, 20th High Performance, Edge And Cloud computing, Barcelona, Spain.
-
----
-
-
-## Internship
-
-### [Tencent](https://www.tencent.com/en-us/)
-*Advertising Engineering Department Intern*  
-**Duration**: May. 2024 - Sep. 2024  & Apr. 2025 - Jun. 2025  
-**Location**: Shenzhen  
-
-- Used int8 quantization in Advertisement scoring system, achieving over 30\% time reduction on GPU kernel functions and over 2\% system throughput.
-- Added new time-consuming analysis logs to the advertising recall system and adjusted the parameter settings to increase the QPS from 10,000 to 15,000.
-
-### [Shengquan Hengyuan Investment Company](https://www.sqhyfund.com/)
-
-*Quantitative Finance Researcher Intern*  
-**Duration**: Jun. 2023 - Aug. 2023  
-**Location**: Nanjing 
-
-
-- Achieved annual cumulative abnormal return of over 30\% using both high and low frequency trading information.
-- Participated in configuring the training environment for GPU servers and accelerated the training process of time series models and multi-factor models with GPU servers.
-
-
-### [Miracle Plus](https://www.miracleplus.com/en/)
-*Investment and Operations Assistant Intern*  
-**Duration**: May. 2023 - Jun. 2023  
-**Location**: Beijing
-
-- Invested in an important startup in networking industry, with a Series A funding round in the tens of millions.
-
-
-### [SYSU AI4Science](http://biomed.nscc-gz.cn/sail/en:research)
-
-*Data Analyst*  
-**Duration**: Jan. 2022 - Jun. 2022  
-**Location**: Guangzhou  
-
-- Extracted genetic relationships using random walking, and predicted Synthetic Lethality using a model constructed on a graph convolution network combined with a multi-view method.
-- Used crystal database provided by Contemporary Amperex Technology Co. Limited to build message passing model to predict the physical characteristics of crystals.
-
-
----
-
-## Academic Projects
-
-### **Model Optimization Works**  
-- Analyzed the bottlenecks in the convolutional modules of DGL using tools such as Nsight System and Nsight Compute, optimized the normalization module in Graph Convolutional Networks (GCN) based on sampling results, achieving a 30\% improvement over DGL
-- Proficient in using the cpp\_extension tool to write C libraries for Python and capable of implementing CUDA operator overloading.
-- Developed deep learning models using the deep graph model library DGL and got familiar with common Python libraries such as Pandas, Numpy, and Pytorch. 
-- Skilled in using the Linux development environment and environment control tools like Conda and Docker.
-
-### **Reed-Solomon Code Optimization**  
-- Analyzed the performance of wide-stripe and narrow-stripe erasure codes using the ISA-L and Jerasure encoding libraries, and compared the underlying finite field implementations.
-- Achieved single node encoding throughput of 128 Gbps using existing RS encoding libraries with an OpenMP multithread implementation.
-
-### **Solid-State Drive Optimization**  
-- Developed SSDTEST to evaluate the performance of SSDs and the performance degradation to further modeling this phenomenon.
-- Developed SSD IO scheduler to control the tail latency of SSD especially during the performance degradation.
-
----
-
-## Certificates and Awards
-
-### Awards
-- Sangfor Scholarship (Apr. 2024)
-- Huazhong University of Science and Technology Scholarship, Second Prize (Oct. 2023)
-- Distinguished Activist in Community Affairs (Oct. 2023)
-- Sun Yat-sen University Scholarship, Second Prize (Oct. 2021)
-- 2019 ACM-ICPC Sun Yat-sen University Competition, Second Prize, Guangzhou (Oct. 2019)
-
-
-### Certificates
-- IELTS (International English Language Testing System) 7.0
-- GRE (Graduate Record Examinations) 320
-- TOEFL (Test of English as a Foreign Language) 106
+<details>
+<summary>Certificates & Awards</summary>
+<div style="padding-top:0.5rem">
+<h3>Awards</h3>
+<ul>
+<li>Sangfor Scholarship (Apr. 2024)</li>
+<li>HUST Scholarship, Second Prize (Oct. 2023)</li>
+<li>Distinguished Activist in Community Affairs (Oct. 2023)</li>
+<li>SYSU Scholarship, Second Prize (Oct. 2021)</li>
+<li>2019 ACM-ICPC SYSU Competition, Second Prize (Oct. 2019)</li>
+</ul>
+<h3>Certificates</h3>
+<ul>
+<li>IELTS 7.0 · GRE 320 · TOEFL 106</li>
+</ul>
+</div>
+</details>
