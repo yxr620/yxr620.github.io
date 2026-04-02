@@ -1,0 +1,64 @@
+{{- define "main" }}
+<div class="lab-page">
+    <aside class="lab-sidebar">
+        <div class="lab-breadcrumb">
+            <a href="/blog/">~/blog</a>&nbsp;/
+        </div>
+
+        {{- with .TableOfContents }}
+        <div class="lab-toc">
+            {{ . }}
+        </div>
+        {{- end }}
+
+        <div class="lab-meta">
+            <div class="lab-date">{{ .Date.Format "2006-01-02" }}</div>
+            {{- with .Params.categories }}
+            <div>{{- range . }}<span class="lab-tag">{{ . }}</span> {{- end }}</div>
+            {{- end }}
+        </div>
+    </aside>
+
+    <article class="lab-content post-content">
+        {{/* Mobile-only meta — shown above title on small screens */}}
+        <div class="lab-mobile-meta">
+            <span>{{ .Date.Format "2006-01-02" }}</span>
+            {{- with .Params.categories }}
+            {{- range . }}<span class="lab-tag">{{ . }}</span>{{- end }}
+            {{- end }}
+        </div>
+
+        <header class="lab-header">
+            <h1>{{ .Title }}</h1>
+        </header>
+
+        {{ .Content }}
+    </article>
+</div>
+
+<script>
+(function () {
+    var tocLinks = document.querySelectorAll('.lab-toc nav a');
+    if (!tocLinks.length) return;
+
+    var headings = document.querySelectorAll('.lab-content h2, .lab-content h3');
+    if (!headings.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var id = entry.target.getAttribute('id');
+            if (!id) return;
+            tocLinks.forEach(function (l) { l.classList.remove('active'); });
+            var match = document.querySelector('.lab-toc nav a[href="#' + id + '"]');
+            if (match) match.classList.add('active');
+        });
+    }, {
+        rootMargin: '-10% 0px -80% 0px',
+        threshold: 0
+    });
+
+    headings.forEach(function (h) { observer.observe(h); });
+}());
+</script>
+{{- end }}
