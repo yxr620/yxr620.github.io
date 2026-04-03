@@ -256,21 +256,7 @@ body {
 }
 
 .cv-hero-photo-frame {
-    position: relative;
     width: min(100%, 220px);
-    padding: 0.75rem;
-    border: 1px solid var(--border);
-    border-radius: 24px;
-    background: linear-gradient(180deg, rgba(127, 127, 127, 0.1), rgba(127, 127, 127, 0.03));
-}
-
-.cv-hero-photo-frame::before {
-    content: "";
-    position: absolute;
-    inset: 10px;
-    border: 1px dashed rgba(127, 127, 127, 0.3);
-    border-radius: 18px;
-    pointer-events: none;
 }
 
 .cv-hero-photo img {
@@ -280,8 +266,13 @@ body {
     height: auto;
     object-fit: cover;
     object-position: center top;
-    border-radius: 18px;
-    border: 1px solid rgba(127, 127, 127, 0.18);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
+}
+
+.dark .cv-hero-photo img {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
 }
 
 .cv-content {
@@ -463,6 +454,10 @@ body {
 
     .cv-hero-photo-frame {
         width: min(100%, 160px);
+    }
+
+    .cv-hero-photo img {
+        border-radius: 16px;
     }
 
     .cv-quick-links {
