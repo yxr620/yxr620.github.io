@@ -1,6 +1,12 @@
 /* Homepage / CV styling */
 
 :root {
+    --site-shell-width: 1200px;
+    --site-home-width: 900px;
+    --site-page-width: 1120px;
+    --site-article-width: 1160px;
+    --nav-width: var(--site-shell-width);
+    --main-width: var(--site-shell-width);
     --cv-accent: #5f8cff;
     --cv-accent-soft: rgba(95, 140, 255, 0.16);
     --cv-panel: rgba(127, 127, 127, 0.05);
@@ -45,7 +51,7 @@ body {
 }
 
 .nav {
-    max-width: 1040px;
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
     padding: 1rem 1.25rem 0.85rem;
 }
 
@@ -76,7 +82,7 @@ body {
 .cv-page {
     position: relative;
     isolation: isolate;
-    max-width: 980px;
+    max-width: var(--site-home-width);
     margin: 0 auto;
     padding: 3rem 1.4rem 4.5rem;
 }
@@ -226,11 +232,9 @@ body {
 }
 
 .cv-hero-bio {
-    margin: 0;
+    display: grid;
+    gap: 0.65rem;
     max-width: 58ch;
-    color: var(--content);
-    font-size: 0.94rem;
-    line-height: 1.8;
 }
 
 .cv-hero-bio a {
@@ -286,7 +290,7 @@ body {
 }
 
 .cv-content p {
-    max-width: 70ch;
+    max-width: 76ch;
     margin: 0 0 1.15rem;
     color: var(--content);
     font-size: 1.02rem;
@@ -534,57 +538,15 @@ body {
 }
 
 /* ============================================================
-   BIO EXPAND — two-level hero card bio
+   HERO BIO — full hero card bio
    ============================================================ */
 
-.cv-hero-bio-expand {
+.cv-content .cv-hero-bio p {
     margin: 0;
-    max-width: 58ch;
-}
-
-.cv-hero-bio-expand > summary {
-    list-style: none;
-    cursor: pointer;
-    color: var(--content);
-    font-size: 0.94rem;
-    line-height: 1.8;
-    display: block;
-}
-
-.cv-hero-bio-expand > summary::-webkit-details-marker {
-    display: none;
-}
-
-.cv-hero-bio-expand > summary::marker {
-    display: none;
-}
-
-.cv-hero-bio-expand > summary::after {
-    content: " ▸ more";
-    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    color: var(--cv-accent);
-}
-
-.cv-hero-bio-expand[open] > summary::after {
-    content: " ▾ less";
-}
-
-.cv-hero-bio-full {
-    padding-top: 0.7rem;
-}
-
-.cv-hero-bio-full p {
     max-width: 58ch;
     color: var(--content);
     font-size: 0.9rem;
     line-height: 1.8;
-    margin: 0 0 0.65rem;
-}
-
-.cv-hero-bio-full p:last-child {
-    margin-bottom: 0;
 }
 
 /* ============================================================
@@ -658,7 +620,7 @@ body {
 .list-page {
     position: relative;
     isolation: isolate;
-    max-width: 980px;
+    max-width: var(--site-page-width);
     margin: 0 auto;
     padding: 3rem 1.4rem 4.5rem;
 }
@@ -747,7 +709,7 @@ body {
     color: var(--content);
     line-height: 1.65;
     margin: 0;
-    max-width: 70ch;
+    max-width: 82ch;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -775,9 +737,9 @@ body {
 
 .lab-page {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 2.5rem;
-    max-width: 1080px;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: clamp(2.5rem, 4vw, 4rem);
+    max-width: var(--site-article-width);
     margin: 0 auto;
     padding: 3rem 1.4rem 4.5rem;
     position: relative;
@@ -889,6 +851,10 @@ body {
 
 .lab-tag {
     color: var(--cv-accent);
+}
+
+.lab-content {
+    min-width: 0;
 }
 
 /* ---- Article header ---- */

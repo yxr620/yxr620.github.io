@@ -6,14 +6,12 @@ description: "PhD Student at HKU"
 <div class="cv-hero">
 <div class="cv-hero-text">
 <div class="cv-hero-kicker">About Me</div>
-<details class="cv-hero-bio-expand">
-<summary>PhD @ HKU, advised by Yiming Qiu. MSc @ HUST · BSc @ SYSU. Research: ML systems, storage, HPC.</summary>
-<div class="cv-hero-bio-full">
-<p>PhD student @ HKU, advised by Prof. Yiming Qiu. MSc CS @ HUST (adv. Prof. Qiang Cao) · BSc CS @ SYSU (adv. Prof. Yuedong Yang).</p>
+<div class="cv-hero-bio">
+<p>PhD student @ HKU, advised by Prof. <a href="https://yimingqiu.me/">Yiming Qiu</a>. MSc CS @ HUST (adv. Prof. <a href="http://english.cs.hust.edu.cn/info/1464/1194.htm">Qiang Cao</a>) · BSc CS @ SYSU (adv. Prof. <a href="https://cse.sysu.edu.cn/content/2951">Yuedong Yang</a>).</p>
 <p>Research: optimizing ML systems and HPC — CUDA, DGL, sparse matrix acceleration. Explored sparse ops in ad-ranking systems at Tencent.</p>
 <p>Outside academia: economics and investment.</p>
+<p>I'm also building <a href="https://github.com/yxr620/chrono">Chrono</a>, a cross-platform time-tracking app for Web, Android, and macOS that records each day's time flow and tracks goal investment.</p>
 </div>
-</details>
 </div>
 <div class="cv-hero-photo">
 <div class="cv-hero-photo-frame">
@@ -42,7 +40,7 @@ description: "PhD Student at HKU"
 <summary>Education</summary>
 <div style="padding-top:0.5rem">
 <h3><a href="https://www.hku.hk/">University of Hong Kong</a></h3>
-<p><em>PhD, Computer Science</em><br><strong>2025 – present</strong> · adv. Prof. Yiming Qiu</p>
+<p><em>PhD, Computer Science</em><br><strong>2025 – present</strong> · adv. Prof. <a href="https://yimingqiu.me/">Yiming Qiu</a></p>
 <h3>Huazhong University of Science and Technology</h3>
 <p><em>MSc, Computer Science</em><br><strong>2022 – 2025</strong> · Outstanding Graduate (Top 20%)</p>
 <h3>Sun Yat-sen University</h3>
