@@ -26,7 +26,7 @@ description: "PhD Student at HKU"
 
 - [HeteroGNN: A Heterogeneous Task Division Based GNN Training Framework to Maximize CPU-GPU Parallelism](https://ieeexplore.ieee.org/document/11209980), **ICME 2025**
 - [Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs](https://www.usenix.org/conference/fast26/presentation/zhan), **FAST 2026**
-- ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference, **ICCD 2025**
+- [ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference](https://ieeexplore.ieee.org/abstract/document/11311058), **ICCD 2025**
 - [Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs](https://www.usenix.org/conference/fast25/presentation/zhan), **FAST'25**
 - [AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation for Commodity SSDs](https://dl.acm.org/doi/10.1145/3708538), **ACM TACO**
 - [RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths](https://dl.acm.org/doi/10.1145/3698038.3698539), **SoCC'24**
@@ -61,6 +61,11 @@ description: "PhD Student at HKU"
 <details>
 <summary>Experience</summary>
 <div style="padding-top:0.5rem">
+<h3><a href="https://www.kuaishou.com/en/">Kuaishou Technology</a></h3>
+<p><em>Algorithm Engine Platform — Intern</em><br><strong>Apr. 2026 – Jun. 2026</strong> · Beijing</p>
+<ul>
+<li>Worked on the generative recommendation serving system, supporting online retrieval for the production deployments of <a href="https://arxiv.org/abs/2506.13695">OneRec</a> and <a href="https://arxiv.org/abs/2508.20900">OneRec-V2</a>.</li>
+</ul>
 <h3><a href="https://www.tencent.com/en-us/">Tencent</a></h3>
 <p><em>Advertising Engineering — Intern</em><br><strong>May 2024 – Sep 2024 &amp; Apr 2025 – Jun 2025</strong> · Shenzhen</p>
 <ul>
