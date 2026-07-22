@@ -132,7 +132,7 @@ params:
 
 
     editPost:
-        URL: "https://github.com/yxr620/blog/tree/master/content"
+        URL: "https://github.com/yxr620/yxr620.github.io/tree/main/content"
         Text: "Suggest Changes"
         appendFilePath: true
 
