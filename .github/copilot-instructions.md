@@ -2,13 +2,13 @@
 
 ## Overview
 
-Hugo static site for Xiangrui Yang's academic blog/CV. Theme: **PaperMod** (`themes/hugo-PaperMod/`). Published to `../yxr_public` via GitHub Pages at `https://yxr620.github.io`.
+Hugo static site for Xiangrui Yang's academic blog/CV. Theme: **PaperMod** (`themes/hugo-PaperMod/`). Pushes to `main` are built and deployed to `https://yxr620.github.io` by `.github/workflows/hugo.yaml`.
 
 ## Commands
 
 ```bash
 hugo server -D        # Dev server with drafts
-hugo                  # Build → ../yxr_public
+hugo                  # Local build → ignored ./public
 hugo new blog/<name>/index.md  # New blog post
 ```
 

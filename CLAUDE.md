@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal academic/blog website for Xiangrui Yang, a PhD student at HKU. It uses [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. The site is published to a sibling directory `../yxr_public` (configured via `publishdir` in `config.yml`).
+This is a personal academic/blog website for Xiangrui Yang, a PhD student at HKU. It uses [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Pushes to `main` are built and deployed to GitHub Pages by `.github/workflows/hugo.yaml`.
 
 ## Commands
 
@@ -12,12 +12,14 @@ This is a personal academic/blog website for Xiangrui Yang, a PhD student at HKU
 # Start local dev server with live reload
 hugo server -D
 
-# Build the site (output goes to ../yxr_public)
+# Build the site locally (output goes to ignored ./public)
 hugo
 
 # Create a new blog post
 hugo new blog/<post-name>/index.md
 ```
+
+Generated files are deployment artifacts and must not be committed. GitHub Actions publishes them directly to <https://yxr620.github.io>.
 
 ## Architecture
 

@@ -1,6 +1,7 @@
 # Hugo build artifacts
 .hugo_build.lock
 resources/_gen/
+/public/
 
 # Claude Code local settings
 .claude/

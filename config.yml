@@ -3,7 +3,6 @@ title: Xiangrui Yang
 pagination:
     pagerSize: 5
 theme: hugo-PaperMod
-publishdir: ../yxr_public
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -17,9 +16,13 @@ minify:
     disableXML: true
     # minifyOutput: true
 
+caches:
+    images:
+        dir: :cacheDir/images
+
 languages:
     en:
-        languageName: "English"
+        label: "English"
         weight: 1
         menu:
             main:
