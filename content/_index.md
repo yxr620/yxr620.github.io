@@ -3,64 +3,26 @@ title: "Xiangrui Yang"
 description: "PhD Student at HKU"
 ---
 
-<div class="cv-hero">
-<div class="cv-hero-text">
-<div class="cv-hero-kicker">About Me</div>
-<div class="cv-hero-bio">
-<p>PhD student @ HKU, advised by Prof. <a href="https://yimingqiu.me/">Yiming Qiu</a>. MSc CS @ HUST (adv. Prof. <a href="http://english.cs.hust.edu.cn/info/1464/1194.htm">Qiang Cao</a>) · BSc CS @ SYSU (adv. Prof. <a href="https://cse.sysu.edu.cn/content/2951">Yuedong Yang</a>).</p>
-<p>Research: optimizing ML systems and HPC — CUDA, DGL, sparse matrix acceleration. Explored sparse ops in ad-ranking systems at Tencent.</p>
-<p>Outside academia: economics and investment.</p>
-<p>I'm also building <a href="https://github.com/yxr620/chrono">Chrono</a>, a cross-platform time-tracking app for Web, Android, and macOS that records each day's time flow and tracks goal investment.</p>
-</div>
-</div>
-<div class="cv-hero-photo">
-<div class="cv-hero-photo-frame">
-<img src="/images/user.jpg" alt="Xiangrui Yang" />
-</div>
-</div>
-</div>
+<section class="cv-section" id="academic-papers">
+<h2>Academic Papers</h2>
+<ol class="cv-paper-list">
+<li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Task Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span></li>
+<li><a href="https://www.usenix.org/conference/fast26/presentation/zhan">Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST 2026</span></li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/11311058">ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference</a> <span class="cv-paper-venue">ICCD 2025</span></li>
+<li><a href="https://www.usenix.org/conference/fast25/presentation/zhan">Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST'25</span></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3708538">AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation for Commodity SSDs</a> <span class="cv-paper-venue">ACM TACO</span></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3698038.3698539">RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths</a> <span class="cv-paper-venue">SoCC'24</span></li>
+<li><a href="https://ieeexplore.ieee.org/document/10818010/">HEncode: A Highly Modularized and Efficient FPGA QC-LDPC Encoder Using High Level Synthesis</a> <span class="cv-paper-venue">ICCD'24</span></li>
+<li><a href="http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003">A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding</a></li>
+<li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13067/130670E/Analyzing-performance-degradation-for-wide-stripe-erasure-codes/10.1117/12.3024709.full">Analyzing performance degradation for wide stripe erasure codes</a></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3605573.3605629">PMLDS: An LSM-tree Direct Managed Storage for Key-value Stores on Byte-addressable Devices</a></li>
+<li><a href="https://arxiv.org/abs/2211.11543">Leveraging Orbital Information and Atomic Feature in Deep Learning Model</a></li>
+</ol>
+</section>
 
----
-
-## Academic Papers
-
-- [HeteroGNN: A Heterogeneous Task Division Based GNN Training Framework to Maximize CPU-GPU Parallelism](https://ieeexplore.ieee.org/document/11209980), **ICME 2025**
-- [Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs](https://www.usenix.org/conference/fast26/presentation/zhan), **FAST 2026**
-- [ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference](https://ieeexplore.ieee.org/abstract/document/11311058), **ICCD 2025**
-- [Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs](https://www.usenix.org/conference/fast25/presentation/zhan), **FAST'25**
-- [AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation for Commodity SSDs](https://dl.acm.org/doi/10.1145/3708538), **ACM TACO**
-- [RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths](https://dl.acm.org/doi/10.1145/3698038.3698539), **SoCC'24**
-- [HEncode: A Highly Modularized and Efficient FPGA QC-LDPC Encoder Using High Level Synthesis](https://ieeexplore.ieee.org/document/10818010/), **ICCD'24**
-- [A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding](http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003)
-- [Analyzing performance degradation for wide stripe erasure codes](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13067/130670E/Analyzing-performance-degradation-for-wide-stripe-erasure-codes/10.1117/12.3024709.full)
-- [PMLDS: An LSM-tree Direct Managed Storage for Key-value Stores on Byte-addressable Devices](https://dl.acm.org/doi/10.1145/3605573.3605629)
-- [Leveraging Orbital Information and Atomic Feature in Deep Learning Model](https://arxiv.org/abs/2211.11543)
-
-<details>
-<summary>Education</summary>
-<div style="padding-top:0.5rem">
-<h3><a href="https://www.hku.hk/">University of Hong Kong</a></h3>
-<p><em>PhD, Computer Science</em><br><strong>2025 – present</strong> · adv. Prof. <a href="https://yimingqiu.me/">Yiming Qiu</a></p>
-<h3>Huazhong University of Science and Technology</h3>
-<p><em>MSc, Computer Science</em><br><strong>2022 – 2025</strong> · Outstanding Graduate (Top 20%)</p>
-<h3>Sun Yat-sen University</h3>
-<p><em>BSc, Computer Science</em><br><strong>2018 – 2022</strong></p>
-</div>
-</details>
-
-<details>
-<summary>Talks &amp; Presentations</summary>
-<ul style="padding-top:0.5rem">
-<li>ICME'25, IEEE International Conference on Multimedia &amp; Expo 2025, Nantes, France. <a href="https://whova.com/embedded/session/hlWY6K3rL7pHvG8Yd1TfjYJVgDEZvOuEPKWGmeuUbIQ%3D/4654604/?widget=primary">Website</a></li>
-<li>FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. <a href="https://www.youtube.com/watch?v=6dGa7Ol8Ryk">Video</a></li>
-<li>SoCC'24, 15th ACM Symposium on Cloud Computing, Redmond, Washington.</li>
-<li>HiPEAC'25, 20th High Performance, Edge And Cloud computing, Barcelona, Spain.</li>
-</ul>
-</details>
-
-<details>
-<summary>Experience</summary>
-<div style="padding-top:0.5rem">
+<section class="cv-section" id="experience">
+<h2>Experience</h2>
+<div>
 <h3><a href="https://www.kuaishou.com/en/">Kuaishou Technology</a></h3>
 <p><em>Algorithm Engine Platform — Intern</em><br><strong>Apr. 2026 – Jun. 2026</strong> · Beijing</p>
 <ul>
@@ -90,11 +52,11 @@ description: "PhD Student at HKU"
 <li>Built message-passing models on CATL crystal database to predict physical properties.</li>
 </ul>
 </div>
-</details>
+</section>
 
-<details>
-<summary>Academic Projects</summary>
-<div style="padding-top:0.5rem">
+<section class="cv-section" id="academic-projects">
+<h2>Academic Projects</h2>
+<div>
 <h3>Model Optimization</h3>
 <ul>
 <li>Profiled DGL conv bottlenecks with Nsight; optimized GCN normalization for a 30% speedup over DGL.</li>
@@ -109,11 +71,33 @@ description: "PhD Student at HKU"
 <li>Built SSDTEST to characterize performance degradation; developed I/O scheduler to control tail latency.</li>
 </ul>
 </div>
-</details>
+</section>
 
-<details>
-<summary>Certificates &amp; Awards</summary>
-<div style="padding-top:0.5rem">
+<section class="cv-section" id="education">
+<h2>Education</h2>
+<div>
+<h3><a href="https://www.hku.hk/">University of Hong Kong</a></h3>
+<p><em>PhD, Computer Science</em><br><strong>2025 – present</strong> · adv. Prof. <a href="https://yimingqiu.me/">Yiming Qiu</a></p>
+<h3>Huazhong University of Science and Technology</h3>
+<p><em>MSc, Computer Science</em><br><strong>2022 – 2025</strong> · Outstanding Graduate (Top 20%)</p>
+<h3>Sun Yat-sen University</h3>
+<p><em>BSc, Computer Science</em><br><strong>2018 – 2022</strong></p>
+</div>
+</section>
+
+<section class="cv-section" id="talks">
+<h2>Talks &amp; Presentations</h2>
+<ul>
+<li>ICME'25, IEEE International Conference on Multimedia &amp; Expo 2025, Nantes, France. <a href="https://whova.com/embedded/session/hlWY6K3rL7pHvG8Yd1TfjYJVgDEZvOuEPKWGmeuUbIQ%3D/4654604/?widget=primary">Website</a></li>
+<li>FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. <a href="https://www.youtube.com/watch?v=6dGa7Ol8Ryk">Video</a></li>
+<li>SoCC'24, 15th ACM Symposium on Cloud Computing, Redmond, Washington.</li>
+<li>HiPEAC'25, 20th High Performance, Edge And Cloud computing, Barcelona, Spain.</li>
+</ul>
+</section>
+
+<section class="cv-section" id="awards">
+<h2>Certificates &amp; Awards</h2>
+<div>
 <h3>Awards</h3>
 <ul>
 <li>Sangfor Scholarship (Apr. 2024)</li>
@@ -127,4 +111,4 @@ description: "PhD Student at HKU"
 <li>IELTS 7.0 · GRE 320 · TOEFL 106</li>
 </ul>
 </div>
-</details>
+</section>

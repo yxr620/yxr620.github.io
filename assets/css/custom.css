@@ -2,7 +2,7 @@
 
 :root {
     --site-shell-width: 1200px;
-    --site-home-width: 900px;
+    --site-home-width: 1120px;
     --site-page-width: 1120px;
     --site-article-width: 1160px;
     --nav-width: var(--site-shell-width);
@@ -41,8 +41,7 @@ body {
 .cv-quick-links a,
 .cv-ql-sep,
 .cv-content h2::before,
-.cv-content h3 + p em,
-.cv-content h2#academic-papers + ul li strong {
+.cv-content h3 + p em {
     font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
 }
 
@@ -62,16 +61,32 @@ body {
     text-transform: uppercase;
 }
 
-.menu a {
+#menu a {
     font-size: 0.78rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
 
-.menu a::before {
-    content: "/";
-    margin-right: 0.45rem;
+#menu.home-index {
+    align-items: center;
+    gap: 1.35rem;
+    margin-left: auto;
+}
+
+#menu.home-index li + li {
+    margin-inline-start: 0;
+}
+
+#menu.home-index a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.38rem;
+}
+
+.home-index-no {
     color: var(--secondary);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
 }
 
 #theme-toggle {
@@ -84,7 +99,7 @@ body {
     isolation: isolate;
     max-width: var(--site-home-width);
     margin: 0 auto;
-    padding: 3rem 1.4rem 4.5rem;
+    padding: 2rem 1.4rem 4.5rem;
 }
 
 .cv-page > * {
@@ -95,8 +110,8 @@ body {
 .cv-page::before {
     content: "";
     position: absolute;
-    inset: -3rem -4rem auto;
-    height: 20rem;
+    inset: -2rem -4rem auto;
+    height: 16rem;
     background: radial-gradient(circle at top left, var(--cv-accent-soft), transparent 60%);
     pointer-events: none;
 }
@@ -117,21 +132,22 @@ body {
 }
 
 .cv-header {
-    margin-bottom: 1.8rem;
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    margin: 0;
     text-align: left;
-    animation: cv-rise 0.55s ease-out both;
     position: relative;
-    overflow: hidden;
 }
 
 .cv-header h1 {
     margin: 0;
-    font-size: clamp(3rem, 10vw, 4.4rem);
-    line-height: 0.94;
+    font-size: clamp(2.7rem, 6.2vw, 5.4rem);
+    line-height: 0.95;
     letter-spacing: -0.05em;
     font-weight: 700;
     color: var(--primary);
-    text-wrap: balance;
+    white-space: nowrap;
     position: relative;
     z-index: 1;
 }
@@ -155,7 +171,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.75rem 0.9rem;
+    gap: 0.7rem 1rem;
     margin-top: 0.9rem;
 }
 
@@ -190,36 +206,28 @@ body {
 .cv-hero {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 200px;
-    gap: 1.8rem;
-    align-items: start;
-    margin: 0 0 2rem;
-    padding: 1.5rem 1.6rem;
-    border: 1px solid var(--border);
-    border-radius: 28px;
-    background:
-        linear-gradient(135deg, rgba(127, 127, 127, 0.06), transparent 58%),
-        var(--entry);
-    box-shadow: var(--cv-shadow);
-    overflow: hidden;
+    grid-template-columns: minmax(0, 1fr) 148px;
+    grid-template-rows: auto auto;
+    gap: 1.4rem 2.2rem;
+    align-items: center;
+    margin: 0;
+    padding: 2.1rem 0 2.6rem;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
     animation: cv-rise 0.7s ease-out 0.08s both;
 }
 
 .cv-hero::before {
-    content: "";
-    position: absolute;
-    right: -3rem;
-    bottom: -4rem;
-    width: 14rem;
-    height: 14rem;
-    background: radial-gradient(circle, var(--cv-accent-soft), transparent 68%);
-    pointer-events: none;
+    display: none;
 }
 
-.cv-hero-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
+.cv-hero-about {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    gap: 0.75rem;
     min-width: 0;
 }
 
@@ -231,38 +239,88 @@ body {
     text-transform: uppercase;
 }
 
-.cv-hero-bio {
+.cv-hero-facts {
     display: grid;
-    gap: 0.65rem;
-    max-width: 58ch;
+    grid-template-columns: 1.2fr 1.1fr 1fr 0.75fr;
+    gap: 1.35rem;
 }
 
-.cv-hero-bio a {
+.cv-hero-fact {
+    min-width: 0;
+    padding-top: 0.55rem;
+    border-top: 1px solid var(--border);
+}
+
+.cv-hero-fact > span {
+    display: block;
+    margin-bottom: 0.18rem;
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.64rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.cv-hero-fact p {
+    margin: 0;
+    color: var(--content);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.cv-hero-lines span {
+    display: block;
+}
+
+.cv-hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.cv-hero-tags span {
+    padding: 0.18rem 0.42rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--cv-panel);
+    color: var(--primary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+}
+
+.cv-hero-fact .cv-hero-note {
+    margin-top: 0.35rem;
+    color: var(--secondary);
+    font-size: 0.76rem;
+}
+
+.cv-hero-fact a {
     color: var(--primary);
     text-decoration: none;
 }
 
-.cv-hero-bio a:hover {
+.cv-hero-fact a:hover {
     text-decoration: underline;
 }
 
-.cv-hero-bio strong {
-    font-weight: 600;
-}
-
 .cv-hero-photo {
+    grid-column: 2;
+    grid-row: 1 / 3;
     display: flex;
     justify-content: flex-end;
 }
 
 .cv-hero-photo-frame {
-    width: min(100%, 220px);
+    width: min(100%, 148px);
 }
 
 .cv-hero-photo img {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 4.7;
     height: auto;
     object-fit: cover;
     object-position: center top;
@@ -278,6 +336,27 @@ body {
 .cv-content {
     counter-reset: cv-section;
     color: var(--content);
+}
+
+.cv-section {
+    display: grid;
+    grid-template-columns: 175px minmax(0, 1fr);
+    gap: clamp(1.75rem, 4vw, 3.5rem);
+    margin: 0;
+    padding: 3rem 0;
+    border: 0;
+    border-top: 1px solid var(--border);
+    border-radius: 0;
+    background: transparent;
+    scroll-margin-top: 5rem;
+}
+
+.cv-section::before {
+    display: none;
+}
+
+.cv-section > :not(h2) {
+    min-width: 0;
 }
 
 .cv-content p {
@@ -303,6 +382,19 @@ body {
     letter-spacing: -0.02em;
 }
 
+.cv-content .cv-section > h2 {
+    position: sticky;
+    top: 5.5rem;
+    align-self: start;
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.22rem;
+    line-height: 1.25;
+}
+
 .cv-content h2::before {
     content: counter(cv-section, decimal-leading-zero);
     display: inline-block;
@@ -310,6 +402,10 @@ body {
     font-size: 0.74rem;
     font-weight: 500;
     letter-spacing: 0.16em;
+}
+
+.cv-content .cv-section > h2::before {
+    display: block;
 }
 
 .cv-content h3 {
@@ -320,6 +416,10 @@ body {
     color: var(--primary);
     font-size: 1.08rem;
     letter-spacing: -0.01em;
+}
+
+.cv-section > div > h3:first-child {
+    margin-top: 0.25rem;
 }
 
 .cv-content h3::before {
@@ -360,12 +460,15 @@ body {
 
 .cv-content a {
     color: var(--primary);
+    box-shadow: none;
     text-decoration: none;
     transition: color 0.15s ease, opacity 0.15s ease;
 }
 
 .cv-content a:hover {
+    color: var(--cv-accent);
     opacity: 0.85;
+    box-shadow: none;
     text-decoration: none;
 }
 
@@ -388,26 +491,83 @@ body {
     font-weight: 600;
 }
 
-.cv-content h2#academic-papers + ul {
+.cv-paper-list {
+    counter-reset: cv-paper;
     list-style: none;
+    margin: 0.35rem 0 0;
     padding-left: 0;
 }
 
-.cv-content h2#academic-papers + ul li {
+.cv-paper-list li {
+    counter-increment: cv-paper;
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 0.3rem 1.25rem;
     margin-bottom: 0;
-    padding: 0.9rem 0;
+    padding: 0.55rem 0;
     border-bottom: 1px solid var(--border);
+    font-size: 0.91rem;
+    line-height: 1.45;
 }
 
-.cv-content h2#academic-papers + ul li:last-child {
+.cv-paper-list li::before {
+    content: counter(cv-paper, decimal-leading-zero);
+    padding-top: 0.12rem;
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.67rem;
+    letter-spacing: 0.08em;
+}
+
+.cv-paper-list li:last-child {
     border-bottom: none;
 }
 
-.cv-content h2#academic-papers + ul li strong {
-    display: inline-block;
-    margin-left: 0.4rem;
-    letter-spacing: 0.08em;
+.cv-paper-venue {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.4rem;
+    margin-top: 0.02rem;
+    padding: 0.1rem 0.42rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--cv-panel);
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+    white-space: nowrap;
     text-transform: uppercase;
+    justify-self: end;
+}
+
+@media (max-width: 900px) {
+    .cv-hero {
+        grid-template-columns: minmax(0, 1fr) 116px;
+        gap: 1.25rem 1rem;
+    }
+
+    .cv-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cv-hero-about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .cv-hero-photo {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .cv-hero-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -415,12 +575,26 @@ body {
         padding: 0.9rem 1rem 0.75rem;
     }
 
-    .menu a::before {
-        margin-right: 0.35rem;
+    #menu.home-index {
+        flex-basis: 100%;
+        gap: 0.9rem;
+        order: 2;
+        margin: 0.45rem 0 0;
+        padding-top: 0.65rem;
+        border-top: 1px solid var(--border);
+    }
+
+    #menu.home-index li + li {
+        margin-inline-start: 0;
+    }
+
+    #menu.home-index a {
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
     }
 
     .cv-page {
-        padding: 1.5rem 1rem 3rem;
+        padding: 1.25rem 1rem 3rem;
     }
 
     .cv-page::after {
@@ -428,7 +602,7 @@ body {
     }
 
     .cv-header h1 {
-        font-size: clamp(2.4rem, 13vw, 3.2rem);
+        font-size: clamp(2.6rem, 8vw, 4rem);
     }
 
     .cv-subtitle {
@@ -437,23 +611,33 @@ body {
     }
 
     .cv-meta-row {
-        gap: 0.55rem 0.75rem;
+        gap: 0.65rem;
     }
 
     .cv-hero {
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
-        padding: 1.1rem;
-        border-radius: 22px;
+        grid-template-columns: minmax(0, 1fr) 116px;
+        gap: 1.25rem 1rem;
+        padding: 1.6rem 0 2rem;
+    }
+
+    .cv-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cv-hero-about {
+        grid-column: 1 / -1;
+        grid-row: 2;
     }
 
     .cv-hero-photo {
-        order: -1;
-        justify-content: flex-start;
+        grid-column: 2;
+        grid-row: 1;
+        justify-content: flex-end;
     }
 
     .cv-hero-photo-frame {
-        width: min(100%, 160px);
+        width: min(100%, 116px);
     }
 
     .cv-hero-photo img {
@@ -471,6 +655,60 @@ body {
     .cv-content h2 {
         gap: 0.65rem;
         font-size: 1.18rem;
+    }
+
+    .cv-section {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 2.25rem 0;
+    }
+
+    .cv-content .cv-section > h2 {
+        position: static;
+        display: flex;
+        gap: 0.65rem;
+        font-size: 1.18rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .cv-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-header {
+        grid-column: 1;
+    }
+
+    .cv-header h1 {
+        font-size: clamp(2.25rem, 11vw, 2.8rem);
+    }
+
+    .cv-hero-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-hero-photo {
+        display: none;
+    }
+
+    .cv-paper-list li {
+        position: relative;
+        display: block;
+        padding: 0.5rem 0 0.5rem 1.75rem;
+    }
+
+    .cv-paper-list li::before {
+        position: absolute;
+        top: 0.62rem;
+        left: 0;
+    }
+
+    .cv-paper-venue {
+        display: inline-flex;
+        margin: 0 0 0 0.6rem;
+        vertical-align: 0.06rem;
+        justify-self: auto;
     }
 }
 
@@ -500,7 +738,6 @@ body {
 
 /* Gradient name fill */
 .dark .cv-header h1 {
-    font-size: clamp(3.5rem, 12vw, 5.5rem);
     letter-spacing: -0.06em;
     line-height: 0.88;
     background: linear-gradient(100deg, #dde2ec 30%, #6a80b0 100%);
@@ -530,82 +767,6 @@ body {
 .dark .cv-subtitle {
     border-color: rgba(0, 229, 192, 0.3);
     color: var(--cv-accent);
-}
-
-/* ============================================================
-   HERO BIO — full hero card bio
-   ============================================================ */
-
-.cv-content .cv-hero-bio p {
-    margin: 0;
-    max-width: 58ch;
-    color: var(--content);
-    font-size: 0.9rem;
-    line-height: 1.8;
-}
-
-/* ============================================================
-   SECTION ACCORDIONS — <details>/<summary> as h2 replacement
-   ============================================================ */
-
-/* Counter incremented on the <details> element so summary::before reads correctly */
-.cv-content > details {
-    counter-increment: cv-section;
-}
-
-.cv-content > details > summary {
-    display: flex;
-    align-items: baseline;
-    gap: 0.85rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.85rem;
-    border-bottom: 1px solid var(--border);
-    color: var(--primary);
-    font-size: 1.4rem;
-    font-weight: 650;
-    letter-spacing: -0.02em;
-    cursor: pointer;
-    list-style: none;
-}
-
-.cv-content > details > summary::-webkit-details-marker {
-    display: none;
-}
-
-.cv-content > details > summary::marker {
-    display: none;
-}
-
-/* Numeric counter prefix — same style as .cv-content h2::before */
-.cv-content > details > summary::before {
-    content: counter(cv-section, decimal-leading-zero);
-    display: inline-block;
-    color: var(--secondary);
-    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", monospace;
-    font-size: 0.74rem;
-    font-weight: 500;
-    letter-spacing: 0.16em;
-}
-
-/* Toggle glyph on the right */
-.cv-content > details > summary::after {
-    content: "▸";
-    margin-left: auto;
-    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", monospace;
-    font-size: 0.74rem;
-    color: var(--cv-accent);
-}
-
-.cv-content > details[open] > summary::after {
-    content: "▾";
-}
-
-@media (max-width: 768px) {
-    .cv-content > details > summary {
-        font-size: 1.18rem;
-        gap: 0.65rem;
-    }
 }
 
 /* ============================================================

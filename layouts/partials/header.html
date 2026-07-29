@@ -99,33 +99,46 @@
                 {{- end }}
             </span>
         </div>
-        {{- $currentPage := . }}
-        {{- $menuEntries := slice }}
-        {{- range .Site.Menus.main }}
-        {{- $menuURL := strings.TrimSuffix "/" .URL }}
-        {{- $isBlogLink := or (eq $menuURL "blog") (eq $menuURL "/blog") }}
-        {{- if not (and $.IsHome $isBlogLink) }}
-        {{- $menuEntries = $menuEntries | append . }}
-        {{- end }}
-        {{- end }}
-        {{- if gt (len $menuEntries) 0 }}
-        <ul id="menu">
-            {{- range $menuEntries }}
-            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.Permalink | absLangURL }}
-            {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
+        {{- if .IsHome }}
+        <ul id="menu" class="home-index" aria-label="Homepage index">
             <li>
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- .Pre }}
-                        {{- .Name -}}
-                        {{ .Post -}}
-                    </span>
-                </a>
+                <a href="#academic-papers"><span class="home-index-no">01</span> Publications</a>
             </li>
-            {{- end }}
+            <li>
+                <a href="#experience"><span class="home-index-no">02</span> Internship</a>
+            </li>
+            <li>
+                <a href="#academic-projects"><span class="home-index-no">03</span> Projects</a>
+            </li>
+            <li>
+                <a href="{{ "blog/" | relURL }}"><span class="home-index-no">04</span> Blog</a>
+            </li>
         </ul>
+        {{- else }}
+            {{- $currentPage := . }}
+            {{- $menuEntries := slice }}
+            {{- range .Site.Menus.main }}
+                {{- $menuEntries = $menuEntries | append . }}
+            {{- end }}
+            {{- if gt (len $menuEntries) 0 }}
+            <ul id="menu">
+                {{- range $menuEntries }}
+                {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+                {{- $page_url:= $currentPage.Permalink | absLangURL }}
+                {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
+                <li>
+                    <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                    {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                        <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                            {{- .Pre }}
+                            {{- .Name -}}
+                            {{ .Post -}}
+                        </span>
+                    </a>
+                </li>
+                {{- end }}
+            </ul>
+            {{- end }}
         {{- end }}
     </nav>
 </header>

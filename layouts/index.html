@@ -1,24 +1,61 @@
 {{- define "main" }}
 <article class="cv-page">
-    <header class="cv-header">
+    <section class="cv-hero" aria-labelledby="cv-hero-name">
+        <header class="cv-header">
         {{- if .Title }}
-        <h1>{{ .Title }}</h1>
+        <h1 id="cv-hero-name">{{ .Title }}</h1>
         {{- end }}
         <div class="cv-meta-row">
             {{- if .Description }}
             <p class="cv-subtitle">{{ .Description | markdownify }}</p>
             {{- end }}
-            <nav class="cv-quick-links" aria-label="Quick links">
+            <nav class="cv-quick-links" aria-label="Contact links">
                 <a href="mailto:yxr620@gmail.com">yxr620@gmail.com</a>
                 <span class="cv-ql-sep">/</span>
                 <a href="https://github.com/yxr620" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <span class="cv-ql-sep">/</span>
-                <a href="/blog/">Blog</a>
-                <span class="cv-ql-sep">/</span>
-                <a href="#academic-papers">Papers</a>
             </nav>
         </div>
-    </header>
+        </header>
+
+        <div class="cv-hero-about">
+            <div class="cv-hero-kicker">About Me</div>
+            <div class="cv-hero-facts">
+                <div class="cv-hero-fact">
+                    <span>Academic</span>
+                    <p class="cv-hero-lines">
+                        <span>HKU · PhD · <a href="https://yimingqiu.me/">Yiming Qiu</a></span>
+                        <span>HUST · MSc CS · <a href="http://english.cs.hust.edu.cn/info/1464/1194.htm">Qiang Cao</a></span>
+                        <span>SYSU · BSc CS · <a href="https://cse.sysu.edu.cn/content/2951">Yuedong Yang</a></span>
+                    </p>
+                </div>
+                <div class="cv-hero-fact">
+                    <span>Research</span>
+                    <div class="cv-hero-tags" aria-label="Research interests">
+                        <span>ML Systems</span>
+                        <span>HPC</span>
+                        <span>CUDA</span>
+                        <span>DGL</span>
+                        <span>Sparse Matrix</span>
+                    </div>
+                    <p class="cv-hero-note">Tencent · sparse ops for ad ranking</p>
+                </div>
+                <div class="cv-hero-fact">
+                    <span>Building</span>
+                    <p><a href="https://github.com/yxr620/chrono">Chrono</a> · daily time flow and goal investment<br>Web · Android · macOS</p>
+                </div>
+                <div class="cv-hero-fact">
+                    <span>Beyond</span>
+                    <p>Economics and investment.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-hero-photo">
+            <div class="cv-hero-photo-frame">
+                <img src="/images/user.jpg" alt="Xiangrui Yang" />
+            </div>
+        </div>
+    </section>
 
     <div class="cv-content post-content">
         {{ .Content }}

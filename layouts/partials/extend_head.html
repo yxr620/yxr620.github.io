@@ -3,6 +3,7 @@
 
 <head></head> section of every page. */ -}}
 {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}}
-<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}" />
+{{- $customCSS := resources.Get "css/custom.css" | minify | fingerprint -}}
+<link crossorigin="anonymous" rel="stylesheet" href="{{ $customCSS.RelPermalink }}" integrity="{{ $customCSS.Data.Integrity }}" />
 <meta name="google-site-verification" content="x7_LCaHvViA9b_WVXqGPjUuaph9OSJR_Fl9-5aJV_fQ" />
 {{- /* Head custom content area end */ -}}

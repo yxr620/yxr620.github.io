@@ -34,13 +34,13 @@ Generated files are deployment artifacts and must not be committed. GitHub Actio
 Hugo uses `layouts/` to override the PaperMod theme. Current overrides:
 
 - `layouts/index.html` — Custom CV-style homepage using `.cv-page` / `.cv-content` CSS classes
-- `layouts/partials/extend_head.html` — Injects `static/css/custom.css` and MathJax (for LaTeX rendering)
+- `layouts/partials/extend_head.html` — Builds and injects fingerprinted `assets/css/custom.css` and MathJax
 - `layouts/partials/foot.html` — Additional MathJax CDN script in footer
 - `layouts/partials/mathjax.html` — MathJax config partial (also included via archetype)
 
 ### Static Assets
 
-- `static/css/custom.css` — All custom styles for the CV page layout; uses PaperMod CSS variables (`--primary`, `--secondary`, `--border`, `--content`) for light/dark mode compatibility
+- `assets/css/custom.css` — All custom styles, processed through Hugo Pipes for cache-safe fingerprinted URLs; uses PaperMod CSS variables (`--primary`, `--secondary`, `--border`, `--content`) for light/dark mode compatibility
 - `static/images/user.jpg` — Profile photo used in the homepage
 
 ### MathJax
