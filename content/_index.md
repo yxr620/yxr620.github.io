@@ -34,7 +34,7 @@ description: "PhD Student at HKU"
 <h2>Experience</h2>
 <div>
 <h3><a href="https://www.kuaishou.com/en/">Kuaishou Technology</a></h3>
-<p><em>Algorithm Engine Platform — Intern</em><br><strong>Apr. 2026 – Jun. 2026</strong> · Beijing</p>
+<p><em>Algorithm Engine Platform — Intern</em><br><strong>Apr. 2026 – Present</strong> · Beijing</p>
 <ul>
 <li>Worked on the generative recommendation serving system, supporting online retrieval for the production deployments of <a href="https://arxiv.org/abs/2506.13695">OneRec</a> and <a href="https://arxiv.org/abs/2508.20900">OneRec-V2</a>.</li>
 </ul>
