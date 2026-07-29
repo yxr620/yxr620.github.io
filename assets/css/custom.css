@@ -1,6 +1,7 @@
 /* Homepage / CV styling */
 
 :root {
+    --header-height: 48px;
     --site-shell-width: 1200px;
     --site-home-width: 1120px;
     --site-page-width: 1120px;
@@ -53,7 +54,7 @@ body {
 
 .nav {
     max-width: calc(var(--nav-width) + var(--gap) * 2);
-    padding: 1rem 1.25rem 0.85rem;
+    padding: 0.55rem 1.25rem 0.5rem;
 }
 
 .logo a {
@@ -91,9 +92,36 @@ body {
     letter-spacing: 0.08em;
 }
 
-#theme-toggle {
-    border: 1px solid var(--border);
-    border-radius: 999px;
+button#theme-toggle {
+    display: inline-grid;
+    width: 2rem;
+    height: 2rem;
+    margin: auto 0.25rem;
+    padding: 0;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: none;
+    color: var(--primary);
+    font-size: inherit;
+    line-height: 1;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+#theme-toggle:hover {
+    background: var(--cv-panel);
+    color: var(--cv-accent);
+}
+
+#theme-toggle:focus-visible {
+    outline: 1px solid var(--cv-accent);
+    outline-offset: 3px;
+}
+
+#theme-toggle svg {
+    width: 1.05rem;
+    height: 1.05rem;
 }
 
 .cv-page {
@@ -821,15 +849,15 @@ body {
 
 @media (max-width: 768px) {
     .nav {
-        padding: 0.9rem 1rem 0.75rem;
+        padding: 0.55rem 1rem 0.45rem;
     }
 
     #menu.home-index {
         flex-basis: 100%;
         gap: 0.9rem;
         order: 2;
-        margin: 0.45rem 0 0;
-        padding-top: 0.65rem;
+        margin: 0.2rem 0 0;
+        padding-top: 0.45rem;
         border-top: 1px solid var(--border);
     }
 

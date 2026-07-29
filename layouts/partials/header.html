@@ -76,12 +76,13 @@
                 </button>
                 {{- end }}
 
-                {{- $lang := .Lang}}
-                {{- $separator := or $label_text (not .Site.Params.disableThemeToggle)}}
-                {{- with $.Site.Home.AllTranslations }}
-                <ul class="lang-switch">
-                    {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
+            {{- $lang := .Lang}}
+            {{- $separator := or $label_text (not .Site.Params.disableThemeToggle)}}
+            {{- with $.Site.Home.AllTranslations }}
+            {{- if gt (len .) 1 }}
+            <ul class="lang-switch">
+                {{- if $separator }}<li>|</li>{{ end }}
+                {{- range . -}}
                     {{- if ne $lang .Lang }}
                     <li>
                         <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
@@ -94,9 +95,10 @@
                         </a>
                     </li>
                     {{- end -}}
-                    {{- end}}
-                </ul>
-                {{- end }}
+                {{- end}}
+            </ul>
+            {{- end }}
+            {{- end }}
             </span>
         </div>
         {{- if .IsHome }}
