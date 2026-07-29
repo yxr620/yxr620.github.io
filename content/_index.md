@@ -8,7 +8,7 @@ description: "PhD Student at HKU"
 <ul class="cv-news-list">
 <li>
 <time datetime="2026">2026</time>
-<p>Serving as <strong>Web Chair</strong> for <a href="https://atcworkshop-rec.github.io/">FRecSys ’26</a> — the 1st Frontier Recommender Systems Workshop, co-located with ACM SIGOPS ATC 2026.</p>
+<p>Serving as <strong>Chair</strong> for <a href="https://atcworkshop-rec.github.io/">FRecSys ’26</a> — the 1st Frontier Recommender Systems Workshop, co-located with ACM SIGOPS ATC 2026.</p>
 </li>
 </ul>
 </section>
