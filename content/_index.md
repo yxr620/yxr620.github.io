@@ -3,6 +3,16 @@ title: "Xiangrui Yang"
 description: "PhD Student at HKU"
 ---
 
+<section class="cv-news" id="news" aria-labelledby="news-title">
+<h2 id="news-title">News</h2>
+<ul class="cv-news-list">
+<li>
+<time datetime="2026">2026</time>
+<p>Serving as <strong>Web Chair</strong> for <a href="https://atcworkshop-rec.github.io/">FRecSys ’26</a> — the 1st Frontier Recommender Systems Workshop, co-located with ACM SIGOPS ATC 2026.</p>
+</li>
+</ul>
+</section>
+
 <section class="cv-section" id="academic-papers">
 <h2>Academic Papers</h2>
 <ol class="cv-paper-list">
