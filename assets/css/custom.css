@@ -8,6 +8,7 @@
     --nav-width: var(--site-shell-width);
     --main-width: var(--site-shell-width);
     --cv-accent: #5f8cff;
+    --cv-accent-2: #8b5cf6;
     --cv-accent-soft: rgba(95, 140, 255, 0.16);
     --cv-panel: rgba(127, 127, 127, 0.05);
     --cv-grid: rgba(127, 127, 127, 0.1);
@@ -19,12 +20,13 @@
     --theme: #111318;
     --entry: #16191f;
     --primary: #dde2ec;
-    --secondary: rgba(160, 180, 255, 0.55);
-    --content: #a8b0c0;
+    --secondary: rgba(170, 188, 255, 0.64);
+    --content: #b5bdca;
     --border: rgba(160, 180, 255, 0.10);
 
     /* cv custom tokens */
     --cv-accent: #00e5c0;
+    --cv-accent-2: #8297ff;
     --cv-accent-soft: rgba(0, 229, 192, 0.12);
     --cv-panel: rgba(255, 255, 255, 0.03);
     --cv-grid: rgba(160, 180, 255, 0.08);
@@ -107,15 +109,6 @@ body {
     z-index: 1;
 }
 
-.cv-page::before {
-    content: "";
-    position: absolute;
-    inset: -2rem -2rem auto;
-    height: 12rem;
-    background: radial-gradient(circle at top left, var(--cv-accent-soft), transparent 60%);
-    pointer-events: none;
-}
-
 .cv-page::after {
     content: "";
     position: absolute;
@@ -141,7 +134,59 @@ body {
     position: relative;
 }
 
+.cv-header::before {
+    content: "XY";
+    position: absolute;
+    right: -0.5rem;
+    top: -1rem;
+    color: transparent;
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", monospace;
+    font-size: 9rem;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    line-height: 1;
+    opacity: 0.28;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    -webkit-text-stroke: 1px var(--border);
+}
+
+.cv-hero-mark {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.61rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.cv-hero-mark::before {
+    content: "";
+    width: 1.75rem;
+    height: 2px;
+    background: linear-gradient(90deg, var(--cv-accent), var(--cv-accent-2));
+}
+
+.cv-hero-mark span + span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cv-hero-mark span + span::before {
+    content: "//";
+    color: var(--border);
+    letter-spacing: -0.08em;
+}
+
 .cv-header h1 {
+    display: inline-block;
     margin: 0;
     font-size: clamp(2.7rem, 6.2vw, 5.4rem);
     line-height: 0.95;
@@ -151,6 +196,17 @@ body {
     white-space: nowrap;
     position: relative;
     z-index: 1;
+}
+
+.cv-header h1::after {
+    content: "";
+    position: absolute;
+    right: -0.38em;
+    top: 0.08em;
+    width: 0.13em;
+    height: 0.13em;
+    background: var(--cv-accent);
+    box-shadow: 0.11em 0.11em 0 var(--cv-accent-soft);
 }
 
 .cv-subtitle {
@@ -250,21 +306,56 @@ body {
     text-transform: uppercase;
 }
 
+.cv-hero-kicker::after {
+    content: "";
+    display: block;
+    width: 2.4rem;
+    height: 2px;
+    margin-top: 0.65rem;
+    background: linear-gradient(90deg, var(--cv-accent), var(--cv-accent-2));
+}
+
 .cv-hero-facts {
+    counter-reset: cv-hero-fact;
     display: grid;
     grid-template-columns: 1.2fr 1.1fr 1fr 0.75fr;
     gap: 1.35rem;
 }
 
 .cv-hero-fact {
+    counter-increment: cv-hero-fact;
+    position: relative;
     min-width: 0;
-    padding-top: 0.55rem;
+    padding-top: 0.7rem;
     border-top: 1px solid var(--border);
+}
+
+.cv-hero-fact::before {
+    content: "0" counter(cv-hero-fact);
+    position: absolute;
+    top: 0.72rem;
+    right: 0;
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    opacity: 0.65;
+}
+
+.cv-hero-fact::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 1.8rem;
+    height: 1px;
+    background: var(--cv-accent);
 }
 
 .cv-hero-fact > span {
     display: block;
     margin-bottom: 0.18rem;
+    padding-right: 1.75rem;
     color: var(--secondary);
     font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
     font-size: 0.64rem;
@@ -325,19 +416,45 @@ body {
 }
 
 .cv-hero-photo-frame {
+    position: relative;
     width: min(100%, 148px);
+    padding-bottom: 1.15rem;
+}
+
+.cv-hero-photo-frame::before {
+    content: "";
+    position: absolute;
+    inset: -0.5rem -0.5rem 0.65rem 0.5rem;
+    border-top: 1px solid var(--cv-accent);
+    border-right: 1px solid var(--cv-accent);
+    pointer-events: none;
 }
 
 .cv-hero-photo img {
+    position: relative;
     display: block;
     width: 100%;
     aspect-ratio: 4 / 4.7;
     height: auto;
     object-fit: cover;
     object-position: center top;
-    border-radius: 20px;
+    border-radius: 0;
     border: 1px solid var(--border);
+    clip-path: polygon(0 0, calc(100% - 17px) 0, 100% 17px, 100% 100%, 17px 100%, 0 calc(100% - 17px));
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
+}
+
+.cv-hero-photo-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.55rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .dark .cv-hero-photo img {
@@ -392,12 +509,28 @@ body {
 }
 
 .cv-news-list time {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
     padding-top: 0.13rem;
     color: var(--cv-accent);
     font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.08em;
+}
+
+.cv-news-list time::after {
+    content: "New";
+    padding: 0.08rem 0.3rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--secondary);
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    text-transform: uppercase;
 }
 
 .cv-content .cv-news-list p {
@@ -414,6 +547,7 @@ body {
 }
 
 .cv-section {
+    position: relative;
     display: grid;
     grid-template-columns: 175px minmax(0, 1fr);
     gap: clamp(1.75rem, 4vw, 3.5rem);
@@ -462,7 +596,7 @@ body {
     top: 5.5rem;
     align-self: start;
     display: grid;
-    gap: 0.5rem;
+    gap: 0.7rem;
     margin: 0;
     padding: 0;
     border: 0;
@@ -481,6 +615,22 @@ body {
 
 .cv-content .cv-section > h2::before {
     display: block;
+    color: transparent;
+    font-size: 3.4rem;
+    font-weight: 650;
+    letter-spacing: -0.08em;
+    line-height: 0.82;
+    opacity: 0.72;
+    -webkit-text-stroke: 1px var(--secondary);
+}
+
+.cv-content .cv-section > h2::after {
+    content: "";
+    display: block;
+    width: 2.4rem;
+    height: 2px;
+    margin-top: 0.15rem;
+    background: linear-gradient(90deg, var(--cv-accent), var(--cv-accent-2));
 }
 
 .cv-content h3 {
@@ -575,6 +725,7 @@ body {
 
 .cv-paper-list li {
     counter-increment: cv-paper;
+    position: relative;
     display: grid;
     grid-template-columns: 2rem minmax(0, 1fr) auto;
     align-items: start;
@@ -584,6 +735,29 @@ body {
     border-bottom: 1px solid var(--border);
     font-size: 0.91rem;
     line-height: 1.45;
+    transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.cv-paper-list li::after {
+    content: "";
+    position: absolute;
+    top: 0.45rem;
+    bottom: 0.45rem;
+    left: -0.75rem;
+    width: 2px;
+    background: linear-gradient(180deg, var(--cv-accent), var(--cv-accent-2));
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: transform 0.18s ease;
+}
+
+.cv-paper-list li:hover {
+    border-color: var(--cv-accent-soft);
+    transform: translateX(0.25rem);
+}
+
+.cv-paper-list li:hover::after {
+    transform: scaleY(1);
 }
 
 .cv-paper-list li::before {
@@ -718,7 +892,7 @@ body {
     }
 
     .cv-hero-photo img {
-        border-radius: 16px;
+        clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
     }
 
     .cv-quick-links {
@@ -748,8 +922,25 @@ body {
     .cv-content .cv-section > h2 {
         position: static;
         display: flex;
+        align-items: center;
         gap: 0.65rem;
         font-size: 1.18rem;
+    }
+
+    .cv-content .cv-section > h2::before {
+        color: var(--secondary);
+        font-size: 0.74rem;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        opacity: 1;
+        -webkit-text-stroke: 0;
+    }
+
+    .cv-content .cv-section > h2::after {
+        flex: 1;
+        width: auto;
+        height: 1px;
+        margin: 0 0 0 0.2rem;
     }
 }
 
@@ -764,6 +955,15 @@ body {
 
     .cv-header h1 {
         font-size: clamp(2.25rem, 11vw, 2.8rem);
+    }
+
+    .cv-meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cv-quick-links {
+        width: 100%;
     }
 
     .cv-hero-facts {
@@ -796,9 +996,15 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
     .cv-header,
-    .cv-hero {
+    .cv-hero,
+    .cv-paper-list li,
+    .cv-paper-list li::after {
         animation: none;
         transition: none;
+    }
+
+    .cv-paper-list li:hover {
+        transform: none;
     }
 }
 
@@ -822,7 +1028,7 @@ body {
 .dark .cv-header h1 {
     letter-spacing: -0.06em;
     line-height: 0.88;
-    background: linear-gradient(100deg, #dde2ec 30%, #6a80b0 100%);
+    background: linear-gradient(100deg, #f1f5fb 38%, #9daccc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -830,19 +1036,8 @@ body {
 
 /* "XY" faint watermark */
 .dark .cv-header::before {
-    content: "XY";
-    position: absolute;
-    right: -0.5rem;
-    top: -1rem;
-    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", monospace;
-    font-size: 9rem;
-    font-weight: 700;
-    color: rgba(0, 229, 192, 0.035);
-    letter-spacing: -0.06em;
-    line-height: 1;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
+    opacity: 0.32;
+    -webkit-text-stroke: 1px rgba(0, 229, 192, 0.18);
 }
 
 /* Compact role label in dark mode */

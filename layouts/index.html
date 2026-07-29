@@ -2,6 +2,10 @@
 <article class="cv-page">
     <section class="cv-hero" aria-labelledby="cv-hero-name">
         <header class="cv-header">
+        <div class="cv-hero-mark" aria-hidden="true">
+            <span>XR—620</span>
+            <span>Systems / Storage / ML</span>
+        </div>
         {{- if .Title }}
         <h1 id="cv-hero-name">{{ .Title }}</h1>
         {{- end }}
@@ -54,6 +58,7 @@
         <div class="cv-hero-photo">
             <div class="cv-hero-photo-frame">
                 <img src="/images/user.jpg" alt="Xiangrui Yang" />
+                <span class="cv-hero-photo-caption">HKU / Hong Kong</span>
             </div>
         </div>
     </section>
