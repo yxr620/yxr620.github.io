@@ -8,29 +8,33 @@
     --site-article-width: 1160px;
     --nav-width: var(--site-shell-width);
     --main-width: var(--site-shell-width);
-    --cv-accent: #5f8cff;
-    --cv-accent-2: #8b5cf6;
-    --cv-accent-soft: rgba(95, 140, 255, 0.16);
+    --cv-accent: #8f3436;
+    --cv-accent-2: #b85c52;
+    --cv-accent-soft: rgba(143, 52, 54, 0.12);
+    --cv-hero-field: #ebc1bd;
+    --cv-hero-field-ink: #482526;
     --cv-panel: rgba(127, 127, 127, 0.05);
-    --cv-grid: rgba(127, 127, 127, 0.1);
+    --cv-grid: rgba(140, 78, 78, 0.08);
     --cv-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
 }
 
 .dark {
     /* PaperMod base token overrides */
-    --theme: #111318;
-    --entry: #16191f;
-    --primary: #dde2ec;
-    --secondary: rgba(170, 188, 255, 0.64);
-    --content: #b5bdca;
-    --border: rgba(160, 180, 255, 0.10);
+    --theme: #121011;
+    --entry: #191617;
+    --primary: #f1eceb;
+    --secondary: rgba(229, 201, 199, 0.68);
+    --content: #c8bebc;
+    --border: rgba(232, 204, 201, 0.12);
 
     /* cv custom tokens */
-    --cv-accent: #00e5c0;
-    --cv-accent-2: #8297ff;
-    --cv-accent-soft: rgba(0, 229, 192, 0.12);
+    --cv-accent: #f28d89;
+    --cv-accent-2: #ffc1ba;
+    --cv-accent-soft: rgba(242, 141, 137, 0.13);
+    --cv-hero-field: #e6aaa7;
+    --cv-hero-field-ink: #3a2020;
     --cv-panel: rgba(255, 255, 255, 0.03);
-    --cv-grid: rgba(160, 180, 255, 0.08);
+    --cv-grid: rgba(230, 190, 188, 0.06);
     --cv-shadow: 0 26px 70px rgba(0, 0, 0, 0.4);
 }
 
@@ -441,6 +445,39 @@ button#theme-toggle {
     grid-row: 1;
     display: flex;
     justify-content: flex-end;
+    isolation: isolate;
+    position: relative;
+    z-index: 0;
+}
+
+.cv-hero-photo::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -1.25rem;
+    right: -1.15rem;
+    bottom: -1.1rem;
+    width: 8.8rem;
+    background: var(--cv-hero-field);
+    clip-path: polygon(
+        1rem 0,
+        100% 0,
+        100% calc(100% - 1rem),
+        calc(100% - 1rem) 100%,
+        0 100%,
+        0 1rem
+    );
+}
+
+.cv-hero-photo::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -1.25rem;
+    left: -0.75rem;
+    width: 2.7rem;
+    height: 0.38rem;
+    background: var(--cv-accent-2);
 }
 
 .cv-hero-photo-frame {
@@ -453,8 +490,8 @@ button#theme-toggle {
     content: "";
     position: absolute;
     inset: -0.5rem -0.5rem 0.65rem 0.5rem;
-    border-top: 1px solid var(--cv-accent);
-    border-right: 1px solid var(--cv-accent);
+    border-top: 1px solid var(--cv-accent-2);
+    border-right: 1px solid var(--cv-accent-2);
     pointer-events: none;
 }
 
@@ -476,7 +513,7 @@ button#theme-toggle {
     position: absolute;
     right: 0;
     bottom: 0;
-    color: var(--secondary);
+    color: var(--cv-hero-field-ink);
     font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
     font-size: 0.55rem;
     font-weight: 600;
@@ -1054,9 +1091,7 @@ button#theme-toggle {
 
 /* Gradient name fill */
 .dark .cv-header h1 {
-    letter-spacing: -0.06em;
-    line-height: 0.88;
-    background: linear-gradient(100deg, #f1f5fb 38%, #9daccc 100%);
+    background: linear-gradient(100deg, #f8f1ed 38%, #cbbbc1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1065,7 +1100,7 @@ button#theme-toggle {
 /* "XY" faint watermark */
 .dark .cv-header::before {
     opacity: 0.32;
-    -webkit-text-stroke: 1px rgba(0, 229, 192, 0.18);
+    -webkit-text-stroke: 1px rgba(242, 141, 137, 0.18);
 }
 
 /* Compact role label in dark mode */
