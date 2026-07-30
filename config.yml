@@ -94,6 +94,15 @@ params:
     author: Xiangrui Yang
     # author: ["Me", "You"] # multiple authors
 
+    assets:
+        favicon: "favicon.svg"
+        favicon16x16: "favicon-16x16.png"
+        favicon32x32: "favicon-32x32.png"
+        apple_touch_icon: "apple-touch-icon.png"
+        safari_pinned_tab: "safari-pinned-tab.svg"
+        theme_color: "#211719"
+        msapplication_TileColor: "#211719"
+
     defaultTheme: auto
     # disableThemeToggle: true
     ShowShareButtons: true
