@@ -16,11 +16,11 @@ description: "PhD Student at HKU"
 <section class="cv-section" id="academic-papers">
 <h2>Academic Papers</h2>
 <ol class="cv-paper-list">
-<li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Task Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span></li>
+<li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span></li>
 <li><a href="https://www.usenix.org/conference/fast26/presentation/zhan">Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST 2026</span></li>
 <li><a href="https://ieeexplore.ieee.org/abstract/document/11311058">ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference</a> <span class="cv-paper-venue">ICCD 2025</span></li>
 <li><a href="https://www.usenix.org/conference/fast25/presentation/zhan">Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST'25</span></li>
-<li><a href="https://dl.acm.org/doi/10.1145/3708538">AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation for Commodity SSDs</a> <span class="cv-paper-venue">ACM TACO</span></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3708538">AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation of Solid-State Drives</a> <span class="cv-paper-venue">ACM TACO</span></li>
 <li><a href="https://dl.acm.org/doi/10.1145/3698038.3698539">RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths</a> <span class="cv-paper-venue">SoCC'24</span></li>
 <li><a href="https://ieeexplore.ieee.org/document/10818010/">HEncode: A Highly Modularized and Efficient FPGA QC-LDPC Encoder Using High Level Synthesis</a> <span class="cv-paper-venue">ICCD'24</span></li>
 <li><a href="http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003">A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding</a></li>
