@@ -8,6 +8,10 @@ description: "PhD Student at HKU"
 <ul class="cv-news-list">
 <li>
 <time datetime="2026">2026</time>
+<p>New preprint: <a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> is now available on <strong>arXiv</strong>.</p>
+</li>
+<li>
+<time datetime="2026">2026</time>
 <p><a href="#academic-papers">AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation</a> has been accepted to <strong>SIGMOD 2027</strong>.</p>
 </li>
 <li>
@@ -20,6 +24,7 @@ description: "PhD Student at HKU"
 <section class="cv-section" id="academic-papers">
 <h2>Academic Papers</h2>
 <ol class="cv-paper-list">
+<li><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> <span class="cv-paper-venue">arXiv Preprint</span></li>
 <li>AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation <span class="cv-paper-venue">SIGMOD 2027</span></li>
 <li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span></li>
 <li><a href="https://www.usenix.org/conference/fast26/presentation/zhan">Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST 2026</span></li>
