@@ -16,6 +16,7 @@
     --cv-panel: rgba(127, 127, 127, 0.05);
     --cv-grid: rgba(140, 78, 78, 0.08);
     --cv-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+    --cv-text-size: 0.91rem;
 }
 
 .dark {
@@ -600,7 +601,7 @@ button#theme-toggle {
 
 .cv-content .cv-news-list p {
     margin: 0;
-    font-size: 0.92rem;
+    font-size: var(--cv-text-size);
     line-height: 1.65;
 }
 
@@ -637,8 +638,8 @@ button#theme-toggle {
     max-width: 76ch;
     margin: 0 0 1.15rem;
     color: var(--content);
-    font-size: 1.02rem;
-    line-height: 1.85;
+    font-size: var(--cv-text-size);
+    line-height: 1.75;
 }
 
 .cv-content h2 {
@@ -744,8 +745,9 @@ button#theme-toggle {
 }
 
 .cv-content li {
-    margin-bottom: 0.7rem;
-    line-height: 1.75;
+    margin-bottom: 0.5rem;
+    font-size: var(--cv-text-size);
+    line-height: 1.7;
 }
 
 .cv-content a {
@@ -769,7 +771,7 @@ button#theme-toggle {
 .cv-content h3 + p em {
     color: var(--secondary);
     font-style: normal;
-    font-size: 0.82rem;
+    font-size: 0.74rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
@@ -798,7 +800,7 @@ button#theme-toggle {
     margin-bottom: 0;
     padding: 0.55rem 0;
     border-bottom: 1px solid var(--border);
-    font-size: 0.91rem;
+    font-size: var(--cv-text-size);
     line-height: 1.45;
     transition: border-color 0.18s ease, transform 0.18s ease;
 }
@@ -1048,10 +1050,6 @@ button#theme-toggle {
 
     .cv-quick-links {
         gap: 0.3rem;
-    }
-
-    .cv-content p {
-        font-size: 0.98rem;
     }
 
     .cv-news {

@@ -52,6 +52,32 @@ description: "PhD Student at HKU"
 </div>
 </section>
 
+<section class="cv-section" id="service">
+<h2>Professional Service &amp; Talks</h2>
+<div>
+<h3>Professional Service</h3>
+<ul>
+<li>Founding Chair &amp; Lead Organizer, <a href="https://atcworkshop-rec.github.io/">FRecSys ’26</a> (1st Workshop on Frontier Recommender Systems, co-located with ACM SIGOPS ATC 2026). Led the full lifecycle: workshop proposal, ACM proceedings, peer review, and on-site operations.</li>
+<li>Reviewer, IEEE International Conference on Multimedia &amp; Expo (ICME).</li>
+</ul>
+<h3>Talks &amp; Presentations</h3>
+<ul>
+<li>ICME'25, IEEE International Conference on Multimedia &amp; Expo 2025, Nantes, France. <a href="https://whova.com/embedded/session/hlWY6K3rL7pHvG8Yd1TfjYJVgDEZvOuEPKWGmeuUbIQ%3D/4654604/?widget=primary">Website</a></li>
+<li>FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. <a href="https://www.youtube.com/watch?v=6dGa7Ol8Ryk">Video</a></li>
+<li>SoCC'24, 15th ACM Symposium on Cloud Computing, Redmond, Washington.</li>
+<li>HiPEAC'25, 20th High Performance, Edge And Cloud computing, Barcelona, Spain.</li>
+</ul>
+</div>
+</section>
+
+<section class="cv-section" id="funding">
+<h2>Research Funding</h2>
+<div>
+<h3>Kuaishou University Research Collaboration Project — OneExec</h3>
+<p><em>Project Initiator &amp; Proposal Lead</em><br><strong>2026</strong> · RMB 500,000</p>
+</div>
+</section>
+
 <section class="cv-section" id="experience">
 <h2>Experience</h2>
 <div>
@@ -86,6 +112,18 @@ description: "PhD Student at HKU"
 </div>
 </section>
 
+<section class="cv-section" id="education">
+<h2>Education</h2>
+<div>
+<h3><a href="https://www.hku.hk/">University of Hong Kong</a></h3>
+<p><em>PhD, Computer Science</em><br><strong>2025 – present</strong> · adv. Prof. <a href="https://yimingqiu.me/">Yiming Qiu</a></p>
+<h3>Huazhong University of Science and Technology</h3>
+<p><em>MSc, Computer Science</em><br><strong>2022 – 2025</strong> · Outstanding Graduate (Top 20%)</p>
+<h3>Sun Yat-sen University</h3>
+<p><em>BSc, Computer Science</em><br><strong>2018 – 2022</strong></p>
+</div>
+</section>
+
 <section class="cv-section" id="academic-projects">
 <h2>Academic Projects</h2>
 <div>
@@ -103,28 +141,6 @@ description: "PhD Student at HKU"
 <li>Built SSDTEST to characterize performance degradation; developed I/O scheduler to control tail latency.</li>
 </ul>
 </div>
-</section>
-
-<section class="cv-section" id="education">
-<h2>Education</h2>
-<div>
-<h3><a href="https://www.hku.hk/">University of Hong Kong</a></h3>
-<p><em>PhD, Computer Science</em><br><strong>2025 – present</strong> · adv. Prof. <a href="https://yimingqiu.me/">Yiming Qiu</a></p>
-<h3>Huazhong University of Science and Technology</h3>
-<p><em>MSc, Computer Science</em><br><strong>2022 – 2025</strong> · Outstanding Graduate (Top 20%)</p>
-<h3>Sun Yat-sen University</h3>
-<p><em>BSc, Computer Science</em><br><strong>2018 – 2022</strong></p>
-</div>
-</section>
-
-<section class="cv-section" id="talks">
-<h2>Talks &amp; Presentations</h2>
-<ul>
-<li>ICME'25, IEEE International Conference on Multimedia &amp; Expo 2025, Nantes, France. <a href="https://whova.com/embedded/session/hlWY6K3rL7pHvG8Yd1TfjYJVgDEZvOuEPKWGmeuUbIQ%3D/4654604/?widget=primary">Website</a></li>
-<li>FAST'25, 23rd USENIX Conference on File and Storage Technologies, Santa Clara, California. <a href="https://www.youtube.com/watch?v=6dGa7Ol8Ryk">Video</a></li>
-<li>SoCC'24, 15th ACM Symposium on Cloud Computing, Redmond, Washington.</li>
-<li>HiPEAC'25, 20th High Performance, Edge And Cloud computing, Barcelona, Spain.</li>
-</ul>
 </section>
 
 <section class="cv-section" id="awards">
