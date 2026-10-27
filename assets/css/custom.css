@@ -781,11 +781,11 @@ button#theme-toggle {
     font-weight: 600;
 }
 
-.cv-paper-list {
+.cv-content .cv-paper-list {
     counter-reset: cv-paper;
     list-style: none;
     margin: 0.35rem 0 0;
-    padding-left: 0;
+    padding-inline-start: 0;
 }
 
 .cv-paper-list li {
@@ -856,6 +856,92 @@ button#theme-toggle {
     white-space: nowrap;
     text-transform: uppercase;
     justify-self: end;
+}
+
+.cv-paper-authors {
+    grid-column: 2;
+    display: block;
+    color: var(--secondary);
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+.cv-content .cv-paper-authors strong {
+    margin: 0;
+    color: var(--primary);
+    font-size: inherit;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.cv-content .cv-paper-group {
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    transition: color 0.15s ease;
+}
+
+.cv-content p.cv-paper-group {
+    margin: 0 0 0.2rem;
+}
+
+.cv-paper-more {
+    margin-top: 1.25rem;
+    border-top: 1px solid var(--border);
+}
+
+.cv-paper-more > summary {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.85rem 0 0.35rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.cv-paper-more > summary::-webkit-details-marker {
+    display: none;
+}
+
+.cv-paper-more > summary::after {
+    content: "+";
+    margin-left: auto;
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 1rem;
+    line-height: 1;
+    transition: color 0.15s ease, transform 0.18s ease;
+}
+
+.cv-paper-more[open] > summary::after {
+    transform: rotate(45deg);
+}
+
+.cv-paper-more > summary:hover .cv-paper-group,
+.cv-paper-more > summary:hover::after {
+    color: var(--cv-accent);
+}
+
+.cv-paper-more > summary:focus-visible {
+    outline: 2px solid var(--cv-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.cv-paper-count {
+    padding: 0.05rem 0.42rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--secondary);
+    font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+    text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
@@ -1057,13 +1143,18 @@ button#theme-toggle {
         vertical-align: 0.06rem;
         justify-self: auto;
     }
+
+    .cv-paper-authors {
+        margin-top: 0.2rem;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .cv-header,
     .cv-hero,
     .cv-paper-list li,
-    .cv-paper-list li::after {
+    .cv-paper-list li::after,
+    .cv-paper-more > summary::after {
         animation: none;
         transition: none;
     }

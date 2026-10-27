@@ -27,21 +27,29 @@ description: "PhD Student at HKU"
 
 <section class="cv-section" id="academic-papers">
 <h2>Academic Papers</h2>
+<div class="cv-papers">
+<p class="cv-paper-group">Selected Publications</p>
 <ol class="cv-paper-list">
-<li><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> <span class="cv-paper-venue">ATC 2026 (FRecSys ’26 Workshop)</span></li>
-<li><a href="https://arxiv.org/abs/2610.21264">AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation</a> <span class="cv-paper-venue">SIGMOD 2027</span></li>
-<li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span></li>
-<li><a href="https://www.usenix.org/conference/fast26/presentation/zhan">Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST 2026</span></li>
-<li><a href="https://ieeexplore.ieee.org/abstract/document/11311058">ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference</a> <span class="cv-paper-venue">ICCD 2025</span></li>
-<li><a href="https://www.usenix.org/conference/fast25/presentation/zhan">Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST'25</span></li>
-<li><a href="https://dl.acm.org/doi/10.1145/3708538">AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation of Solid-State Drives</a> <span class="cv-paper-venue">ACM TACO</span></li>
-<li><a href="https://dl.acm.org/doi/10.1145/3698038.3698539">RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths</a> <span class="cv-paper-venue">SoCC'24</span></li>
-<li><a href="https://ieeexplore.ieee.org/document/10818010/">HEncode: A Highly Modularized and Efficient FPGA QC-LDPC Encoder Using High Level Synthesis</a> <span class="cv-paper-venue">ICCD'24</span></li>
-<li><a href="http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003">A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding</a></li>
-<li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13067/130670E/Analyzing-performance-degradation-for-wide-stripe-erasure-codes/10.1117/12.3024709.full">Analyzing performance degradation for wide stripe erasure codes</a></li>
-<li><a href="https://dl.acm.org/doi/10.1145/3605573.3605629">PMLDS: An LSM-tree Direct Managed Storage for Key-value Stores on Byte-addressable Devices</a></li>
-<li><a href="https://arxiv.org/abs/2211.11543">Leveraging Orbital Information and Atomic Feature in Deep Learning Model</a></li>
+<li><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> <span class="cv-paper-venue">ATC 2026 (FRecSys ’26 Workshop)</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Cheng Peng, Jingshan Lv, Jiaqiang Liu, Xiao Liang, Chen Yang, Yiming Qiu</span></li>
+<li><a href="https://arxiv.org/abs/2610.21264">AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation</a> <span class="cv-paper-venue">SIGMOD 2027</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Yifan Lei, Jiawei Yang, Yekang Zhan, Yuxin Zheng, Lei Mao, Zhaoren Wu, Yiming Qiu</span></li>
+<li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Zhihao Zeng, Jiawei Yang, Yekang Zhan, Qiang Cao, Jie Yao</span></li>
+<li><a href="http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003">A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding</a> <span class="cv-paper-venue">JCCS</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Shaohua Wang, Yekang Zhan, Qiang Cao, Jie Yao</span></li>
+<li><a href="https://arxiv.org/abs/2211.11543">Leveraging Orbital Information and Atomic Feature in Deep Learning Model</a> <span class="cv-paper-venue">arXiv</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong></span></li>
 </ol>
+<details class="cv-paper-more">
+<summary><span class="cv-paper-group">More Publications</span><span class="cv-paper-count">8</span></summary>
+<ol class="cv-paper-list">
+<li><a href="https://www.usenix.org/conference/fast26/presentation/zhan">Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST 2026</span> <span class="cv-paper-authors">Yekang Zhan, Tianze Wang, Zheng Peng, Haichuan Hu, Jiahao Wu, <strong>Xiangrui Yang</strong>, Qiang Cao, Hong Jiang, Jie Yao</span></li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/11311058">ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference</a> <span class="cv-paper-venue">ICCD 2025</span> <span class="cv-paper-authors">Zijian Xiong, <strong>Xiangrui Yang</strong>, Yuhang Zhang, Yue Zhou, Jianguo Yang, Yaoyu Tao, Xiangshui Miao, Yuhui He</span></li>
+<li><a href="https://www.usenix.org/conference/fast25/presentation/zhan">Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST 2025</span> <span class="cv-paper-authors">Yekang Zhan, Haichuan Hu, <strong>Xiangrui Yang</strong>, Qiang Cao, Hong Jiang, Shaohua Wang, Jie Yao</span></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3708538">AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation of Solid-State Drives</a> <span class="cv-paper-venue">ACM TACO</span> <span class="cv-paper-authors">Yekang Zhan, <strong>Xiangrui Yang</strong>, Haichuan Hu, Qiang Cao, Yifan Zhang, Jie Yao</span></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3698038.3698539">RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths</a> <span class="cv-paper-venue">SoCC 2024</span> <span class="cv-paper-authors">Yekang Zhan, Haichuan Hu, <strong>Xiangrui Yang</strong>, Shaohua Wang, Qiang Cao, Hong Jiang, Jie Yao</span></li>
+<li><a href="https://ieeexplore.ieee.org/document/10818010/">HEncode: A Highly Modularized and Efficient FPGA QC-LDPC Encoder Using High Level Synthesis</a> <span class="cv-paper-venue">ICCD 2024</span> <span class="cv-paper-authors">Jiawei Yang, Shaohua Wang, <strong>Xiangrui Yang</strong>, Yifan Zhang, Qiang Cao, Jie Yao, Xiaodi Tan, Xiao Lin</span></li>
+<li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13067/130670E/Analyzing-performance-degradation-for-wide-stripe-erasure-codes/10.1117/12.3024709.full">Analyzing Performance Degradation for Wide Stripe Erasure Codes</a> <span class="cv-paper-venue">IWH 2022 &amp; 2023</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Jie Yao, Qiang Cao</span></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3605573.3605629">PMLDS: An LSM-tree Direct Managed Storage for Key-value Stores on Byte-addressable Devices</a> <span class="cv-paper-venue">ICPP 2023</span> <span class="cv-paper-authors">Ziyi Lu, Qiang Cao, Shucheng Wang, Jie Yao, <strong>Xiangrui Yang</strong></span></li>
+</ol>
+</details>
+</div>
 </section>
 
 <section class="cv-section" id="experience">
