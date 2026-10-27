@@ -8,6 +8,10 @@ description: "PhD Student at HKU"
 <ul class="cv-news-list">
 <li>
 <time datetime="2026">2026</time>
+<p>Our SIGMOD 2027 work <strong>AdaBool</strong> was featured on <a href="https://mp.weixin.qq.com/s/ZbMGWSa5A2OqZDoPSo9fGQ" title="SIGMOD 2027 | AdaBool：面向 GPU 的自适应稀疏布尔矩阵处理框架"><strong>Tencent’s official WeChat account</strong></a>.</p>
+</li>
+<li>
+<time datetime="2026">2026</time>
 <p><a href="https://arxiv.org/abs/2610.21264">AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation</a> has been accepted to <strong>SIGMOD 2027</strong> and is now available on <strong>arXiv</strong>.</p>
 </li>
 <li>
