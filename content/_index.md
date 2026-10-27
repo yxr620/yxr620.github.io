@@ -30,7 +30,7 @@ description: "PhD Student at HKU"
 <div class="cv-papers">
 <p class="cv-paper-group">Selected Publications</p>
 <ol class="cv-paper-list">
-<li><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> <span class="cv-paper-venue">ATC 2026 (FRecSys ’26 Workshop)</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Cheng Peng, Jingshan Lv, Jiaqiang Liu, Xiao Liang, Chen Yang, Yiming Qiu</span></li>
+<li><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> <span class="cv-paper-venue">ATC 2026 (FRecSys ’26)</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Cheng Peng, Jingshan Lv, Jiaqiang Liu, Xiao Liang, Chen Yang, Yiming Qiu</span></li>
 <li><a href="https://arxiv.org/abs/2610.21264">AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation</a> <span class="cv-paper-venue">SIGMOD 2027</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Yifan Lei, Jiawei Yang, Yekang Zhan, Yuxin Zheng, Lei Mao, Zhaoren Wu, Yiming Qiu</span></li>
 <li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Zhihao Zeng, Jiawei Yang, Yekang Zhan, Qiang Cao, Jie Yao</span></li>
 <li><a href="http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003">A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding</a> <span class="cv-paper-venue">JCCS</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Shaohua Wang, Yekang Zhan, Qiang Cao, Jie Yao</span></li>
@@ -57,7 +57,7 @@ description: "PhD Student at HKU"
 <div>
 <h3>Professional Service</h3>
 <ul>
-<li>Founding Chair &amp; Lead Organizer, <a href="https://atcworkshop-rec.github.io/">FRecSys ’26</a> (1st Workshop on Frontier Recommender Systems, co-located with ACM SIGOPS ATC 2026). Led the full lifecycle: workshop proposal, ACM proceedings, peer review, and on-site operations.</li>
+<li>Founding Chair &amp; Lead Organizer, <a href="https://atcworkshop-rec.github.io/">FRecSys ’26</a></li>
 <li>Reviewer, IEEE International Conference on Multimedia &amp; Expo (ICME).</li>
 </ul>
 <h3>Talks &amp; Presentations</h3>

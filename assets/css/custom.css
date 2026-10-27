@@ -426,12 +426,6 @@ button#theme-toggle {
     line-height: 1.35;
 }
 
-.cv-hero-fact .cv-hero-note {
-    margin-top: 0.35rem;
-    color: var(--secondary);
-    font-size: 0.76rem;
-}
-
 .cv-hero-fact a {
     color: var(--primary);
     text-decoration: none;
