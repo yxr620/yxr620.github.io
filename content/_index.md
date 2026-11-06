@@ -37,8 +37,9 @@ description: "PhD Student at HKU"
 <li><a href="https://arxiv.org/abs/2211.11543">Leveraging Orbital Information and Atomic Feature in Deep Learning Model</a> <span class="cv-paper-venue">arXiv</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong></span></li>
 </ol>
 <details class="cv-paper-more">
-<summary><span class="cv-paper-group">More Publications</span><span class="cv-paper-count">8</span></summary>
+<summary><span class="cv-paper-group">More Publications</span><span class="cv-paper-count">9</span></summary>
 <ol class="cv-paper-list">
+<li><span>FlagCD: Exact Request-Constrained Decoding over Billion-Scale Item Catalogs</span> <span class="cv-paper-venue">ATC 2026 (FRecSys ’26)</span> <span class="cv-paper-authors">Jiawei Yang, <strong>Xiangrui Yang</strong>, Cheng Peng, Zihao Zheng, Liang Zeng, Yunfeng Zhao, Lei Yan, Yuting Deng, Jiaqiang Liu, Xiao Liang</span></li>
 <li><a href="https://www.usenix.org/conference/fast26/presentation/zhan">Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST 2026</span> <span class="cv-paper-authors">Yekang Zhan, Tianze Wang, Zheng Peng, Haichuan Hu, Jiahao Wu, <strong>Xiangrui Yang</strong>, Qiang Cao, Hong Jiang, Jie Yao</span></li>
 <li><a href="https://ieeexplore.ieee.org/abstract/document/11311058">ASMA: An Anisotropy Scaling Memristor-based Accelerator for LLM Inference</a> <span class="cv-paper-venue">ICCD 2025</span> <span class="cv-paper-authors">Zijian Xiong, <strong>Xiangrui Yang</strong>, Yuhang Zhang, Yue Zhou, Jianguo Yang, Yaoyu Tao, Xiangshui Miao, Yuhui He</span></li>
 <li><a href="https://www.usenix.org/conference/fast25/presentation/zhan">Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs</a> <span class="cv-paper-venue">FAST 2025</span> <span class="cv-paper-authors">Yekang Zhan, Haichuan Hu, <strong>Xiangrui Yang</strong>, Qiang Cao, Hong Jiang, Shaohua Wang, Jie Yao</span></li>
