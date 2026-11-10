@@ -17,6 +17,8 @@
     --cv-grid: rgba(140, 78, 78, 0.08);
     --cv-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
     --cv-text-size: 0.91rem;
+    --cv-motion-duration: 180ms;
+    --cv-motion-ease: cubic-bezier(0.2, 0, 0, 1);
 }
 
 .dark {
@@ -41,6 +43,38 @@
 
 body {
     font-family: "Avenir Next", "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+/* Give every homepage link the same feedback without moving the content. */
+.logo a,
+#menu a,
+.cv-page a {
+    box-shadow: none;
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    transition: color var(--cv-motion-duration) var(--cv-motion-ease),
+        text-decoration-color var(--cv-motion-duration) var(--cv-motion-ease);
+}
+
+.logo a:hover,
+#menu a:hover,
+.cv-page a:hover,
+.logo a:focus-visible,
+#menu a:focus-visible,
+.cv-page a:focus-visible {
+    color: var(--cv-accent);
+    text-decoration-color: currentColor;
+    box-shadow: none;
+}
+
+.logo a:focus-visible,
+#menu a:focus-visible,
+.cv-page a:focus-visible {
+    outline: 2px solid var(--cv-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
 }
 
 .logo a,
@@ -111,7 +145,8 @@ button#theme-toggle {
     color: var(--primary);
     font-size: inherit;
     line-height: 1;
-    transition: background-color 0.15s ease, color 0.15s ease;
+    transition: background-color var(--cv-motion-duration) var(--cv-motion-ease),
+        color var(--cv-motion-duration) var(--cv-motion-ease);
 }
 
 #theme-toggle:hover {
@@ -284,12 +319,6 @@ button#theme-toggle {
     font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
     font-size: 0.82rem;
     font-weight: 500;
-    text-decoration: none;
-    transition: opacity 0.15s ease;
-}
-
-.cv-quick-links a:hover {
-    opacity: 0.7;
 }
 
 .cv-ql-sep {
@@ -312,7 +341,6 @@ button#theme-toggle {
     background: transparent;
     box-shadow: none;
     overflow: visible;
-    animation: cv-rise 0.7s ease-out 0.08s both;
 }
 
 .cv-hero::before {
@@ -428,11 +456,6 @@ button#theme-toggle {
 
 .cv-hero-fact a {
     color: var(--primary);
-    text-decoration: none;
-}
-
-.cv-hero-fact a:hover {
-    text-decoration: underline;
 }
 
 .cv-hero-photo {
@@ -606,6 +629,10 @@ button#theme-toggle {
     font-weight: 650;
 }
 
+.cv-content .cv-news-list a strong {
+    color: inherit;
+}
+
 .cv-section {
     position: relative;
     display: grid;
@@ -746,16 +773,6 @@ button#theme-toggle {
 
 .cv-content a {
     color: var(--primary);
-    box-shadow: none;
-    text-decoration: none;
-    transition: color 0.15s ease, opacity 0.15s ease;
-}
-
-.cv-content a:hover {
-    color: var(--cv-accent);
-    opacity: 0.85;
-    box-shadow: none;
-    text-decoration: none;
 }
 
 .cv-content h3 + p {
@@ -796,29 +813,6 @@ button#theme-toggle {
     border-bottom: 1px solid var(--border);
     font-size: var(--cv-text-size);
     line-height: 1.45;
-    transition: border-color 0.18s ease, transform 0.18s ease;
-}
-
-.cv-paper-list li::after {
-    content: "";
-    position: absolute;
-    top: 0.45rem;
-    bottom: 0.45rem;
-    left: -0.75rem;
-    width: 2px;
-    background: linear-gradient(180deg, var(--cv-accent), var(--cv-accent-2));
-    transform: scaleY(0);
-    transform-origin: center;
-    transition: transform 0.18s ease;
-}
-
-.cv-paper-list li:hover {
-    border-color: var(--cv-accent-soft);
-    transform: translateX(0.25rem);
-}
-
-.cv-paper-list li:hover::after {
-    transform: scaleY(1);
 }
 
 .cv-paper-list li::before {
@@ -878,7 +872,7 @@ button#theme-toggle {
     letter-spacing: 0.14em;
     line-height: 1.4;
     text-transform: uppercase;
-    transition: color 0.15s ease;
+    transition: color var(--cv-motion-duration) var(--cv-motion-ease);
 }
 
 .cv-content p.cv-paper-group {
@@ -910,7 +904,8 @@ button#theme-toggle {
     font-family: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", monospace;
     font-size: 1rem;
     line-height: 1;
-    transition: color 0.15s ease, transform 0.18s ease;
+    transition: color var(--cv-motion-duration) var(--cv-motion-ease),
+        transform var(--cv-motion-duration) var(--cv-motion-ease);
 }
 
 .cv-paper-more[open] > summary::after {
@@ -1141,30 +1136,33 @@ button#theme-toggle {
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .cv-header,
-    .cv-hero,
-    .cv-paper-list li,
-    .cv-paper-list li::after,
-    .cv-paper-more > summary::after {
-        animation: none;
-        transition: none;
-    }
-
-    .cv-paper-list li:hover {
-        transform: none;
+/* Fade the whole page together; scrolling never hides or replays content. */
+@media (prefers-reduced-motion: no-preference) {
+    .cv-page {
+        animation: cv-appear 320ms var(--cv-motion-ease);
     }
 }
 
-@keyframes cv-rise {
+@media (prefers-reduced-motion: reduce) {
+    .cv-page,
+    .cv-page *,
+    .cv-page *::before,
+    .cv-page *::after,
+    .logo a,
+    #menu a,
+    button#theme-toggle {
+        animation: none;
+        transition: none;
+    }
+}
+
+@keyframes cv-appear {
     from {
         opacity: 0;
-        transform: translateY(12px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 

@@ -8,6 +8,10 @@ description: "PhD Student at HKU"
 <ul class="cv-news-list">
 <li>
 <time datetime="2026">2026</time>
+<p><a href="https://arxiv.org/abs/2611.12296">RecoGEM: A Serving System for Production-Scale Generative Recommendation</a> is now available on <strong>arXiv</strong>.</p>
+</li>
+<li>
+<time datetime="2026">2026</time>
 <p>Our SIGMOD 2027 work <strong>AdaBool</strong> was featured on <a href="https://mp.weixin.qq.com/s/ZbMGWSa5A2OqZDoPSo9fGQ" title="SIGMOD 2027 | AdaBool：面向 GPU 的自适应稀疏布尔矩阵处理框架"><strong>Tencent’s official WeChat account</strong></a>.</p>
 </li>
 <li>
@@ -30,6 +34,7 @@ description: "PhD Student at HKU"
 <div class="cv-papers">
 <p class="cv-paper-group">Selected Publications</p>
 <ol class="cv-paper-list">
+<li><a href="https://arxiv.org/abs/2611.12296">RecoGEM: A Serving System for Production-Scale Generative Recommendation</a> <span class="cv-paper-venue">arXiv</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Yunfeng Zhao, Jiawei Yang, Fangyu Zhang, Enrui Zhao, Liang Zeng, Cheng Peng, Minhui Xie, Jiaqiang Liu, Xiao Liang, Yiming Qiu</span></li>
 <li><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> <span class="cv-paper-venue">ATC 2026 (FRecSys ’26)</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Cheng Peng, Jingshan Lv, Jiaqiang Liu, Xiao Liang, Chen Yang, Yiming Qiu</span></li>
 <li><a href="https://arxiv.org/abs/2610.21264">AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation</a> <span class="cv-paper-venue">SIGMOD 2027</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Yifan Lei, Jiawei Yang, Yekang Zhan, Yuxin Zheng, Lei Mao, Zhaoren Wu, Yiming Qiu</span></li>
 <li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Zhihao Zeng, Jiawei Yang, Yekang Zhan, Qiang Cao, Jie Yao</span></li>
