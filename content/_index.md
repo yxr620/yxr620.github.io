@@ -8,7 +8,7 @@ description: "PhD Student at HKU"
 <ul class="cv-news-list">
 <li>
 <time datetime="2026">2026</time>
-<p><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> received the <strong>Best Paper Award</strong> at <a href="https://atcworkshop-rec.github.io/"><strong>FRecSys ’26</strong> (ACM SIGOPS ATC 2026 Workshop)</a>.</p>
+<p><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> received the <strong>Best Paper Award</strong> at <a href="https://atcworkshop-rec.github.io/"><strong>ACM SIGOPS ATC 2026 Workshop</strong> (FRecSys ’26)</a>.</p>
 </li>
 <li>
 <time datetime="2026">2026</time>
