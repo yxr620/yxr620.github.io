@@ -848,6 +848,14 @@ button#theme-toggle {
     justify-self: end;
 }
 
+.cv-paper-award {
+    margin-inline-start: 0.45rem;
+    padding-inline-start: 0.45rem;
+    border-inline-start: 1px solid var(--border);
+    color: var(--cv-accent);
+    font-weight: 700;
+}
+
 .cv-paper-authors {
     grid-column: 2;
     display: block;

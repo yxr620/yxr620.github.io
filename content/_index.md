@@ -8,6 +8,10 @@ description: "PhD Student at HKU"
 <ul class="cv-news-list">
 <li>
 <time datetime="2026">2026</time>
+<p><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> received the <strong>Best Paper Award</strong> at <a href="https://atcworkshop-rec.github.io/"><strong>FRecSys ’26</strong> (ACM SIGOPS ATC 2026 Workshop)</a>.</p>
+</li>
+<li>
+<time datetime="2026">2026</time>
 <p><a href="https://arxiv.org/abs/2611.12296">RecoGEM: A Serving System for Production-Scale Generative Recommendation</a> is now available on <strong>arXiv</strong>.</p>
 </li>
 <li>
@@ -17,10 +21,6 @@ description: "PhD Student at HKU"
 <li>
 <time datetime="2026">2026</time>
 <p><a href="https://arxiv.org/abs/2610.21264">AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation</a> has been accepted to <strong>SIGMOD 2027</strong> and is now available on <strong>arXiv</strong>.</p>
-</li>
-<li>
-<time datetime="2026">2026</time>
-<p><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> has been accepted to <a href="https://atcworkshop-rec.github.io/"><strong>ATC 2026</strong> (FRecSys ’26 Workshop)</a>.</p>
 </li>
 <li>
 <time datetime="2026">2026</time>
@@ -35,7 +35,7 @@ description: "PhD Student at HKU"
 <p class="cv-paper-group">Selected Publications</p>
 <ol class="cv-paper-list">
 <li><a href="https://arxiv.org/abs/2611.12296">RecoGEM: A Serving System for Production-Scale Generative Recommendation</a> <span class="cv-paper-venue">arXiv</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Yunfeng Zhao, Jiawei Yang, Fangyu Zhang, Enrui Zhao, Liang Zeng, Cheng Peng, Minhui Xie, Jiaqiang Liu, Xiao Liang, Yiming Qiu</span></li>
-<li><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> <span class="cv-paper-venue">ATC 2026 (FRecSys ’26)</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Cheng Peng, Jingshan Lv, Jiaqiang Liu, Xiao Liang, Chen Yang, Yiming Qiu</span></li>
+<li><a href="https://arxiv.org/abs/2609.12399">OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation</a> <span class="cv-paper-venue">ATC 2026 (FRecSys ’26) <span class="cv-paper-award">Best Paper</span></span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Cheng Peng, Jingshan Lv, Jiaqiang Liu, Xiao Liang, Chen Yang, Yiming Qiu</span></li>
 <li><a href="https://arxiv.org/abs/2610.21264">AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation</a> <span class="cv-paper-venue">SIGMOD 2027</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Yifan Lei, Jiawei Yang, Yekang Zhan, Yuxin Zheng, Lei Mao, Zhaoren Wu, Yiming Qiu</span></li>
 <li><a href="https://ieeexplore.ieee.org/document/11209980">HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism</a> <span class="cv-paper-venue">ICME 2025</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Zhihao Zeng, Jiawei Yang, Yekang Zhan, Qiang Cao, Jie Yao</span></li>
 <li><a href="http://xwxt.sict.ac.cn/CN/Y2025/V46/I4/1003">A Study on Data-Layout Optimization in Memory for High-Performance Erasure Coding</a> <span class="cv-paper-venue">JCCS</span> <span class="cv-paper-authors"><strong>Xiangrui Yang</strong>, Shaohua Wang, Yekang Zhan, Qiang Cao, Jie Yao</span></li>
@@ -154,6 +154,7 @@ description: "PhD Student at HKU"
 <div>
 <h3>Awards</h3>
 <ul>
+<li>Best Paper Award, <a href="https://atcworkshop-rec.github.io/">FRecSys ’26 (ACM SIGOPS ATC 2026 Workshop)</a> — <a href="https://arxiv.org/abs/2609.12399">OneLA</a> (2026)</li>
 <li>Sangfor Scholarship (Apr. 2024)</li>
 <li>HUST Scholarship, Second Prize (Oct. 2023)</li>
 <li>Distinguished Activist in Community Affairs (Oct. 2023)</li>
